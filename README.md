@@ -1,5 +1,5 @@
 <p align="center">
-  <div style='text-align:center;font-size:30px'><h3>Different UI</h1></div>
+  <img width='300px' src='https://cdn.jsdelivr.net/gh/yesmore/img/img/logo (2).png' alt='different-ui'/>
 </p>
 
 <p align="center">
@@ -9,40 +9,45 @@
   <a href="https://npmcharts.com/compare/different-ui?minimal=true">
     <img src="http://img.shields.io/npm/dm/different-ui.svg">
   </a>
+    <img src="https://img.shields.io/github/license/yesmore/different-ui" alt="mit"/>  <br>
+  <img src="https://img.shields.io/github/stars/yesmore/different-ui.svg" alt="star"/>
+        <img src="https://img.shields.io/github/forks/yesmore/different-ui" alt="fork"/>
+    <img src="https://img.shields.io/github/issues/yesmore/different-ui" alt="issues"/><br>
   <br>
 </p>
+
 
 <p align="center">Different UI - A Vue.js 3 UI library</p>
 
 - 💪 Vue 3 Composition API
 - 🔥 Written in TypeScript
 
+<div style='float:right;margin-bottom:20px;'><br><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/OSAPI'>English</a></div><br>
 
+## ⚡️ 状态: Beta
 
-## Status: Beta
-
-This project is still under heavy development. Feel free to join us and make your first pull request.
+这个项目仍在持续开发中。欢迎加入开发，并提出您的第一次Pull Request 。
 
 - 基本架构已完成
 - 未测试
 
-## Documentation
+## 📖 开发文档
 
-You can find for more details, API, and other docs on [https://yesmore/different-ui]()
+更详细的 Api、组件信息请查看 [https://yesmore/different-ui](https://github.com/yesmore/Different-UI)
 
-## Breaking change list
+## 🎡 重要更新
 
-You can find the breaking change list here: [Breaking Change List](https://github.com/yesmore/different-ui/issues/162).
+重大更新日志请查看: [Breaking Change List](https://github.com/yesmore/different-ui/issues/1).
 
 ---
 
-## Install
+## 🖖 安装
 
 ```shell
 $ npm install different-ui -S
 ```
 
-## Quick Start
+## 👋 快速开始
 
 **全局加载**
 
@@ -50,7 +55,7 @@ $ npm install different-ui -S
 // vue3/main.ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import DifferentUi from '~/index'
+import DifferentUi from '@different-ui'
 
 const app = createApp(App)
 app.use(DifferentUi)
@@ -59,7 +64,7 @@ app.mount('#app')
 
 或 **按需加载**
 
-```tsx
+```vue
 // vue3/App.vue
 <template>
   <div>
@@ -81,22 +86,19 @@ export default defineComponent({
 </script>
 ```
 
-With command
+开发者启动
 
 ```shell
 $ npm run dev
 ```
 
-will start the local development environment
+## 🌱 禅
 
-## Different's dhyana
 
-借鉴了Element-Plus的theme主题
 
 
 
 ## Licence
 
-Element Plus is open source software licensed as
-[MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
+Different UI is open source software licensed as [MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
 
