@@ -23,7 +23,7 @@
 - 🔥 Written in TypeScript
 - ✨ Generate Colorful Style
 
-<div style='float:right;margin-bottom:20px;'><br><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/OSAPI'>English</a></div><br>
+<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/OSAPI'>English</a></div>
 
 ## ⚡️ 状态: Beta
 
