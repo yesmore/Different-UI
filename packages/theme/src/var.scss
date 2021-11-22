@@ -1,0 +1,92 @@
+@use 'sass:map';
+
+// CSS3 var
+@use 'common/var' as *;
+@use 'mixins/var' as *;
+
+// for better performance do not dynamically change the root variable if you really
+// do not need that, since this could introduce recalculation overhead for rendering.
+// https://lisilinhart.info/posts/css-variables-performance/
+
+:root {
+  --df-color-white: #{$color-white};
+  --df-color-black: #{$color-black};
+
+  --df-color-primary: #{$color-primary};
+
+  @for $i from 1 through 9 {
+    @include set-css-color-type-light('primary', $i);
+  }
+
+  // --df-color-#{$type}
+  // --df-color-#{$type}-light-{$i}
+  @each $type in (success, warning, danger, error, info) {
+    @include set-css-color-type($type);
+  }
+
+  // --df-text-color-#{$type}
+  @each $type in (primary, regular, secondary, placeholder) {
+    @include set-css-var-type('text-color', $type, $text-color);
+  }
+
+  // --df-border-color-#{$type}
+  @each $type in (base, light, lighter, extra-light) {
+    @include set-css-var-type('border-color', $type, $border-color);
+  }
+
+  // Background
+  --df-background-color-base: #{$background-color-base};
+
+  // Border
+  --df-border-width-base: #{$border-width-base};
+  --df-border-style-base: #{$border-style-base};
+  --df-border-color-hover: #{$border-color-hover};
+  --df-border-base: var(--df-border-width-base) var(--df-border-style-base)
+    var(--df-border-color-base);
+
+  // --df-border-radius-#{$type}
+  @each $type in (base, small, round, circle) {
+    @include set-css-var-type('border-radius', $type, $border-radius);
+  }
+
+  // Box-shadow
+  // --df-box-shadow-#{$type}
+  @each $type in (base, light) {
+    @include set-css-var-type('box-shadow', $type, $box-shadow);
+  }
+
+  // Svg
+  --df-svg-monochrome-grey: #dcdde0;
+
+  // Fill
+  --df-fill-base: var(--df-color-white);
+
+  // Typography
+  @each $type in (extra-large, large, medium, base, small, extra-small) {
+    @include set-css-var-type('font-size', $type, $font-size);
+  }
+
+  --df-font-weight-primary: 500;
+  --df-font-line-height-primary: 24px;
+  --df-font-color-disabled-base: #bbb;
+
+  // z-index
+  --df-index-normal: 1;
+  --df-index-top: 1000;
+  --df-index-popper: 2000;
+
+  // Disable base
+  --df-disabled-fill-base: var(--df-background-color-base);
+  --df-disabled-color-base: var(--df-text-color-placeholder);
+  --df-disabled-border-base: var(--df-border-color-light);
+
+  /* Transition
+-------------------------- */
+  // refer to this website to get the bezier motion function detail
+  //  https://cubic-bezier.com/#p1,p2,p3,p4 (change px as your function parameter)
+  --df-transition-duration: #{map.get($transition-duration, 'default')};
+  --df-transition-duration-fast: #{map.get($transition-duration, 'fast')};
+
+  @include set-component-css-var('transition-function', $transition-function);
+  @include set-component-css-var('transition', $transition);
+}

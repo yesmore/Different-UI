@@ -1,0 +1,85 @@
+@use './mixins/config' as *;
+@use './common/toolvar.scss' as *;
+
+// tool class
+
+// text color
+@each $colorKey, $color in $df-tc-colors {
+  .text-#{$colorKey} {
+    color: $color;
+  }
+}
+
+// bg color
+@each $colorKey, $color in $df-tc-bg-colors {
+  .bg-#{$colorKey} {
+    background-color: $color;
+  }
+}
+
+// fontSize
+@each $Key, $size in $df-tc-fs {
+  .fs-#{$Key} {
+    font-size: $size;
+  }
+}
+
+// text pos
+@each $val in (left, center, right) {
+  .text-#{$val} {
+    text-align: $val;
+  }
+}
+
+// margin,padding
+@each $typeKey, $type in $df-spacing-types {
+  // .m-1
+  @each $sizeKey, $size in $df-spacing-sizes {
+    .#{$typeKey}-#{$sizeKey} {
+      #{$type}: $size * $df-spacing-base-size;
+    }
+  }
+
+  @each $sizeKey, $size in $df-spacing-sizes {
+    // .mx-0,  .mx-1,  .mx-2 ...
+    .#{$typeKey}x-#{$sizeKey} {
+      #{$type}-left: $size * $df-spacing-base-size;
+      #{$type}-right: $size * $df-spacing-base-size;
+    }
+
+    // .my-0,  .my-1,   .my-2  ...
+    .#{$typeKey}y-#{$sizeKey} {
+      #{$type}-top: $size * $df-spacing-base-size;
+      #{$type}-bottom: $size * $df-spacing-base-size;
+    }
+  }
+
+  // .mt-1, .mr-1
+  @each $directionKey, $direction in $df-spacing-directions {
+    @each $sizeKey, $size in $df-spacing-sizes {
+      // .mt-1{margin-top: 0.25rem}
+      .#{$typeKey}#{$directionKey}-#{$sizeKey} {
+        #{$type}-#{$direction}: $size * $df-spacing-base-size;
+      }
+    }
+  }
+}
+
+// border-radius
+@each $key, $val in $df-tc-radius {
+  .radius-#{$key} {
+    border-radius: $val;
+  }
+}
+
+.df-hover:hover {
+  color: rgb(211, 211, 211);
+  transition: 0.3s;
+}
+
+// box-shadow
+@each $key, $val in $df-tc-box-shadow {
+  .shadow-#{$key} {
+    box-shadow: $val;
+  }
+}
