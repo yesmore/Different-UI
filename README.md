@@ -17,27 +17,25 @@
 </p>
 
 
-<p align="center">Different UI - A Vue.js 3 UI library</p>
+<p align="center">Different UI - A Vue.js 3 UI library made by <a href='https://github.com/yesmore'>@yesmore</a></p>
 
 - 💪 Vue 3 Composition API
 - 🔥 Written in TypeScript
-- ✨ Generate Colorful Style
+- ✨ With Colorful Style
 
-<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/OSAPI'>English</a></div>
+<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/different-ui'>English</a></div>
 
 ## ⚡️ 状态: Beta
 
 这个项目仍在持续开发中。欢迎加入开发，并提出您的第一次Pull Request 。
 
-- 基本架构已完成
-- 未测试
+**下一步计划**：
 
-下一步计划：
-
-- 完善已开发组件的样式
-- 测试已开发组件
-- 使用vuepress生成开发文档并上线
-- 发布npm
+- 完善已有组件样式
+- 使用`jest`测试已有组件
+- 使用`vuepress`生成开发文档并上线
+- 发布`npm`
+- 编写案例模板
 
 ## 📖 开发文档
 
@@ -100,9 +98,11 @@ export default defineComponent({
 $ npm run dev
 ```
 
-## 🌱 禅
+## 🌱 Different Zen
 
-
+- Beauty is better than ugliness, and so is CSS
+- Sometimes ‘CV’ may be really better than you, except boss
+- From 0 to 1
 
 
 
