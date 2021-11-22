@@ -21,6 +21,7 @@
 
 - 💪 Vue 3 Composition API
 - 🔥 Written in TypeScript
+- ✨ Generate Colorful Style
 
 <div style='float:right;margin-bottom:20px;'><br><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/OSAPI'>English</a></div><br>
 
@@ -30,6 +31,13 @@
 
 - 基本架构已完成
 - 未测试
+
+下一步计划：
+
+- 完善已开发组件的样式
+- 测试已开发组件
+- 使用vuepress生成开发文档并上线
+- 发布npm
 
 ## 📖 开发文档
 
