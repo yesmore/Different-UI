@@ -1,6 +1,6 @@
 import { App } from 'vue'
 import Modal from './src/Modal.vue'
-import './style/Modal.scss'
+import '../../theme/src/components/Modal.scss'
 
 Modal.install = (app: App): void => {
   app.component(Modal.name, Modal)
