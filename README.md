@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.org/package/different-ui">
-    <img src="https://img.shields.io/npm/v/different-ui.svg">
+    <img src="https://img.shields.io/npm/v/different-ui">
   </a>
   <a href="https://npmcharts.com/compare/different-ui?minimal=true">
     <img src="http://img.shields.io/npm/dm/different-ui.svg">
@@ -16,7 +16,6 @@
   <br>
 </p>
 
-
 <p align="center">Different UI - A Vue.js 3 UI library made by <a href='https://github.com/yesmore'>@yesmore</a></p>
 
 - 💪 Vue 3 Composition API
@@ -27,7 +26,7 @@
 
 ## ⚡️ 状态: Beta
 
-这个项目仍在持续开发中。欢迎加入开发，并提出您的第一次Pull Request 。
+这个项目仍在持续开发中。欢迎加入开发，并提出您的第一次 Pull Request 。
 
 **下一步计划**：
 
@@ -62,6 +61,7 @@ $ npm install different-ui -S
 import { createApp } from 'vue'
 import App from './App.vue'
 import DifferentUi from '@different-ui'
+import 'different-ui/lib/packages/theme/index.css'
 
 const app = createApp(App)
 app.use(DifferentUi)
@@ -74,7 +74,7 @@ app.mount('#app')
 // vue3/App.vue
 <template>
   <div>
-  	<df-button>按钮1</df-button>	
+    <df-button>按钮1</df-button>
   </div>
 </template>
 
@@ -85,10 +85,8 @@ import { DfButton } from 'different-ui'
 export default defineComponent({
   name: 'App',
   components: { DfButton },
-  setup() {
-      
-  }
-})    
+  setup() {},
+})
 </script>
 ```
 
@@ -104,9 +102,6 @@ $ npm run dev
 - Sometimes ‘CV’ may be really better than you, except boss
 - From 0 to 1
 
-
-
 ## Licence
 
 Different UI is open source software licensed as [MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
-
