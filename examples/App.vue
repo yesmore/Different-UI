@@ -1,9 +1,9 @@
 <template>
   <h2>组件示例<i class="iconfont icon-dongtai"></i></h2>
-  <!-- <div class="btn-container">
+  <div class="btn-container">
     <div>{{ count }}</div>
     <df-button @click="handleClick">按钮</df-button>
-  </div> -->
+  </div>
 
   <!-- <div class="car-container">
     <df-carousel

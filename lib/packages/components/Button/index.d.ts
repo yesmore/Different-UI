@@ -3,5 +3,5 @@
  *  import { DfButton } from 'different-ui'
  */
 import Button from './src/Button.vue';
-import './style/index.scss';
+import './style/Button.scss';
 export default Button;

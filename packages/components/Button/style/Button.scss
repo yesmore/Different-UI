@@ -2,6 +2,15 @@
   width: 90%;
   margin: 40px auto;
   text-align: center;
+  .btn-1 {
+    background: rgb(6, 14, 131);
+    background: linear-gradient(
+      0deg,
+      rgba(6, 14, 131, 1) 0%,
+      rgba(12, 25, 180, 1) 100%
+    );
+    border: none;
+  }
 }
 .custom-btn {
   width: 130px;
@@ -21,15 +30,7 @@
   outline: none;
 }
 /* 1 */
-.btn-1 {
-  background: rgb(6, 14, 131);
-  background: linear-gradient(
-    0deg,
-    rgba(6, 14, 131, 1) 0%,
-    rgba(12, 25, 180, 1) 100%
-  );
-  border: none;
-}
+
 .btn-1:hover {
   background: rgb(0, 3, 255);
   background: linear-gradient(
