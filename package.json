@@ -35,6 +35,7 @@
     "serve": "vue-cli-service serve",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
     "build": "yarn build:clean && yarn build:lib && yarn build:esm-bundle && rimraf lib/demo.html && yarn build:css",
     "build:clean": "rimraf lib",
     "build:lib": "vue-cli-service build --target lib --name index --dest lib packages/index.ts",
