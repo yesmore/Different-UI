@@ -14,9 +14,9 @@ const {
   babel
 } = require('@rollup/plugin-babel');
 import pkg from '../package.json'
-const deps = Object.keys(pkg.dependencies)
 import vue from 'rollup-plugin-vue'
 
+const deps = Object.keys(pkg.dependencies)
 const babelOptions = {
   "presets": ['@babel/preset-env'],
 }
@@ -45,7 +45,6 @@ export default [{
   }, ],
   plugins: [
     nodeResolve(),
-    // commonjs(),
     babel(babelOptions),
     vue({
       target: 'browser',

@@ -1,3 +1,3 @@
 import Carousel from './src/Carousel.vue';
-import './style/index.scss';
+import './style/Carousel.scss';
 export default Carousel;

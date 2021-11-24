@@ -7,5 +7,16 @@
 @use './col.scss';
 @use './display.scss';
 
+@use '../../components/Button/style/Button.scss';
+@use '../../components/Carousel/style/Carousel.scss';
+@use '../../components/Magnifier/style/Magnifier.scss';
+@use '../../components/Modal/style/Modal.scss';
+@use '../../components/Selector/style/Selector.scss';
+@use '../../components/StarsRate/style/StarsRate.scss';
+@use '../../components/TreeMenu/style/TreeMenu.scss';
+
 // df-tool styles
 @use './layout.scss';
+
+// iconfont
+@use './Icon/iconfont.css';

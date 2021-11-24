@@ -1,7 +1,8 @@
 {
   "name": "different-ui",
+  "version": "0.1.1-beta.1",
   "description": "A Component Library for Vue 3",
-  "homepage": "https://yesmore.cc/",
+  "homepage": "https://github.com/yesmore/different-ui",
   "keywords": [
     "different-ui",
     "different",
@@ -12,13 +13,13 @@
     "vue3"
   ],
   "private": false,
-  "main": "lib/index.min.js",
+  "main": "lib/index.umd.js",
   "module": "lib/index.esm.js",
-  "typings": "lib/index.d.ts types文件",
+  "typings": "lib/index.d.ts",
   "license": "MIT",
   "author": {
     "name": "yesmore",
-    "email": "2421662954@qq.com"
+    "email": "3224266014@qq.com"
   },
   "repository": {
     "type": "git",
@@ -34,12 +35,12 @@
     "serve": "vue-cli-service serve",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "build": "yarn build:clean && yarn build:lib && yarn build:esm-bundle && rimraf lib/demo.html",
+    "build": "yarn build:clean && yarn build:lib && yarn build:esm-bundle && rimraf lib/demo.html && yarn build:css",
     "build:clean": "rimraf lib",
     "build:lib": "vue-cli-service build --target lib --name index --dest lib packages/index.ts",
     "build:esm-bundle": "rollup --config ./build/rollup.config.js",
     "build:dev": "rollup --config ./build/rollup.config.dev.js",
-    "build:css": "sass ./packages/theme/src/index.scss ./packages/theme/index.css && sass ./packages/theme/src/reset.scss ./packages/theme/reset.css &&  sass ./packages/theme/src/layout.scss ./packages/theme/layout.css",
+    "build:css": "npx gulp sass",
     "test:unit": "vue-cli-service test:unit",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
@@ -52,7 +53,6 @@
     "@babel/preset-env": "^7.16.4",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-node-resolve": "^13.0.6",
-    "@rollup/plugin-typescript": "^8.3.0",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
@@ -68,14 +68,14 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.0.0",
     "lint-staged": "^9.5.0",
     "node-sass": "^4.12.0",
     "prettier": "^2.2.1",
     "rollup": "^2.60.0",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-css-porter": "^1.0.2",
     "rollup-plugin-postcss": "^4.0.1",
-    "rollup-plugin-sass": "^1.2.9",
     "rollup-plugin-scss": "^3.0.0",
     "rollup-plugin-serve": "^1.1.0",
     "rollup-plugin-terser": "^7.0.2",
