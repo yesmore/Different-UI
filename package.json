@@ -43,6 +43,7 @@
     "build:dev": "rollup --config ./build/rollup.config.dev.js",
     "build:css": "yarn gulp sass",
     "test:unit": "vue-cli-service test:unit",
+    "test:cov": "vue-cli-service test:unit --coverage",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
@@ -86,8 +87,8 @@
     "rollup-plugin-vue": "^6.0.0",
     "sass-loader": "^8.0.2",
     "typescript": "~4.1.5",
-    "vue-jest": "^5.0.0-0",
-    "vuepress": "^1.8.2"
+    "vue-jest": "^5.0.0-0"
+
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

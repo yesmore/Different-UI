@@ -20,30 +20,37 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: npm run test:unit
+      - run: npm run test:cov
         env:
           CI: true
 
-  build-and-deploy:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node-version: [8.x, 10.x, 12.x, 14.x]
-        os: [windows-latest, macos-latest, ubuntu-latest]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2.3.1
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@2
         with:
-          persist-credentials: false
-      - name: Install and Build
-        run: |
-          npm install
-          npm run docs:build
+          flags: unittests
+          file: ./coverage/clover.xml
+          fail_ci_if_error: true
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.6
-        with:
-          BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
-        env:
-          CI: true
+  # build-and-deploy:
+  #   runs-on: ${{ matrix.os }}
+  #   strategy:
+  #     matrix:
+  #       node-version: [8.x, 10.x, 12.x, 14.x]
+  #       os: [windows-latest, macos-latest, ubuntu-latest]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2.3.1
+  #       with:
+  #         persist-credentials: false
+  #     - name: Install and Build
+  #       run: |
+  #         npm install
+  #         npm run docs:build
+
+  #     - name: Deploy
+  #       uses: JamesIves/github-pages-deploy-action@4.1.6
+  #       with:
+  #         BRANCH: gh-pages
+  #         FOLDER: docs/.vuepress/dist
+  #       env:
+  #         CI: true
