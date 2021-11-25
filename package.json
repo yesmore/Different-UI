@@ -38,7 +38,7 @@
     "serve": "vue-cli-service serve",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh",
+    "deploy": "yarn docs:build && cd docs/.vuepress/dist && git add -A && git commit -m 'deploy' && git push -f git@github.com:yesmore/different-ui.git master:gh-pages",
     "build": "yarn build:clean && yarn build:lib && yarn build:esm-bundle && rimraf lib/demo.html && yarn build:css",
     "build:clean": "rimraf lib",
     "build:lib": "vue-cli-service build --target lib --name index --dest lib packages/index.ts",
@@ -49,7 +49,6 @@
     "test:unit": "vue-cli-service test:unit",
     "test:cov": "vue-cli-service test:unit --coverage",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
-
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -93,7 +92,6 @@
     "sass-loader": "^8.0.2",
     "typescript": "~4.1.5",
     "vue-jest": "^5.0.0-0"
-
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
