@@ -31,6 +31,9 @@
   "peerDependencies": {
     "vue": "^3.2.0"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "docs:dev": "vuepress dev docs",
@@ -42,9 +45,11 @@
     "build:esm-bundle": "rollup --config ./build/rollup.config.js",
     "build:dev": "rollup --config ./build/rollup.config.dev.js",
     "build:css": "yarn gulp sass",
+    "prepublishOnly": "yarn build",
     "test:unit": "vue-cli-service test:unit",
     "test:cov": "vue-cli-service test:unit --coverage",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+
   },
   "dependencies": {
     "core-js": "^3.6.5",
