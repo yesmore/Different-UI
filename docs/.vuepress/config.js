@@ -1,13 +1,9 @@
 module.exports = {
-  // 网站标题
-  title: 'Different UI',
-  // 网站描述
-  description: 'A Vue.js 3 UI library',
   // 注入到当前页面的 HTML <head> 中的标签
   head: [
     ['link', {
       rel: 'icon',
-      href: '/favicon.ico'
+      href: '/logo-s.png'
     }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
   // 这是部署到github相关的配置
@@ -20,17 +16,16 @@ module.exports = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-      title: 'VuePress',
-      description: '基于 Vuejs 3.x 开发的UI组件库'
+      title: 'Different',
+      description: '基于 Vuejs 3.x 的UI组件库'
     },
     '/en/': {
       lang: 'eh-US',
-      title: 'VuePress',
+      title: 'Different',
       description: 'A Vue.js 3 UI library'
     }
   },
   themeConfig: {
-    logo: '/logo.png', // 左上角导航logo
     sidebarDepth: 2, // 将同时提取markdown中h2 和 h3 标题，显示在侧边栏上，默认为1（只会显示h2标题），若 sidebar 下也配置该属性，则以 sidebar 的为准
     activeHeaderLinks: true, // 当用户通过滚动查看页面的不同部分时，嵌套的标题链接和 URL 中的 Hash 值会实时更新, 默认为 true
     nextLinks: true, // 显示下一篇链接, 默认为 true
@@ -41,7 +36,7 @@ module.exports = {
     locales: {
       '/': {
         // 多语言下拉菜单的标题
-        selectText: '选择语言',
+        selectText: '多语言',
         // 该语言在下拉菜单中的标签
         label: '简体中文',
         // 编辑链接文字

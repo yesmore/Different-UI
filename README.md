@@ -1,5 +1,5 @@
 <p align="center">
-  <img width='300px' src='https://cdn.jsdelivr.net/gh/yesmore/img/img/logo (2).png' alt='different-ui'/>
+    <img width='300px' src='https://cdn.jsdelivr.net/gh/yesmore/img/img/logo.png' alt='different-ui'/>
 </p>
 <p align="center">
   <a href="javascript:;">
@@ -26,6 +26,7 @@
   <img src="https://img.shields.io/github/license/yesmore/different-ui" alt="mit"/>  
   <br>
 </p>
+
 
 
 <p align="center">Different UI - A Vue.js 3 UI library made by <a href='https://github.com/yesmore'>@yesmore</a></p>
