@@ -6,9 +6,6 @@
   <a href="https://www.npmjs.org/package/different-ui">
     <img src="https://img.shields.io/npm/v/different-ui">
   </a>
-  <a href="https://www.npmjs.org/package/different-ui">
-    <img src="https://img.shields.io/github/package-json/v/yesmore/different-ui">
-  </a>
   <a href="https://npmcharts.com/compare/different-ui?minimal=true">
     <img src="https://img.shields.io/npm/dt/different-ui.svg">
   </a>
