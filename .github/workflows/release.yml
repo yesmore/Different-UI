@@ -25,7 +25,7 @@ jobs:
           CI: true
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@1
+        uses: codecov/codecov-action@v2
         with:
           flags: unittests
           file: ./coverage/clover.xml
