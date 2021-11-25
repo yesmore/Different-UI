@@ -73,7 +73,7 @@ $ npm install different-ui -S
 // vue3/main.ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import DifferentUi from '@different-ui'
+import DifferentUi from 'different-ui'
 import 'different-ui/lib/packages/theme/index.css'
 
 const app = createApp(App)
