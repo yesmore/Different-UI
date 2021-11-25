@@ -17,10 +17,10 @@
   </a><br>
   <img src="https://img.shields.io/github/stars/yesmore/different-ui.svg" alt="star"/>
   <img src="https://img.shields.io/github/forks/yesmore/different-ui" alt="fork"/>
-  <img src="https://img.shields.io/github/issues/yesmore/different-ui" alt="issues"/><br>
+  <img src="https://img.shields.io/github/issues/yesmore/different-ui" alt="issues"/>
   <a href="https://gitter.im/yesmore/yesmoreforchat">
     <img src="https://img.shields.io/gitter/room/yesmore/yesmoreforchat" alt="chat"/>
-  </a>
+  </a><br>
   <img src="https://img.shields.io/github/license/yesmore/different-ui" alt="mit"/>  
   <br>
 </p>
