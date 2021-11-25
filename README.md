@@ -1,13 +1,12 @@
 <p align="center">
   <img width='300px' src='https://cdn.jsdelivr.net/gh/yesmore/img/img/logo (2).png' alt='different-ui'/>
 </p>
-
 <p align="center">
   <a href="javascript:;">
     <img src="https://img.shields.io/github/workflow/status/yesmore/different-ui/dev-release">
   </a>
   <a href="javascript:;">
-    <img src="https://img.shields.io/codecov/c/github/yesmore/different-ui">
+    <img src="https://img.shields.io/codecov/c/github/yesmore/different-ui?logo=codecov">
   </a>
   <a href="https://www.npmjs.org/package/different-ui">
     <img src="https://img.shields.io/npm/v/different-ui">
@@ -18,7 +17,7 @@
   <a href="https://npmcharts.com/compare/different-ui?minimal=true">
     <img src="https://img.shields.io/github/size/yesmore/different-ui/lib/index.umd.js">
   </a>
-  <img src="https://img.shields.io/github/stars/yesmore/different-ui.svg" alt="star"/>
+  <img src="https://img.shields.io/github/stars/yesmore/different-ui.svg?logo=github" alt="star"/>
   <img src="https://img.shields.io/github/forks/yesmore/different-ui" alt="fork"/>
   <img src="https://img.shields.io/github/issues/yesmore/different-ui" alt="issues"/><br>
   <a href="https://gitter.im/yesmore/yesmoreforchat">
@@ -27,6 +26,7 @@
   <img src="https://img.shields.io/github/license/yesmore/different-ui" alt="mit"/>  
   <br>
 </p>
+
 
 <p align="center">Different UI - A Vue.js 3 UI library made by <a href='https://github.com/yesmore'>@yesmore</a></p>
 
