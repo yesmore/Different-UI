@@ -6,13 +6,22 @@
   <a href="https://www.npmjs.org/package/different-ui">
     <img src="https://img.shields.io/npm/v/different-ui">
   </a>
+  <a href="https://www.npmjs.org/package/different-ui">
+    <img src="https://img.shields.io/github/package-json/v/yesmore/different-ui">
+  </a>
   <a href="https://npmcharts.com/compare/different-ui?minimal=true">
-    <img src="http://img.shields.io/npm/dm/different-ui.svg">
+    <img src="https://img.shields.io/npm/dt/different-ui.svg">
+  </a>
+  <a href="https://npmcharts.com/compare/different-ui?minimal=true">
+    <img src="https://img.shields.io/github/size/yesmore/different-ui/lib/index.umd.js">
   </a>
     <img src="https://img.shields.io/github/license/yesmore/different-ui" alt="mit"/>  <br>
   <img src="https://img.shields.io/github/stars/yesmore/different-ui.svg" alt="star"/>
         <img src="https://img.shields.io/github/forks/yesmore/different-ui" alt="fork"/>
-    <img src="https://img.shields.io/github/issues/yesmore/different-ui" alt="issues"/><br>
+    <img src="https://img.shields.io/github/issues/yesmore/different-ui" alt="issues"/>
+    <a href="https://gitter.im/yesmore/yesmoreforchat">
+      <img src="https://img.shields.io/gitter/room/yesmore/yesmoreforchat" alt="issues"/><br>
+    </a>
   <br>
 </p>
 
@@ -38,7 +47,7 @@
 
 ## 📖 开发文档
 
-更详细的 Api、组件信息请查看 [https://yesmore/different-ui](https://github.com/yesmore/Different-UI)
+更详细的 Api、组件信息请查看 [https://yesmore.cc/Different-UI](https://yesmore.cc/Different-UI)
 
 ## 🎡 重要更新
 
