@@ -35,41 +35,41 @@
 - 🔥 Written in TypeScript
 - 🌈 With Colorful Style
 
-<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/different-ui/Readme_en.md'>English</a></div>
+<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：<a href='https://github.com/yesmore/different-ui'>中文版</a> | English</div>
 
-## 💻 状态: Beta
+## 💻 Status: Beta
 
-> 目前不推荐使用本框架
+> This framework is not recommended at this time
 
-这个项目仍在持续开发中。欢迎加入开发，并提出您的第一次 Pull Request 。
+This project is still under heavy development. Feel free to join us and make your first pull request.
 
-**下一步计划**：
+**Next**：
 
-- 完善已有组件样式
-- 使用`jest`测试已有组件
-- 使用`vuepress`生成开发文档并上线
-- 发布`npm`
-- 编写案例模板
+- Improve existing component styles
+- Use `jest` to test existing components
+- Use `vuepress` to generate development documents and go online
+- Publish ` npm`
+- Writing case templates
 
-## 📖 开发文档
+## 📖 Documentation
 
 更详细的 Api、组件信息请查看 [https://yesmore.cc/Different-UI](https://yesmore.cc/Different-UI)
 
-## 📘 重要更新
+## 📘 Change Logs
 
 重大更新日志请查看: [Breaking Change List](https://github.com/yesmore/different-ui/issues/1).
 
 ---
 
-## 🖖 安装
+## 🖖 Install
 
 ```shell
 $ npm install different-ui -S
 ```
 
-## 👋 快速开始
+## 👋 Quick start
 
-**全局加载**
+**Global load**
 
 ```ts
 // vue3/main.ts
@@ -83,7 +83,7 @@ app.use(DifferentUi)
 app.mount('#app')
 ```
 
-或 **按需加载**
+or **Load on demand**
 
 ```vue
 // vue3/App.vue
@@ -105,23 +105,23 @@ export default defineComponent({
 </script>
 ```
 
-开发者启动
+Local debugging
 
 ```shell
 $ npm run dev
 ```
 
-## 🌱 禅
+## 🌱 Different Zen
 
 - Beauty is better than ugliness, and so is CSS
 - Sometimes ‘CV’ may be really better than you, except boss
 - From 0 to 1
 
-## 🐾 创建者
+## 🐾 Contributors
 
 <img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/> 
 
-## 🎨 请我吃辣条
+## 🎨 Treat me to spicy strips
 
 <p align="center">
   <table border="0">
