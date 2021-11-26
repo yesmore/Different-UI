@@ -33,11 +33,11 @@
 
 - 💪 Vue 3 Composition API
 - 🔥 Written in TypeScript
-- ✨ With Colorful Style
+- 🌈 With Colorful Style
 
 <div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/different-ui'>English</a></div>
 
-## ⚡️ 状态: Beta
+## 💻 状态: Beta
 
 这个项目仍在持续开发中。欢迎加入开发，并提出您的第一次 Pull Request 。
 
@@ -53,7 +53,7 @@
 
 更详细的 Api、组件信息请查看 [https://yesmore.cc/Different-UI](https://yesmore.cc/Different-UI)
 
-## 🎡 重要更新
+## 📘 重要更新
 
 重大更新日志请查看: [Breaking Change List](https://github.com/yesmore/different-ui/issues/1).
 
@@ -115,6 +115,23 @@ $ npm run dev
 - Sometimes ‘CV’ may be really better than you, except boss
 - From 0 to 1
 
+## 🐾 Contributors
+
+<img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/> 
+
+## 🎨 Treat me to spicy strips
+
+<p align="center">
+  <table border="0">
+    <tr>
+        <th  align="center"><img width='200px' src='https://cdn.jsdelivr.net/gh/yesmore/img/img/81E3D2890C073A52E045D9E49457C3ED.jpg' alt='wx'/> <p>微信</p> </th>
+        <th align="center"><img width='200px' src='https://cdn.jsdelivr.net/gh/yesmore/img/img/849E2934286ACA620B988C523AEBC92B.jpg' alt='zfb'/> <p>支付宝</p> </th>
+    </tr>    
+  </table>
+</p>
+
+
 ## Licence
 
 Different UI is open source software licensed as [MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
+
