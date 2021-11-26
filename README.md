@@ -35,7 +35,7 @@
 - 🔥 Written in TypeScript
 - 🌈 With Colorful Style
 
-<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/different-ui/Readme_en.md'>English</a></div>
+<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/Different-UI/blob/dev/README_en.md'>English</a></div>
 
 ## 💻 状态: Beta
 
@@ -119,7 +119,7 @@ $ npm run dev
 
 ## 🐾 创建者
 
-<img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/> 
+<a href='https://github.com/yesmore'><img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a> 
 
 ## 🎨 请我吃辣条
 

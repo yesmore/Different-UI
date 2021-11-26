@@ -53,11 +53,11 @@ This project is still under heavy development. Feel free to join us and make you
 
 ## 📖 Documentation
 
-更详细的 Api、组件信息请查看 [https://yesmore.cc/Different-UI](https://yesmore.cc/Different-UI)
+You can find for more details, API, and other docs on [https://yesmore.cc/Different-UI](https://yesmore.cc/Different-UI)
 
 ## 📘 Change Logs
 
-重大更新日志请查看: [Breaking Change List](https://github.com/yesmore/different-ui/issues/1).
+You can find the breaking change list here: [Breaking Change List](https://github.com/yesmore/different-ui/issues/1).
 
 ---
 
@@ -119,7 +119,7 @@ $ npm run dev
 
 ## 🐾 Contributors
 
-<img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/> 
+<a href='https://github.com/yesmore'><img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a>  
 
 ## 🎨 Treat me to spicy strips
 
