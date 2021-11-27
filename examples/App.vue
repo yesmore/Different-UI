@@ -1,8 +1,14 @@
 <template>
   <h2>组件示例<i class="iconfont icon-dongtai"></i></h2>
   <div class="btn-container">
-    <div>{{ count }}</div>
-    <df-button @click="handleClick">按钮</df-button>
+    <df-button color="" type="bling" size="" radius="" :round="true">
+      按钮
+      <i class="iconfont icon-github1"></i>
+    </df-button>
+    <df-button>
+      按钮
+      <i class="iconfont icon-github1"></i>
+    </df-button>
   </div>
 
   <!-- <div class="car-container">

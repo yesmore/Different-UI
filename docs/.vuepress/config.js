@@ -17,7 +17,7 @@ module.exports = {
     '/': {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
       title: 'Different',
-      description: '基于 Vuejs 3.x 的UI组件库'
+      description: '一个基于 Vuejs 3.x 的UI组件库'
     },
     '/en/': {
       lang: 'eh-US',
@@ -64,6 +64,10 @@ module.exports = {
             link: '/guide/'
           }, // 内部链接
           {
+            text: '组件',
+            link: '/component/'
+          },
+          {
             text: '帮助',
             link: '/help/'
           },
@@ -96,6 +100,24 @@ module.exports = {
               ]
             }
           ],
+          '/component/': [ // 设置侧边栏分组, 通过设置 children 将页面划分到分组里
+            {
+              title: '基础',
+              collapsable: false, // 是否侧边菜单折叠，默认值是 true
+              children: [
+                ['', '关于组件'],
+                ['button.md', '按钮'],
+              ]
+            },
+            {
+              title: 'API',
+              collapsable: false,
+              sidebarDepth: 2,
+              children: [
+                ['more.md', '开发中']
+              ]
+            }
+          ],
           '/help/': 'auto' // 配置 auto 适合单文件 README.md 的场景, 自动生成侧边栏
         }
       },
@@ -124,6 +146,10 @@ module.exports = {
             text: 'Guide',
             link: '/guide/'
           }, // 内部链接
+          {
+            text: 'component',
+            link: '/component/'
+          },
           {
             text: 'Help',
             link: '/help/'

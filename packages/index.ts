@@ -12,7 +12,7 @@ import DfMagnifier from './components/Magnifier'
 import DfStarsRate from './components/StarsRate'
 import DfModal from './components/Modal'
 
-// import './theme/index.css'
+// import './theme/src/index.scss'
 import './theme/src/Icon/iconfont.css'
 
 // 所有插件列表

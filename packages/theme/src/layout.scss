@@ -5,28 +5,28 @@
 
 // text color
 @each $colorKey, $color in $df-tc-colors {
-  .text-#{$colorKey} {
+  .#{$namespace}-text-#{$colorKey} {
     color: $color;
   }
 }
 
 // bg color
 @each $colorKey, $color in $df-tc-bg-colors {
-  .bg-#{$colorKey} {
+  .#{$namespace}-bg-#{$colorKey} {
     background-color: $color;
   }
 }
 
 // fontSize
 @each $Key, $size in $df-tc-fs {
-  .fs-#{$Key} {
+  .#{$namespace}-fs-#{$Key} {
     font-size: $size;
   }
 }
 
 // text pos
 @each $val in (left, center, right) {
-  .text-#{$val} {
+  .#{$namespace}-text-#{$val} {
     text-align: $val;
   }
 }
@@ -35,20 +35,20 @@
 @each $typeKey, $type in $df-spacing-types {
   // .m-1
   @each $sizeKey, $size in $df-spacing-sizes {
-    .#{$typeKey}-#{$sizeKey} {
+    .#{$namespace}-#{$typeKey}-#{$sizeKey} {
       #{$type}: $size * $df-spacing-base-size;
     }
   }
 
   @each $sizeKey, $size in $df-spacing-sizes {
     // .mx-0,  .mx-1,  .mx-2 ...
-    .#{$typeKey}x-#{$sizeKey} {
+    .#{$namespace}-#{$typeKey}x-#{$sizeKey} {
       #{$type}-left: $size * $df-spacing-base-size;
       #{$type}-right: $size * $df-spacing-base-size;
     }
 
     // .my-0,  .my-1,   .my-2  ...
-    .#{$typeKey}y-#{$sizeKey} {
+    .#{$namespace}-#{$typeKey}y-#{$sizeKey} {
       #{$type}-top: $size * $df-spacing-base-size;
       #{$type}-bottom: $size * $df-spacing-base-size;
     }
@@ -58,7 +58,7 @@
   @each $directionKey, $direction in $df-spacing-directions {
     @each $sizeKey, $size in $df-spacing-sizes {
       // .mt-1{margin-top: 0.25rem}
-      .#{$typeKey}#{$directionKey}-#{$sizeKey} {
+      .#{$namespace}-#{$typeKey}#{$directionKey}-#{$sizeKey} {
         #{$type}-#{$direction}: $size * $df-spacing-base-size;
       }
     }
