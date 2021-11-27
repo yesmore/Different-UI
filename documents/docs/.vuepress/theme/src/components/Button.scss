@@ -1,0 +1,420 @@
+@use '../common/var' as *;
+@use '../mixins/config.scss' as *;
+
+$df-btn-bg-colors: (
+  'primary': $color-primary,
+  'white': $color-white,
+  'success': $color-success,
+  'warning': $color-warning,
+  'danger': $color-danger,
+  'error': $color-error,
+  'info': $color-info,
+  'black': $color-black,
+  'default': $color-primary,
+);
+$df-btn-size: (
+  'mini': (
+    65px,
+    25px,
+  ),
+  'small': (
+    78px,
+    30px,
+  ),
+  'middle': (
+    110px,
+    35px,
+  ),
+  'default': (
+    110px,
+    35px,
+  ),
+  'large': (
+    130px,
+    40px,
+  ),
+);
+
+$df-btn-radius: (
+  'mini': 1px,
+  'small': 3px,
+  'default': 5px,
+  'middle': 5px,
+  'large': 10px,
+);
+
+/* color */
+@each $colorKey, $color in $df-btn-bg-colors {
+  .#{$namespace}-btn-#{$colorKey} {
+    background-color: $color;
+  }
+}
+
+/* radius */
+@each $key, $radius in $df-btn-radius {
+  .#{$namespace}-btn-radius-#{$key} {
+    border-radius: $radius;
+  }
+}
+
+.df-btn {
+  color: #fff;
+  border: none;
+  margin: 5px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* simple */
+.df-btn-type-default {
+  &:hover {
+    opacity: 0.9;
+  }
+  &:hover:after {
+    top: 0;
+    height: 100%;
+  }
+  &:active {
+    top: 2px;
+  }
+}
+
+.df-btn-type-simple {
+  &:hover {
+    opacity: 0.9;
+  }
+  &:hover:after {
+    top: 0;
+    height: 100%;
+  }
+  &:active {
+    top: 2px;
+  }
+}
+
+/* concave */
+.df-btn-type-concave {
+  &:before {
+    height: 0%;
+    width: 2px;
+  }
+  &:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+      -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+      inset -2px -2px 2px 0 rgba(255, 255, 255, 0.2),
+      inset 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* bling */
+.df-btn-type-bling {
+  overflow: hidden;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    animation: shiny-btn1 3s ease-in-out infinite;
+  }
+  &:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+      -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+@each $colorKey, $color in $df-btn-bg-colors {
+  /* transx */
+  .#{$namespace}-btn-type-transx-#{$colorKey} {
+    line-height: 42px;
+    // padding: 0;
+
+    span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        color: $color;
+      }
+      &:before,
+      &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        background: $color;
+        transition: all 0.3s ease;
+      }
+      &:before {
+        width: 2px;
+        height: 0%;
+      }
+      &:after {
+        width: 0%;
+        height: 2px;
+      }
+      &:hover:before {
+        height: 100%;
+      }
+      &:hover:after {
+        width: 100%;
+      }
+    }
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      right: 0;
+      top: 0;
+      background: $color;
+      transition: all 0.3s ease;
+    }
+    &:before {
+      height: 0%;
+      width: 2px;
+    }
+    &:after {
+      width: 0%;
+      height: 2px;
+    }
+    &:hover {
+      background: transparent;
+      box-shadow: none;
+    }
+    &:hover:before {
+      height: 100%;
+    }
+    &:hover:after {
+      width: 92%;
+    }
+  }
+
+  /* transy */
+  .#{$namespace}-btn-type-transy-#{$colorKey} {
+    line-height: 42px;
+    padding: 0;
+
+    &:hover {
+      color: $color;
+      background: transparent;
+      box-shadow: none;
+    }
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 2px;
+      width: 0;
+      background: $color;
+      box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+      transition: 400ms ease all;
+    }
+    &:after {
+      right: inherit;
+      top: inherit;
+      left: 0;
+      bottom: 0;
+    }
+    &:hover:before,
+    &:hover:after {
+      width: 100%;
+      transition: 800ms ease all;
+    }
+  }
+
+  /* curtain down*/
+  .#{$namespace}-btn-type-curtain-down-#{$colorKey} {
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 5px;
+      background-color: $color;
+      background-image: linear-gradient(315deg, $color 0%, $color 74%);
+      box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+    &:hover:after {
+      top: 0;
+      height: 100%;
+    }
+    &:active {
+      top: 2px;
+    }
+  }
+
+  /* curtain up*/
+  .#{$namespace}-btn-type-curtain-up-#{$colorKey} {
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 5px;
+      background-color: $color;
+      background-image: linear-gradient(
+        315deg,
+        $color 0%,
+        rgba(255, 255, 255, 0.5) 74%
+      );
+      box-shadow: inset
+          2px
+          2px
+          2px
+          0px
+          rgba(255, 255, 255, 0.5)
+          7px
+          7px
+          20px
+          0px
+          rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      color: #fff;
+    }
+    &:hover:after {
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+    &:active {
+      top: 2px;
+    }
+  }
+
+  /* curtain right*/
+  .#{$namespace}-btn-type-curtain-right-#{$colorKey} {
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: $color;
+      border-radius: 5px;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      color: #fff;
+    }
+    &:hover:after {
+      left: 0;
+      width: 100%;
+    }
+    &:active {
+      top: 2px;
+    }
+  }
+
+  /* curtain left*/
+  .#{$namespace}-btn-type-curtain-left-#{$colorKey} {
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      direction: rtl;
+      background-color: $color;
+      border-radius: 5px;
+      box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      color: #fff;
+    }
+    &:hover:after {
+      left: auto;
+      right: 0;
+      width: 100%;
+    }
+    &:active {
+      top: 2px;
+    }
+  }
+}
+
+@each $key, $size in $df-btn-size {
+  .#{$namespace}-btn-size-#{$key} {
+    width: #{nth($size, 1)};
+    height: #{nth($size, 2)};
+    line-height: #{nth($size, 2)};
+  }
+
+  .#{$namespace}-btn-round-#{$key} {
+    width: #{nth($size, 2)};
+    height: #{nth($size, 2)};
+    border-radius: 50%;
+  }
+}
+
+@keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}

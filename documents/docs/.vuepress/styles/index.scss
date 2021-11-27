@@ -1,0 +1,81 @@
+.custom-container.details {
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  background: rgb(255, 255, 255);
+
+  background-color: rgba(255, 255, 255, 0);
+  .language-vue {
+    border-radius: 0 0 7px 7px;
+  }
+  pre {
+    margin-top: -3px;
+  }
+}
+.custom-container.details summary {
+  &::marker {
+    content: '';
+    unicode-bidi: normal;
+    font-variant-numeric: normal;
+  }
+
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 0;
+  border-radius: 7px 7px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  // box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+  //   7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+
+  overflow: hidden;
+
+  &:hover {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    opacity: 0.7;
+    background: rgba(209, 209, 209, 0.3);
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: rgb(226, 226, 226);
+    animation: shiny-btn1 3s ease-in-out infinite;
+  }
+  &:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+      -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}

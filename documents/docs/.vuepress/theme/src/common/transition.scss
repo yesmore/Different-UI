@@ -1,0 +1,108 @@
+@use '../mixins/config' as *;
+
+.fade-in-linear-enter-active,
+.fade-in-linear-leave-active {
+  transition: var(--df-transition-fade-linear);
+}
+
+.fade-in-linear-enter-from,
+.fade-in-linear-leave-to {
+  opacity: 0;
+}
+
+.#{$namespace}-fade-in-linear-enter-active,
+.#{$namespace}-fade-in-linear-leave-active {
+  transition: var(--df-transition-fade-linear);
+}
+.#{$namespace}-fade-in-linear-enter-from,
+.#{$namespace}-fade-in-linear-leave-to {
+  opacity: 0;
+}
+
+.#{$namespace}-fade-in-enter-active,
+.#{$namespace}-fade-in-leave-active {
+  transition: all var(--df-transition-duration) cubic-bezier(0.55, 0, 0.1, 1);
+}
+.#{$namespace}-fade-in-enter-from,
+.#{$namespace}-fade-in-leave-active {
+  opacity: 0;
+}
+
+.#{$namespace}-zoom-in-center-enter-active,
+.#{$namespace}-zoom-in-center-leave-active {
+  transition: all var(--df-transition-duration) cubic-bezier(0.55, 0, 0.1, 1);
+}
+.#{$namespace}-zoom-in-center-enter-from,
+.#{$namespace}-zoom-in-center-leave-active {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.#{$namespace}-zoom-in-top-enter-active,
+.#{$namespace}-zoom-in-top-leave-active {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: var(--df-transition-md-fade);
+  transform-origin: center top;
+
+  &[data-popper-placement^='top'] {
+    transform-origin: center bottom;
+  }
+}
+.#{$namespace}-zoom-in-top-enter-from,
+.#{$namespace}-zoom-in-top-leave-active {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.#{$namespace}-zoom-in-bottom-enter-active,
+.#{$namespace}-zoom-in-bottom-leave-active {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: var(--df-transition-md-fade);
+  transform-origin: center bottom;
+}
+.#{$namespace}-zoom-in-bottom-enter-from,
+.#{$namespace}-zoom-in-bottom-leave-active {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.#{$namespace}-zoom-in-left-enter-active,
+.#{$namespace}-zoom-in-left-leave-active {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: var(--df-transition-md-fade);
+  transform-origin: top left;
+}
+.#{$namespace}-zoom-in-left-enter-from,
+.#{$namespace}-zoom-in-left-leave-active {
+  opacity: 0;
+  transform: scale(0.45, 0.45);
+}
+
+.collapse-transition {
+  transition: var(--df-transition-duration) height ease-in-out,
+    var(--df-transition-duration) padding-top ease-in-out,
+    var(--df-transition-duration) padding-bottom ease-in-out;
+}
+.horizontal-collapse-transition {
+  transition: var(--df-transition-duration) width ease-in-out,
+    var(--df-transition-duration) padding-left ease-in-out,
+    var(--df-transition-duration) padding-right ease-in-out;
+}
+
+.#{$namespace}-list-enter-active,
+.#{$namespace}-list-leave-active {
+  transition: all 1s;
+}
+.#{$namespace}-list-enter-from,
+.#{$namespace}-list-leave-active {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.#{$namespace}-opacity-transition {
+  transition: opacity var(--df-transition-duration)
+    cubic-bezier(0.55, 0, 0.1, 1);
+}

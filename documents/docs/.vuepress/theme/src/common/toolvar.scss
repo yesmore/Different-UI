@@ -1,0 +1,74 @@
+@use './var.scss' as *;
+
+// tool class var
+$df-tc-colors: (
+  'primary': $color-primary,
+  'white': $color-white,
+  'success': $color-success,
+  'warning': $color-warning,
+  'danger': $color-danger,
+  'error': $color-error,
+  'info': $color-info,
+  'black': $color-black,
+);
+
+$df-tc-bg-colors: (
+  'primary': $color-primary,
+  'white': $color-white,
+  'success': $color-success,
+  'warning': $color-warning,
+  'danger': $color-danger,
+  'error': $color-error,
+  'info': $color-info,
+  'black': $color-black,
+);
+
+$df-tc-fs: (
+  'xl': 20px,
+  'lg': 18px,
+  'md': 16px,
+  'base': 14px,
+  'sm': 13px,
+  'xs': 12px,
+);
+
+$df-spacing-types: (
+  m: margin,
+  p: padding,
+);
+$df-spacing-directions: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+);
+$df-spacing-base-size: 1rem;
+$df-spacing-sizes: (
+  0: 0,
+  1: 0.25,
+  2: 0.5,
+  3: 1,
+  4: 1.5,
+  5: 3,
+);
+
+$df-tc-radius: (
+  'base': 4px,
+  'small': 2px,
+  'round': 20px,
+  'circle': 100%,
+);
+
+$df-tc-box-shadow: (
+  'base': (
+    inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1),
+  ),
+  'light': 0 2px 12px 0 rgba(0, 0, 0, 0.1),
+  'custom': (
+    inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1),
+  ),
+);

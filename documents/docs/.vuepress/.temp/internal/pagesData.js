@@ -1,0 +1,36 @@
+export const pagesData = {
+  // path: /
+  "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
+  // path: /component/button.html
+  "v-1fdc817c": () => import(/* webpackChunkName: "v-1fdc817c" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/button.html.js").then(({ data }) => data),
+  // path: /component/more.html
+  "v-0de0ac79": () => import(/* webpackChunkName: "v-0de0ac79" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/more.html.js").then(({ data }) => data),
+  // path: /component/
+  "v-952a5aea": () => import(/* webpackChunkName: "v-952a5aea" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/index.html.js").then(({ data }) => data),
+  // path: /guide/link.html
+  "v-43288db3": () => import(/* webpackChunkName: "v-43288db3" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/guide/link.html.js").then(({ data }) => data),
+  // path: /guide/
+  "v-fffb8e28": () => import(/* webpackChunkName: "v-fffb8e28" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/guide/index.html.js").then(({ data }) => data),
+  // path: /guide/start.html
+  "v-621628ba": () => import(/* webpackChunkName: "v-621628ba" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/guide/start.html.js").then(({ data }) => data),
+  // path: /help/
+  "v-14ac19b5": () => import(/* webpackChunkName: "v-14ac19b5" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/help/index.html.js").then(({ data }) => data),
+  // path: /zh/
+  "v-2d0ad528": () => import(/* webpackChunkName: "v-2d0ad528" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/index.html.js").then(({ data }) => data),
+  // path: /zh/component/button.html
+  "v-42a9baa6": () => import(/* webpackChunkName: "v-42a9baa6" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/button.html.js").then(({ data }) => data),
+  // path: /zh/component/more.html
+  "v-44d0342c": () => import(/* webpackChunkName: "v-44d0342c" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/more.html.js").then(({ data }) => data),
+  // path: /zh/component/
+  "v-5a5505fa": () => import(/* webpackChunkName: "v-5a5505fa" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/index.html.js").then(({ data }) => data),
+  // path: /zh/guide/link.html
+  "v-35dfb0b8": () => import(/* webpackChunkName: "v-35dfb0b8" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/guide/link.html.js").then(({ data }) => data),
+  // path: /zh/guide/
+  "v-47357bdb": () => import(/* webpackChunkName: "v-47357bdb" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/guide/index.html.js").then(({ data }) => data),
+  // path: /zh/guide/start.html
+  "v-6a008fd2": () => import(/* webpackChunkName: "v-6a008fd2" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/guide/start.html.js").then(({ data }) => data),
+  // path: /zh/help/
+  "v-2b9d3ce6": () => import(/* webpackChunkName: "v-2b9d3ce6" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/help/index.html.js").then(({ data }) => data),
+  // path: /404.html
+  "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
+}
