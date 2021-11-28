@@ -6,6 +6,7 @@ gulp.task('sass', async function () {
   return gulp.src('packages/theme/src/**/*.scss')
     .pipe(sass())
     .pipe(minifyCSS())
+    .pipe(gulp.dest('packages/theme'))
     .pipe(gulp.dest('lib/packages/theme'))
 })
 

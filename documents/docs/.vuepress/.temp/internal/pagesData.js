@@ -3,6 +3,12 @@ export const pagesData = {
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
   // path: /component/button.html
   "v-1fdc817c": () => import(/* webpackChunkName: "v-1fdc817c" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/button.html.js").then(({ data }) => data),
+  // path: /component/color.html
+  "v-35e09821": () => import(/* webpackChunkName: "v-35e09821" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/color.html.js").then(({ data }) => data),
+  // path: /component/icon.html
+  "v-4ee9c1d5": () => import(/* webpackChunkName: "v-4ee9c1d5" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/icon.html.js").then(({ data }) => data),
+  // path: /component/layout.html
+  "v-00a16884": () => import(/* webpackChunkName: "v-00a16884" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/layout.html.js").then(({ data }) => data),
   // path: /component/more.html
   "v-0de0ac79": () => import(/* webpackChunkName: "v-0de0ac79" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/more.html.js").then(({ data }) => data),
   // path: /component/

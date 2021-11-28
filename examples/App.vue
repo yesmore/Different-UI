@@ -1,11 +1,18 @@
 <template>
   <h2>组件示例<i class="iconfont icon-dongtai"></i></h2>
   <div class="btn-container">
-    <df-button color="" type="bling" size="" radius="" :round="true">
+    <df-button
+      disabled
+      @click="handleClick"
+      color="success"
+      type="bling"
+      size="large"
+      radius="small"
+    >
       按钮
       <i class="iconfont icon-github1"></i>
     </df-button>
-    <df-button>
+    <df-button @click="handleClick">
       按钮
       <i class="iconfont icon-github1"></i>
     </df-button>
@@ -141,7 +148,7 @@ export default defineComponent({
     const count = ref(0)
 
     const handleClick = () => {
-      count.value++
+      console.log('click-btn')
     }
     const setItemValue = (value: string | undefined) => {
       console.log(value)
@@ -162,10 +169,10 @@ export default defineComponent({
       console.log(num)
     }
 
-    const modalConfirm = (data: any) => {
+    const modalConfirm = (data: { msg: string }) => {
       console.log(data.msg)
     }
-    const modalClose = (data: any) => {
+    const modalClose = (data: { msg: string }) => {
       console.log(data.msg)
     }
 

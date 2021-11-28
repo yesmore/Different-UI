@@ -7,12 +7,12 @@ import {
   terser
 } from 'rollup-plugin-terser'
 import typescript from 'rollup-plugin-typescript2'
-import postcss from 'rollup-plugin-postcss'
-import sass from 'node-sass'
+// import postcss from 'rollup-plugin-postcss'
+// import sass from 'node-sass'
 import scss from 'rollup-plugin-scss'
-const {
+import {
   babel
-} = require('@rollup/plugin-babel');
+} from '@rollup/plugin-babel';
 import pkg from '../package.json'
 import vue from 'rollup-plugin-vue'
 
@@ -21,21 +21,21 @@ const babelOptions = {
   "presets": ['@babel/preset-env'],
 }
 
-const processSass = function (context, payload) {
-  return new Promise((resolve, reject) => {
-    sass.render({
-      file: context
-    }, function (err, result) {
-      console.log(result);
-      if (!err) {
-        resolve(result);
-      } else {
-        console.log(err);
-        reject(err)
-      }
-    });
-  })
-};
+// const processSass = function (context, payload) {
+//   return new Promise((resolve, reject) => {
+//     sass.render({
+//       file: context
+//     }, function (err, result) {
+//       console.log(result);
+//       if (!err) {
+//         resolve(result);
+//       } else {
+//         console.log(err);
+//         reject(err)
+//       }
+//     });
+//   })
+// };
 
 export default [{
   input: path.resolve(__dirname, '../packages/index.ts'), // 入口文件
@@ -45,7 +45,7 @@ export default [{
   }, ],
   plugins: [
     nodeResolve(),
-    babel(babelOptions),
+
     vue({
       target: 'browser',
       css: false,
@@ -65,12 +65,13 @@ export default [{
     scss({
       sass: require('node-sass'),
     }),
-    postcss({
-      extract: true, // true：分离出css文件，false：会在style里插入css
-      extensions: ['css', 'scss'],
-      process: processSass,
-      minimize: false
-    }),
+    // postcss({
+    //   extract: true, // true：分离出css文件，false：会在style里插入css
+    //   extensions: ['css', 'scss'],
+    //   process: processSass,
+    //   minimize: true
+    // }),
+    babel(babelOptions),
     terser(),
   ],
   external(id) {

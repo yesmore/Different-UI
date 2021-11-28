@@ -2,25 +2,25 @@
     <img width='300px' src='https://cdn.jsdelivr.net/gh/yesmore/img/img/logo.png' alt='different-ui'/>
 </p>
 <p align="center">
-  <a href="javascript:;">
+  <a href="javascript:;" target='_blank'>
     <img src="https://img.shields.io/github/workflow/status/yesmore/different-ui/dev-release">
   </a>
-  <a href="javascript:;">
+  <a href="javascript:;" target='_blank'>
     <img src="https://img.shields.io/codecov/c/github/yesmore/different-ui?logo=codecov">
   </a>
-  <a href="https://www.npmjs.org/package/different-ui">
+  <a href="https://www.npmjs.org/package/different-ui" target='_blank'>
     <img src="https://img.shields.io/npm/v/different-ui">
   </a>
-  <a href="https://npmcharts.com/compare/different-ui?minimal=true">
+  <a href="https://npmcharts.com/compare/different-ui?minimal=true" target='_blank'>
     <img src="https://img.shields.io/npm/dt/different-ui.svg">
   </a><br>
-  <a href="https://npmcharts.com/compare/different-ui?minimal=true">
+  <a href="https://npmcharts.com/compare/different-ui?minimal=true" target='_blank'>
     <img src="https://img.shields.io/github/size/yesmore/different-ui/lib/index.umd.js">
   </a>
   <img src="https://img.shields.io/github/stars/yesmore/different-ui.svg?logo=github" alt="star"/>
   <img src="https://img.shields.io/github/forks/yesmore/different-ui" alt="fork"/>
   <img src="https://img.shields.io/github/issues/yesmore/different-ui" alt="issues"/><br>
-  <a href="https://gitter.im/yesmore/yesmoreforchat">
+  <a href="https://gitter.im/yesmore/yesmoreforchat" target='_blank'>
     <img src="https://img.shields.io/gitter/room/yesmore/yesmoreforchat" alt="chat"/>
   </a>
   <img src="https://img.shields.io/github/license/yesmore/different-ui" alt="mit"/>  

@@ -1,30 +1,17 @@
-@use '../common/var.scss' as *;
-@use '../mixins/config.scss' as *;
-
-$namespace: 'df';
+@use '../common/var' as *;
+@use '../mixins/config' as *;
 
 $df-btn-bg-colors: (
-  'primary': #409eff,
-  'white': #ffffff,
-  'success': #67c23a,
-  'warning': #e6a23c,
-  'danger': #f56c6c,
-  'error': #f56c6c,
-  'info': #909399,
-  'black': #000000,
-  'default': #409eff,
+  'primary': $color-primary,
+  'white': $color-white,
+  'success': $color-success,
+  'warning': $color-warning,
+  'danger': $color-danger,
+  'error': $color-error,
+  'info': $color-info,
+  'black': $color-black,
+  'default': $color-primary,
 );
-// $df-btn-bg-colors: (
-//   'primary': $color-primary,
-//   'white': $color-white,
-//   'success': $color-success,
-//   'warning': $color-warning,
-//   'danger': $color-danger,
-//   'error': $color-error,
-//   'info': $color-info,
-//   'black': $color-black,
-//   'default': $color-primary,
-// );
 $df-btn-size: (
   'mini': (
     65px,
@@ -89,6 +76,13 @@ $df-btn-radius: (
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
+
+  &:disabled,
+  &[disabled] {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
 }
 
 /* simple */

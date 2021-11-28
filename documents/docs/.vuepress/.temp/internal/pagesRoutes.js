@@ -3,6 +3,9 @@ import { Vuepress } from '@vuepress/client/lib/components/Vuepress'
 const routeItems = [
   ["v-8daa1a0e","/","",["/index.html","/README.md"]],
   ["v-1fdc817c","/component/button.html","Button",["/component/button","/component/button.md"]],
+  ["v-35e09821","/component/color.html","",["/component/color","/component/color.md"]],
+  ["v-4ee9c1d5","/component/icon.html","",["/component/icon","/component/icon.md"]],
+  ["v-00a16884","/component/layout.html","",["/component/layout","/component/layout.md"]],
   ["v-0de0ac79","/component/more.html","开发中",["/component/more","/component/more.md"]],
   ["v-952a5aea","/component/","Component",["/component/index.html","/component/README.md"]],
   ["v-43288db3","/guide/link.html","Link",["/guide/link","/guide/link.md"]],

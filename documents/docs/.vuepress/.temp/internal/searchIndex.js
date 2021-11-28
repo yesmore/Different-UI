@@ -83,6 +83,27 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "",
+    "headers": [],
+    "path": "/component/color.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/component/icon.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/component/layout.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "开发中",
     "headers": [],
     "path": "/component/more.html",

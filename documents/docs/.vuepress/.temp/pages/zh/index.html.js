@@ -6,20 +6,30 @@ export const data = {
   "frontmatter": {
     "home": true,
     "heroImage": "/logo-s.png",
-    "actionText": "Quick Start →",
-    "actionLink": "/guide/",
+    "actions": [
+      {
+        "text": "快速上手",
+        "link": "/guide/start.html",
+        "type": "primary"
+      },
+      {
+        "text": "项目简介",
+        "link": "/guide/",
+        "type": "secondary"
+      }
+    ],
     "features": [
       {
-        "title": "简洁至上",
-        "details": "以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。"
+        "title": "🌈 Colorful Style",
+        "details": "Different 借鉴了 Element-Plus(theme)、CodePen的样式，这意味着Different 在保证基本业务逻辑功能基础上，更注重样式的定制化。它或许不能让你快速完成你的工作，但在你闲暇时刻使用它开发一个“花里胡哨”的网站，将绰绰有余。"
       },
       {
-        "title": "Vue驱动",
-        "details": "享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。"
+        "title": "🔥 TypeScript",
+        "details": "你以为我用的TypeScript，其实是AnyScript (bushi 。"
       },
       {
-        "title": "高性能",
-        "details": "VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。"
+        "title": "💪 Composition API",
+        "details": "Vuejs 3.x 新特性，建议去vue官网详情，鄙人只是个小白。"
       }
     ],
     "footer": "MIT Licensed | Copyright © 2021-yesmore"

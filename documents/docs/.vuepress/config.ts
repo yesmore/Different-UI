@@ -76,7 +76,7 @@ module.exports = {
             text: 'Version',
             children: [
               {
-                text: 'v0.1.1-beta.1',
+                text: 'v0.1.1-beta.3',
                 link: 'https://github.com/yesmore/different-ui',
               },
             ],
@@ -128,9 +128,23 @@ module.exports = {
               children: ['/component/', '/component/button.md'],
             },
             {
-              text: 'API',
-
-              // sidebarDepth: 4,
+              text: 'Form',
+              children: ['/component/more.md'],
+            },
+            {
+              text: 'Data',
+              children: ['/component/more.md'],
+            },
+            {
+              text: 'Navigation',
+              children: ['/component/more.md'],
+            },
+            {
+              text: 'Feedback',
+              children: ['/component/more.md'],
+            },
+            {
+              text: 'Others',
               children: ['/component/more.md'],
             },
           ],
@@ -159,7 +173,7 @@ module.exports = {
             text: '版本',
             children: [
               {
-                text: 'v0.1.1-beta.1',
+                text: 'v0.1.1-beta.3',
                 link: 'https://github.com/yesmore/different-ui',
               },
             ],
@@ -204,16 +218,30 @@ module.exports = {
           '/zh/component/': [
             // 设置侧边栏分组, 通过设置 children 将页面划分到分组里
             {
-              text: '基础',
+              text: 'Basic 基础组件',
               // sidebarDepth: 4,
               // collapsable: false, // 是否侧边菜单折叠，默认值是 true
               children: ['/zh/component/', '/zh/component/button.md'],
             },
             {
-              text: 'API',
-              // collapsable: false,
-              // sidebarDepth: 4,
-              children: ['/zh/component/more.md'],
+              text: 'Form 表单组件',
+              children: ['/component/more.md'],
+            },
+            {
+              text: 'Data 数据展示',
+              children: ['/component/more.md'],
+            },
+            {
+              text: 'Navigation 导航',
+              children: ['/component/more.md'],
+            },
+            {
+              text: 'Feedback 反馈组件',
+              children: ['/component/more.md'],
+            },
+            {
+              text: 'Others 其他',
+              children: ['/component/more.md'],
             },
           ],
           '/zh/help/': [
