@@ -1,12 +1,15 @@
-# Button 按钮
+# Button
 
-按钮组件
+Button component
 
 ## Basic
 
-df-button 提供了 `color` 属性来设置按钮不同颜色主题，示例如下：
+Basic properties of buttons: color/size/radius/round
 
 ### color
+
+df-button provides the `color` attribute to set different color themes for buttons.
+**Examples**:
 
 <df-template>
 
@@ -55,7 +58,8 @@ df-button 提供了 `color` 属性来设置按钮不同颜色主题，示例如�
 
 ### size
 
-通过 `size` 属性来设置按钮大小，默认值为 `default`/`middle` 示例如下：
+Set the button size through the `size` attribute. The default value is `default / middle`.
+**Examples**:
 
 <df-template>
 
@@ -65,10 +69,10 @@ df-button 提供了 `color` 属性来设置按钮不同颜色主题，示例如�
     class="btn-container"
     style='display:flex;justify-content:center;flex-wrap:wrap;'
   >
-    <df-button color='primary' size="mini">small</df-button>
-    <df-button color='success' size="small">success</df-button>
-    <df-button color='warning' size="middle">warning</df-button>
-    <df-button color='danger' size='large'>danger</df-button>
+    <df-button color='primary' size="mini">mini</df-button>
+    <df-button color='success' size="small">small</df-button>
+    <df-button color='warning' size="middle">middle</df-button>
+    <df-button color='danger' size='large'>large</df-button>
   </div>
 
   </template>
@@ -83,10 +87,10 @@ df-button 提供了 `color` 属性来设置按钮不同颜色主题，示例如�
     class="btn-container"
     style="display:flex;justify-content:center;flex-wrap:wrap;"
   >
-    <df-button color="primary" size="mini">small</df-button>
-    <df-button color="success" size="small">success</df-button>
-    <df-button color="warning" size="middle">warning</df-button>
-    <df-button color="danger" size="large">danger</df-button>
+    <df-button color="primary" size="mini">mini</df-button>
+    <df-button color="success" size="small">small</df-button>
+    <df-button color="warning" size="middle">middle</df-button>
+    <df-button color="danger" size="large">large</df-button>
   </div>
 </template>
 ```
@@ -98,7 +102,8 @@ df-button 提供了 `color` 属性来设置按钮不同颜色主题，示例如�
 
 ### radius
 
-通过 `radius` 属性来设置按钮圆角半径，默认值为 `default`/`middle` 示例如下：
+Set the button fillet radius through the `radius` attribute. The default value is `default / middle`.
+**Examples**:
 
 <df-template>
 
@@ -108,10 +113,10 @@ df-button 提供了 `color` 属性来设置按钮不同颜色主题，示例如�
     class="btn-container"
     style='display:flex;justify-content:center;flex-wrap:wrap;'
   >
-    <df-button color='primary' radius="mini">small</df-button>
-    <df-button color='success' radius="small">success</df-button>
-    <df-button color='warning' radius="middle">warning</df-button>
-    <df-button color='danger' radius='large'>danger</df-button>
+    <df-button color='primary' radius="mini">mini</df-button>
+    <df-button color='success' radius="small">small</df-button>
+    <df-button color='warning' radius="middle">middle</df-button>
+    <df-button color='danger' radius='large'>large</df-button>
   </div>
 
   </template>
@@ -126,10 +131,10 @@ df-button 提供了 `color` 属性来设置按钮不同颜色主题，示例如�
     class="btn-container"
     style="display:flex;justify-content:center;flex-wrap:wrap;"
   >
-    <df-button color="primary" radius="mini">small</df-button>
-    <df-button color="success" radius="small">success</df-button>
-    <df-button color="warning" radius="middle">warning</df-button>
-    <df-button color="danger" radius="large">danger</df-button>
+    <df-button color="primary" radius="mini">mini</df-button>
+    <df-button color="success" radius="small">small</df-button>
+    <df-button color="warning" radius="middle">middle</df-button>
+    <df-button color="danger" radius="large">large</df-button>
   </div>
 </template>
 ```
@@ -141,7 +146,8 @@ df-button 提供了 `color` 属性来设置按钮不同颜色主题，示例如�
 
 ### round
 
-通过 `round` 属性来设置按钮是否为圆形，默认值为 `false`，示例如下：
+Set whether the button is round through the `round` attribute. The default value is `false`.
+**Examples**:
 
 <df-template>
 
@@ -184,14 +190,14 @@ df-button 提供了 `color` 属性来设置按钮不同颜色主题，示例如�
 
 ## Advanced
 
-df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，默认样式为 `default`/`simple`。下面是 `type` 的可选值示例。
+DF button provides the `type` attribute to set different style types of buttons. The default style is `default / simple` '`. The following is an example of optional values for `type`.
 
 ### concave
 
 - `type='concave'`
-- 当你鼠标点击时，会产生凹陷效果。
+- When you click the mouse, it will produce a depression effect.
 
-示例如下：
+**Examples**:
 
 <df-template>
 
@@ -241,9 +247,9 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
 ### bling
 
 - `type='bling'`
-- 闪动效果。
+- blingbling effect.
 
-示例如下：
+**Examples**:
 
 <df-template>
 
@@ -290,12 +296,12 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
 
 </df-template>
 
-### transx-[color]
+### transx
 
 - `type='transx-[color]'`
-- 边框动态绘制效果。
+- Button border dynamic drawing effect.
 
-示例如下：
+**Examples**:
 
 <df-template>
 
@@ -326,13 +332,13 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
     class="btn-container"
     style="display:flex;justify-content:center;flex-wrap:wrap;"
   >
-    <df-button color="primary" type="transy-primary">primary</df-button>
-    <df-button color="success" type="transy-success">success</df-button>
-    <df-button color="warning" type="transy-warning">warning</df-button>
-    <df-button color="danger" type="transy-danger">danger</df-button>
-    <df-button color="error" type="transy-error">error</df-button>
-    <df-button color="info" type="transy-info">info</df-button>
-    <df-button color="black" type="transy-black">black</df-button>
+    <df-button color="primary" type="transx-primary">primary</df-button>
+    <df-button color="success" type="transx-success">success</df-button>
+    <df-button color="warning" type="transx-warning">warning</df-button>
+    <df-button color="danger" type="transx-danger">danger</df-button>
+    <df-button color="error" type="transx-error">error</df-button>
+    <df-button color="info" type="transx-info">info</df-button>
+    <df-button color="black" type="transx-black">black</df-button>
   </div>
 </template>
 ```
@@ -347,12 +353,12 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
 `type='transx-[color]'`中的 [color] 为边框颜色，可与 `color` 属性同时使用。
 :::
 
-### transy-[color]
+### transy
 
 - `type='transy-[color]'`
-- 边框动态绘制(一半)效果。
+- Button border dynamic drawing (half) effect.
 
-示例如下：
+**Examples**:
 
 <df-template>
 
@@ -400,8 +406,58 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
 
 </df-template>
 
-### curtain-[dirction]-[color]
+### curtain
+
+- `type='curtain-[dirction]-[color]'`
+- Curtain effect.
 
 ::: warning
-手打中
+[color] is the color of the curtain. If the `color` attribute is the same as [color], the curtain should be transparent, and the two can be combined with different colors at will.
 :::
+
+**Examples**:
+
+<df-template>
+
+<template #demo>
+
+  <div
+    class="btn-container"
+    style='display:flex;justify-content:center;flex-wrap:wrap;'
+  >
+    <df-button type='curtain-up-primary'>curtain-up-primary</df-button>
+    <df-button color="success" type='curtain-down-success'>curtain-down-success</df-button>
+    <df-button color="warning" type='curtain-left-warning'>curtain-left-warning</df-button>
+    <df-button color="info" type='curtain-right-danger'>curtain-right-danger</df-button>
+    <df-button color="primary" type='curtain-down-success'>curtain-down-success</df-button>
+    <df-button color="error" type='curtain-up-primary'>curtain-up-primary</df-button>
+  </div>
+
+  </template>
+
+<template #src>
+
+::: details <i class="iconfont icon-script"></i>
+
+```vue
+<template>
+  <div
+    class="btn-container"
+    style="display:flex;justify-content:center;flex-wrap:wrap;"
+  >
+    <df-button color="primary" type="transy-primary">primary</df-button>
+    <df-button color="success" type="transy-success">success</df-button>
+    <df-button color="warning" type="transy-warning">warning</df-button>
+    <df-button color="danger" type="transy-danger">danger</df-button>
+    <df-button color="error" type="transy-error">error</df-button>
+    <df-button color="info" type="transy-info">info</df-button>
+    <df-button color="black" type="transy-black">black</df-button>
+  </div>
+</template>
+```
+
+:::
+
+</template>
+
+</df-template>

@@ -27,13 +27,11 @@
   <br>
 </p>
 
-
-
 <p align="center">Different UI - A Vue.js 3 UI library made by <a href='https://github.com/yesmore'>@yesmore</a></p>
 
-- 💪 Vue 3 Composition API
-- 🔥 Written in TypeScript
 - 🌈 With Colorful Style
+- 🔥 Written in TypeScript
+- 💪 Vue 3 Composition API
 
 <div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/Different-UI/blob/dev/README_en.md'>English</a></div>
 
@@ -113,13 +111,14 @@ $ npm run dev
 
 ## 🌱 禅
 
-- Beauty is better than ugliness, and so is CSS
-- Sometimes ‘CV’ may be really better than you, except boss
-- From 0 to 1
+- 路上有个小孩在踩影子，
+- 我觉得好幼稚。
+- 所以绕开了，
+- 我怕他踩到我的影子。
 
 ## 🐾 创建者
 
-<a href='https://github.com/yesmore'><img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a> 
+<a href='https://github.com/yesmore'><img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a>
 
 ## 🎨 请我吃辣条
 
@@ -132,8 +131,6 @@ $ npm run dev
   </table>
 </p>
 
-
 ## Licence
 
 Different UI is open source software licensed as [MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
-

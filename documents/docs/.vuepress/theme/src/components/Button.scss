@@ -16,22 +16,27 @@ $df-btn-size: (
   'mini': (
     65px,
     25px,
+    130px,
   ),
   'small': (
     78px,
     30px,
+    156px,
   ),
   'middle': (
     110px,
     35px,
+    220px,
   ),
   'default': (
     110px,
     35px,
+    220px,
   ),
   'large': (
     130px,
     40px,
+    260px,
   ),
 );
 
@@ -61,7 +66,7 @@ $df-btn-radius: (
   color: #fff;
   border: none;
   margin: 5px;
-  width: 100%;
+  padding: 0 15px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   cursor: pointer;
@@ -211,9 +216,6 @@ $df-btn-radius: (
 
   /* transy */
   .#{$namespace}-btn-type-transy-#{$colorKey} {
-    line-height: 42px;
-    padding: 0;
-
     &:hover {
       color: $color;
       background: transparent;
@@ -388,7 +390,6 @@ $df-btn-radius: (
 
 @each $key, $size in $df-btn-size {
   .#{$namespace}-btn-size-#{$key} {
-    width: #{nth($size, 1)};
     height: #{nth($size, 2)};
     line-height: #{nth($size, 2)};
   }

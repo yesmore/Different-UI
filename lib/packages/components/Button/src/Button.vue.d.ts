@@ -1,2 +1,41 @@
-declare const _default: import("vue").DefineComponent<{}, {}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, import("vue").EmitsOptions, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{} & {} & {}>, {}>;
+declare const _default: import("vue").DefineComponent<{
+    type: {
+        type: StringConstructor;
+        default: string;
+    };
+    color: {
+        type: StringConstructor;
+        default: string;
+    };
+    size: {
+        type: StringConstructor;
+        default: string;
+    };
+    radius: {
+        type: StringConstructor;
+        default: string;
+    };
+    round: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+}, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
+    type?: unknown;
+    color?: unknown;
+    size?: unknown;
+    radius?: unknown;
+    round?: unknown;
+} & {
+    type: string;
+    color: string;
+    size: string;
+    radius: string;
+    round: boolean;
+} & {}>, {
+    type: string;
+    color: string;
+    size: string;
+    radius: string;
+    round: boolean;
+}>;
 export default _default;

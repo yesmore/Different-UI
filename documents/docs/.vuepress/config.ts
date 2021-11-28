@@ -71,8 +71,6 @@ module.exports = {
         },
         lastUpdated: 'Last Updated',
         editLinkText: 'Edit this page on GitHub',
-        // 当前 locale 的 algolia docsearch 选项
-        algolia: {},
         navbar: [
           {
             text: 'Version',
@@ -133,10 +131,15 @@ module.exports = {
               text: 'API',
 
               // sidebarDepth: 4,
-              children: ['/component/more.md', '开发中'],
+              children: ['/component/more.md'],
             },
           ],
-          '/help/': 'auto', // 配置 auto 适合单文件 README.md 的场景, 自动生成侧边栏
+          '/help/': [
+            {
+              text: '帮助',
+              children: ['/zh/component/'],
+            },
+          ], // 配置 auto 适合单文件 README.md 的场景, 自动生成侧边栏
         },
       },
       '/zh/': {
@@ -151,7 +154,6 @@ module.exports = {
             buttonText: '刷新',
           },
         },
-        algolia: {},
         navbar: [
           {
             text: '版本',
@@ -186,9 +188,7 @@ module.exports = {
           },
         ],
         sidebar: {
-          // 设置多个侧边栏, guide 和 config 两个目录
           '/zh/guide/': [
-            // 设置侧边栏分组, 通过设置 children 将页面划分到分组里
             {
               text: '指南',
               // collapsable: false, // 是否侧边菜单折叠，默认值是 true
@@ -216,7 +216,12 @@ module.exports = {
               children: ['/zh/component/more.md'],
             },
           ],
-          '/zh/help/': 'auto', // 配置 auto 适合单文件 README.md 的场景, 自动生成侧边栏
+          '/zh/help/': [
+            {
+              text: '帮助',
+              children: ['/zh/component/'],
+            },
+          ], // 配置 auto 适合单文件 README.md 的场景, 自动生成侧边栏
         },
       },
     },

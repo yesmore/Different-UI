@@ -19,7 +19,6 @@ export const themeData = {
       },
       "lastUpdated": "Last Updated",
       "editLinkText": "Edit this page on GitHub",
-      "algolia": {},
       "navbar": [
         {
           "text": "Version",
@@ -79,12 +78,18 @@ export const themeData = {
           {
             "text": "API",
             "children": [
-              "/component/more.md",
-              "开发中"
+              "/component/more.md"
             ]
           }
         ],
-        "/help/": "auto"
+        "/help/": [
+          {
+            "text": "帮助",
+            "children": [
+              "/zh/component/"
+            ]
+          }
+        ]
       }
     },
     "/zh/": {
@@ -98,7 +103,6 @@ export const themeData = {
           "buttonText": "刷新"
         }
       },
-      "algolia": {},
       "navbar": [
         {
           "text": "版本",
@@ -162,7 +166,14 @@ export const themeData = {
             ]
           }
         ],
-        "/zh/help/": "auto"
+        "/zh/help/": [
+          {
+            "text": "帮助",
+            "children": [
+              "/zh/component/"
+            ]
+          }
+        ]
       }
     }
   },

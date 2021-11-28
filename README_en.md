@@ -31,9 +31,9 @@
 
 <p align="center">Different UI - A Vue.js 3 UI library made by <a href='https://github.com/yesmore'>@yesmore</a></p>
 
-- 💪 Vue 3 Composition API
-- 🔥 Written in TypeScript
 - 🌈 With Colorful Style
+- 🔥 Written in TypeScript
+- 💪 Vue 3 Composition API
 
 <div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：<a href='https://github.com/yesmore/different-ui'>中文版</a> | English</div>
 

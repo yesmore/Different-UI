@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-1fdc817c",
   "path": "/component/button.html",
-  "title": "Button 按钮",
+  "title": "Button",
   "lang": "eh-US",
   "frontmatter": {},
   "excerpt": "",
@@ -56,20 +56,20 @@ export const data = {
         },
         {
           "level": 3,
-          "title": "transx-[color]",
-          "slug": "transx-color",
+          "title": "transx",
+          "slug": "transx",
           "children": []
         },
         {
           "level": 3,
-          "title": "transy-[color]",
-          "slug": "transy-color",
+          "title": "transy",
+          "slug": "transy",
           "children": []
         },
         {
           "level": 3,
-          "title": "curtain-[dirction]-[color]",
-          "slug": "curtain-dirction-color",
+          "title": "curtain",
+          "slug": "curtain",
           "children": []
         }
       ]
@@ -77,7 +77,13 @@ export const data = {
   ],
   "filePathRelative": "component/button.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1638030834000,
+    "contributors": [
+      {
+        "name": "song",
+        "email": "3224266014@qq.com",
+        "commits": 1
+      }
+    ]
   }
 }
