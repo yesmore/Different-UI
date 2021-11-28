@@ -8,7 +8,13 @@ export const data = {
   "headers": [],
   "filePathRelative": "component/color.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1638103809000,
+    "contributors": [
+      {
+        "name": "song",
+        "email": "3224266014@qq.com",
+        "commits": 1
+      }
+    ]
   }
 }

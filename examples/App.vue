@@ -2,20 +2,17 @@
   <h2>组件示例<i class="iconfont icon-dongtai"></i></h2>
   <div class="btn-container">
     <df-button
-      disabled
       @click="handleClick"
-      color="success"
       type="bling"
       size="large"
       radius="small"
+      :plain="true"
+      disabled
     >
       按钮
-      <i class="iconfont icon-github1"></i>
     </df-button>
-    <df-button @click="handleClick">
-      按钮
-      <i class="iconfont icon-github1"></i>
-    </df-button>
+
+    <df-button @click="handleClick" color="success"> 按钮 </df-button>
   </div>
 
   <!-- <div class="car-container">

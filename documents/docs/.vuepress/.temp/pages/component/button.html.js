@@ -34,6 +34,18 @@ export const data = {
           "title": "round",
           "slug": "round",
           "children": []
+        },
+        {
+          "level": 3,
+          "title": "plain",
+          "slug": "plain",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "disabled",
+          "slug": "disabled",
+          "children": []
         }
       ]
     },

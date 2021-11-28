@@ -1,5 +1,5 @@
 @use '../common/var' as *;
-@use '../mixins/config.scss' as *;
+@use '../mixins/config' as *;
 
 $df-btn-bg-colors: (
   'primary': $color-primary,
@@ -53,6 +53,11 @@ $df-btn-radius: (
   .#{$namespace}-btn-#{$colorKey} {
     background-color: $color;
   }
+  .#{$namespace}-btn-plain-#{$colorKey} {
+    background: #fff;
+    color: $color !important;
+    border: 1px dashed $color !important;
+  }
 }
 
 /* radius */
@@ -76,6 +81,14 @@ $df-btn-radius: (
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
+
+  &:disabled,
+  &[disabled] {
+    background-color: #cccccc;
+    color: #666666 !important;
+    cursor: not-allowed;
+    border: none !important;
+  }
 }
 
 /* simple */

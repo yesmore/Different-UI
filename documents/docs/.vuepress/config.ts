@@ -125,7 +125,11 @@ module.exports = {
               text: 'Basic',
               // sidebarDepth: 4,
 
-              children: ['/component/', '/component/button.md'],
+              children: [
+                '/component/',
+                '/component/button.md',
+                '/component/icon.md',
+              ],
             },
             {
               text: 'Form',
@@ -221,7 +225,11 @@ module.exports = {
               text: 'Basic 基础组件',
               // sidebarDepth: 4,
               // collapsable: false, // 是否侧边菜单折叠，默认值是 true
-              children: ['/zh/component/', '/zh/component/button.md'],
+              children: [
+                '/zh/component/',
+                '/zh/component/button.md',
+                '/component/icon.md',
+              ],
             },
             {
               text: 'Form 表单组件',

@@ -37,6 +37,18 @@ export const searchIndex = [
             "title": "round",
             "slug": "round",
             "children": []
+          },
+          {
+            "level": 3,
+            "title": "plain",
+            "slug": "plain",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "disabled",
+            "slug": "disabled",
+            "children": []
           }
         ]
       },
@@ -90,7 +102,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "Iconfont",
     "headers": [],
     "path": "/component/icon.html",
     "pathLocale": "/",
@@ -111,7 +123,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Component",
+    "title": "Component Introduction",
     "headers": [],
     "path": "/component/",
     "pathLocale": "/",
@@ -251,6 +263,18 @@ export const searchIndex = [
             "title": "round 圆形",
             "slug": "round-圆形",
             "children": []
+          },
+          {
+            "level": 3,
+            "title": "plain 扁平",
+            "slug": "plain-扁平",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "disabled 禁用",
+            "slug": "disabled-禁用",
+            "children": []
           }
         ]
       },
@@ -304,7 +328,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "组件",
+    "title": "组件说明",
     "headers": [],
     "path": "/zh/component/",
     "pathLocale": "/zh/",

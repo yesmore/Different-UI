@@ -8,9 +8,10 @@ gulp.task('sass', async function () {
     .pipe(minifyCSS())
     .pipe(gulp.dest('packages/theme'))
     .pipe(gulp.dest('lib/packages/theme'))
+    .pipe(gulp.dest('documents/docs/.vuepress/theme'))
 })
 
 gulp.task('watch', function () {
   gulp.watch('packages/theme/src/**/*.scss', gulp.series(['sass']))
-
+  gulp.watch('documents/docs/.vuepress/theme/src/**/*.scss', gulp.series(['sass']))
 })

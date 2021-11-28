@@ -9,12 +9,12 @@ export const data = {
     "actions": [
       {
         "text": "快速上手",
-        "link": "/guide/start.html",
+        "link": "/zh/guide/start.html",
         "type": "primary"
       },
       {
         "text": "项目简介",
-        "link": "/guide/",
+        "link": "/zh/guide/",
         "type": "secondary"
       }
     ],
@@ -38,12 +38,12 @@ export const data = {
   "headers": [],
   "filePathRelative": "zh/README.md",
   "git": {
-    "updatedTime": 1638030834000,
+    "updatedTime": 1638103809000,
     "contributors": [
       {
         "name": "song",
         "email": "3224266014@qq.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

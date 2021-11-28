@@ -3,6 +3,7 @@
     :class="[
       'df-btn',
       color ? 'df-btn-' + color : 'df-btn-default',
+      plain === true && color ? 'df-btn-plain-' + color : '',
       type ? 'df-btn-type-' + type : 'df-btn-type-default',
       size ? 'df-btn-size-' + size : 'df-btn-size-default',
       radius ? 'df-btn-radius-' + radius : 'df-btn-radius-default',
@@ -27,7 +28,7 @@ export default defineComponent({
     },
     color: {
       type: String,
-      default: '',
+      default: 'default',
     },
     size: {
       type: String,
@@ -38,6 +39,10 @@ export default defineComponent({
       default: 'default',
     },
     round: {
+      type: Boolean,
+      default: false,
+    },
+    plain: {
       type: Boolean,
       default: false,
     },

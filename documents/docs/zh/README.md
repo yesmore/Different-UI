@@ -3,10 +3,10 @@ home: true
 heroImage: /logo-s.png
 actions:
   - text: 快速上手
-    link: /guide/start.html
+    link: /zh/guide/start.html
     type: primary
   - text: 项目简介
-    link: /guide/
+    link: /zh/guide/
     type: secondary
 features:
   - title: 🌈 Colorful Style

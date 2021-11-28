@@ -72,7 +72,8 @@ export const themeData = {
             "text": "Basic",
             "children": [
               "/component/",
-              "/component/button.md"
+              "/component/button.md",
+              "/component/icon.md"
             ]
           },
           {
@@ -180,7 +181,8 @@ export const themeData = {
             "text": "Basic 基础组件",
             "children": [
               "/zh/component/",
-              "/zh/component/button.md"
+              "/zh/component/button.md",
+              "/component/icon.md"
             ]
           },
           {

@@ -34,6 +34,18 @@ export const data = {
           "title": "round 圆形",
           "slug": "round-圆形",
           "children": []
+        },
+        {
+          "level": 3,
+          "title": "plain 扁平",
+          "slug": "plain-扁平",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "disabled 禁用",
+          "slug": "disabled-禁用",
+          "children": []
         }
       ]
     },

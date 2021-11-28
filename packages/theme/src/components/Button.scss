@@ -53,6 +53,11 @@ $df-btn-radius: (
   .#{$namespace}-btn-#{$colorKey} {
     background-color: $color;
   }
+  .#{$namespace}-btn-plain-#{$colorKey} {
+    background: #fff;
+    color: $color !important;
+    border: 1px dashed $color !important;
+  }
 }
 
 /* radius */
@@ -80,8 +85,9 @@ $df-btn-radius: (
   &:disabled,
   &[disabled] {
     background-color: #cccccc;
-    color: #666666;
+    color: #666666 !important;
     cursor: not-allowed;
+    border: none !important;
   }
 }
 
