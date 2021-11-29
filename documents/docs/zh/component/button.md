@@ -33,7 +33,7 @@
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -81,7 +81,7 @@
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -126,7 +126,7 @@
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -171,7 +171,7 @@
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -216,7 +216,7 @@
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -261,7 +261,7 @@
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -314,7 +314,7 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -366,7 +366,7 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -418,7 +418,7 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -475,7 +475,7 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -529,7 +529,7 @@ df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，�
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>

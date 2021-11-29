@@ -11,7 +11,7 @@
     >
       按钮
     </df-button>
-
+    <df-button color="success" type="trans-success">success</df-button>
     <df-button @click="handleClick" color="success"> 按钮 </df-button>
   </div>
 

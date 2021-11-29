@@ -390,66 +390,9 @@ Set whether the button is disabled through the `1disabled` attribute.
 
 </df-template>
 
-### transx
+### trans
 
-- `type='transx-[color]'`
-- Button border dynamic drawing effect.
-
-**Examples**:
-
-<df-template>
-
-<template #demo>
-
-  <div
-    class="btn-container"
-    style='display:flex;justify-content:center;flex-wrap:wrap;'
-  >
-    <df-button color='primary' type='transx-primary'>primary</df-button>
-    <df-button color='success' type='transx-success'>success</df-button>
-    <df-button color="warning" type='transx-warning'>warning</df-button>
-    <df-button color="danger" type='transx-danger'>danger</df-button>
-    <df-button color="error" type='transx-error'>error</df-button>
-    <df-button color="info" type='transx-info'>info</df-button>
-    <df-button color="black" type='transx-black'>black</df-button>
-  </div>
-
-  </template>
-
-<template #src>
-
-::: details <i class="iconfont icon-script"></i>
-
-```vue
-<template>
-  <div
-    class="btn-container"
-    style="display:flex;justify-content:center;flex-wrap:wrap;"
-  >
-    <df-button color="primary" type="transx-primary">primary</df-button>
-    <df-button color="success" type="transx-success">success</df-button>
-    <df-button color="warning" type="transx-warning">warning</df-button>
-    <df-button color="danger" type="transx-danger">danger</df-button>
-    <df-button color="error" type="transx-error">error</df-button>
-    <df-button color="info" type="transx-info">info</df-button>
-    <df-button color="black" type="transx-black">black</df-button>
-  </div>
-</template>
-```
-
-:::
-
-</template>
-
-</df-template>
-
-::: tip
-`type='transx-[color]'`中的 [color] 为边框颜色，可与 `color` 属性同时使用。
-:::
-
-### transy
-
-- `type='transy-[color]'`
+- `type='trans-[color]'`
 - Button border dynamic drawing (half) effect.
 
 **Examples**:
@@ -462,13 +405,13 @@ Set whether the button is disabled through the `1disabled` attribute.
     class="btn-container"
     style='display:flex;justify-content:center;flex-wrap:wrap;'
   >
-    <df-button color='primary' type='transy-primary'>primary</df-button>
-    <df-button color='success' type='transy-success'>success</df-button>
-    <df-button color="warning" type='transy-warning'>warning</df-button>
-    <df-button color="danger" type='transy-danger'>danger</df-button>
-    <df-button color="error" type='transy-error'>error</df-button>
-    <df-button color="info" type='transy-info'>info</df-button>
-    <df-button color="black" type='transy-black'>black</df-button>
+    <df-button color='primary' type='trans-primary'>primary</df-button>
+    <df-button color='success' type='trans-success'>success</df-button>
+    <df-button color="warning" type='trans-warning'>warning</df-button>
+    <df-button color="danger" type='trans-danger'>danger</df-button>
+    <df-button color="error" type='trans-error'>error</df-button>
+    <df-button color="info" type='trans-info'>info</df-button>
+    <df-button color="black" type='trans-black'>black</df-button>
   </div>
 
   </template>
@@ -483,13 +426,13 @@ Set whether the button is disabled through the `1disabled` attribute.
     class="btn-container"
     style="display:flex;justify-content:center;flex-wrap:wrap;"
   >
-    <df-button color="primary" type="transy-primary">primary</df-button>
-    <df-button color="success" type="transy-success">success</df-button>
-    <df-button color="warning" type="transy-warning">warning</df-button>
-    <df-button color="danger" type="transy-danger">danger</df-button>
-    <df-button color="error" type="transy-error">error</df-button>
-    <df-button color="info" type="transy-info">info</df-button>
-    <df-button color="black" type="transy-black">black</df-button>
+    <df-button color="primary" type="trans-primary">primary</df-button>
+    <df-button color="success" type="trans-success">success</df-button>
+    <df-button color="warning" type="trans-warning">warning</df-button>
+    <df-button color="danger" type="trans-danger">danger</df-button>
+    <df-button color="error" type="trans-error">error</df-button>
+    <df-button color="info" type="trans-info">info</df-button>
+    <df-button color="black" type="trans-black">black</df-button>
   </div>
 </template>
 ```
@@ -499,6 +442,10 @@ Set whether the button is disabled through the `1disabled` attribute.
 </template>
 
 </df-template>
+
+::: tip
+`type='trans-[color]'`中的 [color] 为边框颜色，可与 `color` 属性同时使用。
+:::
 
 ### curtain
 

@@ -161,74 +161,8 @@ $df-btn-radius: (
 }
 
 @each $colorKey, $color in $df-btn-bg-colors {
-  /* transx */
-  .#{$namespace}-btn-type-transx-#{$colorKey} {
-    line-height: 42px;
-    // padding: 0;
-
-    span {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 100%;
-      &:hover {
-        color: $color;
-      }
-      &:before,
-      &:after {
-        position: absolute;
-        content: '';
-        left: 0;
-        bottom: 0;
-        background: $color;
-        transition: all 0.3s ease;
-      }
-      &:before {
-        width: 2px;
-        height: 0%;
-      }
-      &:after {
-        width: 0%;
-        height: 2px;
-      }
-      &:hover:before {
-        height: 100%;
-      }
-      &:hover:after {
-        width: 100%;
-      }
-    }
-    &:before,
-    &:after {
-      position: absolute;
-      content: '';
-      right: 0;
-      top: 0;
-      background: $color;
-      transition: all 0.3s ease;
-    }
-    &:before {
-      height: 0%;
-      width: 2px;
-    }
-    &:after {
-      width: 0%;
-      height: 2px;
-    }
-    &:hover {
-      background: transparent;
-      box-shadow: none;
-    }
-    &:hover:before {
-      height: 100%;
-    }
-    &:hover:after {
-      width: 92%;
-    }
-  }
-
-  /* transy */
-  .#{$namespace}-btn-type-transy-#{$colorKey} {
+  /* trans */
+  .#{$namespace}-btn-type-trans-#{$colorKey} {
     &:hover {
       color: $color;
       background: transparent;

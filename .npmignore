@@ -2,7 +2,7 @@
 .idea
 .vscode
 build/
-docs/
+documents/
 examples/
 packages/
 public/

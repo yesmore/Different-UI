@@ -59,8 +59,10 @@ module.exports = {
         // 多语言下拉菜单的标题
         selectLanguageName: 'English',
         lastUpdatedText: 'Last Updated',
+        lastUpdated: 'Last Updated',
+        editLinkText: 'Edit this page on GitHub',
         contributors: true,
-        contributorsText: '贡献者列表',
+        contributorsText: 'Contributors',
         // 该语言在下拉菜单中的标签
         // Service Worker 的配置
         serviceWorker: {
@@ -69,8 +71,7 @@ module.exports = {
             buttonText: 'Refresh',
           },
         },
-        lastUpdated: 'Last Updated',
-        editLinkText: 'Edit this page on GitHub',
+
         navbar: [
           {
             text: 'Version',
@@ -166,6 +167,8 @@ module.exports = {
         // ariaLabel: '',
         lastUpdated: '上次更新',
         editLinkText: '在Github上编辑此页',
+        contributors: true,
+        contributorsText: '贡献者列表',
         serviceWorker: {
           updatePopup: {
             message: '有新的内容被推送',
@@ -228,7 +231,7 @@ module.exports = {
               children: [
                 '/zh/component/',
                 '/zh/component/button.md',
-                '/component/icon.md',
+                '/zh/component/icon.md',
               ],
             },
             {
@@ -283,6 +286,7 @@ module.exports = {
         components: {
           DfButton: path.resolve(__dirname, './components/button/DfButton.vue'),
           DfTemplate: path.resolve(__dirname, './components/DfTemplate.vue'),
+          DfIcon: path.resolve(__dirname, './components/DfIcon.vue'),
         },
       },
     ],

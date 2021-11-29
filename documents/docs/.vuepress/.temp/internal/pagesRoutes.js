@@ -14,6 +14,7 @@ const routeItems = [
   ["v-14ac19b5","/help/","帮助",["/help/index.html","/help/README.md"]],
   ["v-2d0ad528","/zh/","",["/zh/index.html","/zh/README.md"]],
   ["v-42a9baa6","/zh/component/button.html","Button 按钮",["/zh/component/button","/zh/component/button.md"]],
+  ["v-1ea0fb46","/zh/component/icon.html","Iconfont 图标字体",["/zh/component/icon","/zh/component/icon.md"]],
   ["v-44d0342c","/zh/component/more.html","",["/zh/component/more","/zh/component/more.md"]],
   ["v-5a5505fa","/zh/component/","组件说明",["/zh/component/index.html","/zh/component/README.md"]],
   ["v-35dfb0b8","/zh/guide/link.html","链接",["/zh/guide/link","/zh/guide/link.md"]],

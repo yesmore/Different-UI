@@ -5,15 +5,22 @@ export const data = {
   "lang": "eh-US",
   "frontmatter": {},
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 2,
+      "title": "Basic use",
+      "slug": "basic-use",
+      "children": []
+    }
+  ],
   "filePathRelative": "component/icon.md",
   "git": {
-    "updatedTime": 1638103809000,
+    "updatedTime": 1638108746000,
     "contributors": [
       {
         "name": "song",
         "email": "3224266014@qq.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

@@ -68,14 +68,8 @@ export const data = {
         },
         {
           "level": 3,
-          "title": "transx",
-          "slug": "transx",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "transy",
-          "slug": "transy",
+          "title": "trans",
+          "slug": "trans",
           "children": []
         },
         {
@@ -89,12 +83,12 @@ export const data = {
   ],
   "filePathRelative": "component/button.md",
   "git": {
-    "updatedTime": 1638067839000,
+    "updatedTime": 1638108746000,
     "contributors": [
       {
         "name": "song",
         "email": "3224266014@qq.com",
-        "commits": 2
+        "commits": 3
       }
     ]
   }

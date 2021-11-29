@@ -71,14 +71,8 @@ export const searchIndex = [
           },
           {
             "level": 3,
-            "title": "transx",
-            "slug": "transx",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "transy",
-            "slug": "transy",
+            "title": "trans",
+            "slug": "trans",
             "children": []
           },
           {
@@ -103,7 +97,14 @@ export const searchIndex = [
   },
   {
     "title": "Iconfont",
-    "headers": [],
+    "headers": [
+      {
+        "level": 2,
+        "title": "Basic use",
+        "slug": "basic-use",
+        "children": []
+      }
+    ],
     "path": "/component/icon.html",
     "pathLocale": "/",
     "extraFields": []
@@ -317,6 +318,20 @@ export const searchIndex = [
       }
     ],
     "path": "/zh/component/button.html",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "Iconfont 图标字体",
+    "headers": [
+      {
+        "level": 2,
+        "title": "基本使用",
+        "slug": "基本使用",
+        "children": []
+      }
+    ],
+    "path": "/zh/component/icon.html",
     "pathLocale": "/zh/",
     "extraFields": []
   },

@@ -27,6 +27,8 @@ export const pagesComponents = {
   "v-2d0ad528": defineAsyncComponent(() => import(/* webpackChunkName: "v-2d0ad528" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/index.html.vue")),
   // path: /zh/component/button.html
   "v-42a9baa6": defineAsyncComponent(() => import(/* webpackChunkName: "v-42a9baa6" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/button.html.vue")),
+  // path: /zh/component/icon.html
+  "v-1ea0fb46": defineAsyncComponent(() => import(/* webpackChunkName: "v-1ea0fb46" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/icon.html.vue")),
   // path: /zh/component/more.html
   "v-44d0342c": defineAsyncComponent(() => import(/* webpackChunkName: "v-44d0342c" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/more.html.vue")),
   // path: /zh/component/

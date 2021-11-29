@@ -9,16 +9,16 @@ export const themeData = {
       "selectLanguageText": "Languages",
       "selectLanguageName": "English",
       "lastUpdatedText": "Last Updated",
+      "lastUpdated": "Last Updated",
+      "editLinkText": "Edit this page on GitHub",
       "contributors": true,
-      "contributorsText": "贡献者列表",
+      "contributorsText": "Contributors",
       "serviceWorker": {
         "updatePopup": {
           "message": "New content is available.",
           "buttonText": "Refresh"
         }
       },
-      "lastUpdated": "Last Updated",
-      "editLinkText": "Edit this page on GitHub",
       "navbar": [
         {
           "text": "Version",
@@ -122,6 +122,8 @@ export const themeData = {
       "selectLanguageName": "简体中文",
       "lastUpdated": "上次更新",
       "editLinkText": "在Github上编辑此页",
+      "contributors": true,
+      "contributorsText": "贡献者列表",
       "serviceWorker": {
         "updatePopup": {
           "message": "有新的内容被推送",
@@ -182,7 +184,7 @@ export const themeData = {
             "children": [
               "/zh/component/",
               "/zh/component/button.md",
-              "/component/icon.md"
+              "/zh/component/icon.md"
             ]
           },
           {
