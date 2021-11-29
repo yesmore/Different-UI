@@ -48,7 +48,7 @@ export default {
     }
 
     function handleMouseOut() {
-      oMagWrap.className = 'df-mag-point-wrapper shadow-custom'
+      oMagWrap.className = 'df-mag-point-wrapper df-shadow-light'
       document.removeEventListener('mousemove', handleMouseMove, false)
     }
 
@@ -64,7 +64,7 @@ export default {
         mouseY &&
         (mouseX < 0 || mouseY < 0 || mouseX > imgWidth || mouseY > imgHeight)
       ) {
-        oMagWrap.className = 'df-mag-point-wrapper shadow-custom'
+        oMagWrap.className = 'df-mag-point-wrapper df-shadow-light'
         document.removeEventListener('mousemove', handleMouseMove, false)
       }
     }

@@ -1,6 +1,41 @@
 <template>
-  <h2>组件示例<i class="iconfont icon-dongtai"></i></h2>
-  <div class="btn-container">
+  <h2>组件示例<i class="iconfont df-icon-script"></i></h2>
+
+  <!-- <div class="card-container">
+    <df-card
+      :bodyStyle="{ borderRadius: '10px', width: '300px' }"
+      coverUrl="https://cdn.jsdelivr.net/gh/yesmore/img/v2/6/02.jpg"
+    >
+      <template #title> <h2>标题</h2> </template>
+
+      <df-magnifier
+        :link="link"
+        :blank="blank"
+        :imgUrl="imgUrl"
+        :imgAlt="imgAlt"
+        :imgWidth="imgWidth"
+        :imgHeight="imgHeight"
+        :magWidth="magWidth"
+        :magHeight="magHeight"
+        magRadius="10%"
+      />
+      <template #action>
+        <df-button color="primary" type="trans-error" size="large"
+          >success</df-button
+        >
+      </template>
+    </df-card>
+  </div> -->
+
+  <!-- 动画 -->
+  <!-- <df-button @click="show">显示</df-button>
+  <transition name="df-list">
+    <div v-if="showMod">
+      <h1>卧槽</h1>
+    </div>
+  </transition> -->
+
+  <!-- <div class="btn-container">
     <df-button
       @click="handleClick"
       type="bling"
@@ -13,7 +48,7 @@
     </df-button>
     <df-button color="success" type="trans-success">success</df-button>
     <df-button @click="handleClick" color="success"> 按钮 </df-button>
-  </div>
+  </div> -->
 
   <!-- <div class="car-container">
     <df-carousel
@@ -75,6 +110,7 @@
       :imgHeight="imgHeight"
       :magWidth="magWidth"
       :magHeight="magHeight"
+      magRadius="10%"
     />
   </div> -->
 
@@ -87,18 +123,20 @@
     />
   </div> -->
 
-  <!-- <div class="modal-container">
+  <df-button @click="show">显示</df-button>
+  <div v-if="showMod" class="modal-container">
     <df-modal
-      :show="true"
+      animate="fade"
+      :show="showMod"
       :mask="true"
       :modalStyle="{
         width: '300px',
         borderRadius: '5px',
-        backgroundColor: 'yellow',
+        // backgroundColor: 'yellow',
       }"
       :headerStyle="{
-        color: '#fff',
-        backgroundColor: 'orange',
+        // color: 'pink',
+        // backgroundColor: 'orange',
       }"
       :contentStyle="{
         // color: '#fff',
@@ -112,12 +150,12 @@
       position="center"
       :showHead="true"
       :actionBtn="true"
-      confirmText="确定"
-      cancelText="取消"
+      confirmText="确定哈哈"
+      cancelText="取消按钮"
       @confirm="modalConfirm"
       @cancel="modalClose"
     />
-  </div> -->
+  </div>
 
   <!-- <div class="df-row is-justify-space-around">
     <div class="text-primary">sfs</div>
@@ -137,10 +175,11 @@ import carousel_data from './data/carousel'
 import tree_menu_data from './data/treeMenu'
 import selector_data from './data/selector'
 // import { DfCarousel, DfCarouselItem, DfButton, DfTreeMenu } from '~/index'
+// import { DfModal } from '~/index'
 
 export default defineComponent({
   name: 'App',
-  // components: { DfCarousel, DfCarouselItem, DfButton, DfTreeMenu },
+  // components: { DfModal },
   setup() {
     const count = ref(0)
 
@@ -160,6 +199,8 @@ export default defineComponent({
       imgHeight: 481,
       magWidth: 100,
       magHeight: 100,
+      magRadius: '50%',
+      showMod: false,
     })
 
     const getStarsNum = (num: number) => {
@@ -173,6 +214,10 @@ export default defineComponent({
       console.log(data.msg)
     }
 
+    const show = () => {
+      state.showMod = !state.showMod
+    }
+
     return {
       carousel_data,
       handleClick,
@@ -184,6 +229,7 @@ export default defineComponent({
       ...toRefs(state),
       modalConfirm,
       modalClose,
+      show,
     }
   },
 })

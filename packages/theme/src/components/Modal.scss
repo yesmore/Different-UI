@@ -5,82 +5,82 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #333;
+}
 
-  a {
-    text-decoration: none;
-    outline: none;
+h2,
+p {
+  font-weight: normal;
+  margin: 0;
+}
+button {
+  // outline: none;
+  border: none;
+}
+
+#df-modal {
+  position: fixed;
+  left: 50%;
+  overflow: hidden;
+  background-color: #fff;
+
+  // 动态配置项
+  width: 400px;
+  border-radius: 5px;
+
+  .df-modal-header {
+    height: 44px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    // color: white;
+
+    h2 {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 44px;
+    }
+
+    a {
+      float: right;
+      font-size: 20px;
+      margin-top: 12px;
+    }
+  }
+
+  .df-modal-content {
     color: #333;
+    padding: 15px;
+    box-sizing: border-box;
   }
-
-  h2,
-  p {
-    font-weight: normal;
-    margin: 0;
-  }
-  button {
-    // outline: none;
-    border: none;
-  }
-
-  #df-modal {
-    position: fixed;
-    left: 50%;
-    overflow: hidden;
-    background-color: #fff;
-
-    // 动态配置项
-    width: 400px;
-    border-radius: 5px;
-
-    .df-modal-header {
-      height: 44px;
-      padding: 0 15px;
-      box-sizing: border-box;
-      color: white;
-
-      h2 {
-        display: inline-block;
-        font-size: 18px;
-        line-height: 44px;
-      }
-
-      a {
-        float: right;
-        font-size: 20px;
-        margin-top: 12px;
-      }
+  .df-modal-footer {
+    // margin-right: 10px;
+    // margin-left: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    .df-modal-action {
+      height: 30px;
+      padding: 10px 0;
     }
-
-    .df-modal-content {
-      color: #333;
-      padding: 15px;
-      box-sizing: border-box;
-    }
-    .df-modal-footer {
+    .df-modal-btn {
+      float: right;
+      min-width: 80px;
+      height: 30px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
       margin-right: 10px;
-      margin-left: 10px;
-      box-sizing: border-box;
-      border-top: 1px solid #ddd;
-      .df-modal-action {
-        height: 30px;
-        padding: 10px 0;
-      }
-      .df-custom-btn {
-        float: right;
-        min-width: 80px;
-        height: 30px;
-        font-size: 14px;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      .df-modal-confirm {
-        color: #fff;
-        margin-left: 15px;
-      }
-      .df-modal-cancel {
-        background-color: #ddd;
-        color: #666;
-      }
+    }
+    .df-modal-confirm {
+      color: var(--df-color-white);
+      background-color: var(--df-color-primary);
+    }
+    .df-modal-cancel {
+      // background-color: #ddd;
+      color: #666;
     }
   }
 }

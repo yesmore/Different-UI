@@ -4,17 +4,13 @@
       class="df-carousel-director df-carousel-dir-next"
       v-if="dir === 'next'"
     >
-      <a href="javascript:;" @click="dirClick(dir)">
-        <i class="iconfont icon-jiantou1"></i>
-      </a>
+      <a href="javascript:;" @click="dirClick(dir)"> &gt; </a>
     </div>
     <div
       class="df-carousel-director df-carousel-dir-prev"
       v-else-if="dir === 'prev'"
     >
-      <a href="javascript:;" @click="dirClick(dir)">
-        <i class="iconfont icon-jiantou1"></i>
-      </a>
+      <a href="javascript:;" @click="dirClick(dir)">&lt;</a>
     </div>
   </div>
 </template>

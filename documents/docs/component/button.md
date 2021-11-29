@@ -33,7 +33,7 @@ df-button provides the `color` attribute to set different color themes for butto
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -81,7 +81,7 @@ Set the button size through the `size` attribute. The default value is `default 
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -126,7 +126,7 @@ Set the button fillet radius through the `radius` attribute. The default value i
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -171,7 +171,7 @@ Set whether the button is round through the `round` attribute. The default value
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -216,7 +216,7 @@ Set the button to have a flat effect through the `plain` attribute. The default 
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -261,7 +261,7 @@ Set whether the button is disabled through the `1disabled` attribute.
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -314,7 +314,7 @@ Set whether the button is disabled through the `1disabled` attribute.
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -366,7 +366,7 @@ Set whether the button is disabled through the `1disabled` attribute.
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -418,7 +418,7 @@ Set whether the button is disabled through the `1disabled` attribute.
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>
@@ -478,7 +478,7 @@ Set whether the button is disabled through the `1disabled` attribute.
 
 <template #src>
 
-::: details <i class="iconfont icon-script"></i>
+::: details <i class="iconfont df-icon-script"></i>
 
 ```vue
 <template>

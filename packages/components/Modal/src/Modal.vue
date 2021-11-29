@@ -1,52 +1,59 @@
 <template>
-  <div class="df-modal-mask" v-show="mask">
-    <div
-      v-show="modalShow"
-      id="df-modal"
-      class="shadow-custom"
-      ref="dfModal"
-      :style="{
-        ...modalStyle,
-        marginLeft:
-          -parseInt(modalStyle.width.replace(/[^0-9]/gi, '')) / 2 + 'px',
-        top: position === 'center' ? '50%' : '50px',
-        marginTop: position === 'center' ? -dfModalHeight / 2 + 'px' : '',
-      }"
-    >
-      <header class="df-modal-header" :style="headerStyle">
-        <h2>{{ headText }}</h2>
-        <a
-          href="javascript:;"
-          :style="{ color: headerStyle.color || 'grey' }"
-          @click="cancel"
+  <transition :name="animate">
+    <div :class="[mask === true ? 'df-modal-mask' : '']">
+      <transition :name="animate">
+        <div
+          v-show="modalShow"
+          id="df-modal"
+          ref="dfModal"
+          :style="{
+            ...modalStyle,
+            marginLeft:
+              -parseInt(modalStyle.width.replace(/[^0-9]/gi, '')) / 2 + 'px',
+            top: position === 'center' ? '50%' : '50px',
+            marginTop: position === 'center' ? -dfModalHeight / 2 + 'px' : '',
+          }"
         >
-          <i class="iconfont icon-quxiao1"></i>
-        </a>
-      </header>
+          <header class="df-modal-header" :style="headerStyle">
+            <h2 :style="{ color: headerStyle.color }">{{ headText }}</h2>
+            <a
+              href="javascript:;"
+              :style="{ color: headerStyle.color || 'grey' }"
+              @click="cancel"
+            >
+              <i class="iconfont df-icon-close"></i>
+            </a>
+          </header>
 
-      <article class="df-modal-content" :style="contentStyle">
-        <p>{{ contentText }}</p>
-      </article>
+          <article class="df-modal-content" :style="contentStyle">
+            <p>{{ contentText }}</p>
+          </article>
 
-      <footer class="df-modal-footer" :style="footerStyle" v-show="actionBtn">
-        <div class="df-modal-action">
-          <button
-            class="df-modal-confirm df-custom-btn"
-            :style="{
-              backgroundColor: headerStyle.backgroundColor || '#fff',
-              color: headerStyle.color || 'white',
-            }"
-            @click="confirm"
+          <footer
+            class="df-modal-footer"
+            :style="footerStyle"
+            v-show="actionBtn"
           >
-            {{ confirmText }}
-          </button>
-          <button class="df-modal-cancel df-custom-btn" @click="cancel">
-            {{ cancelText }}
-          </button>
+            <div class="df-modal-action">
+              <button
+                class="df-modal-confirm df-modal-btn"
+                :style="{
+                  backgroundColor: headerStyle.backgroundColor,
+                  color: headerStyle.color,
+                }"
+                @click="confirm"
+              >
+                {{ confirmText }}
+              </button>
+              <button class="df-modal-cancel df-modal-btn" @click="cancel">
+                {{ cancelText }}
+              </button>
+            </div>
+          </footer>
         </div>
-      </footer>
+      </transition>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script lang="ts">
@@ -57,85 +64,11 @@ import {
   toRefs,
   getCurrentInstance,
 } from 'vue'
+import { modalProps } from './Modal'
 
 export default defineComponent({
   name: 'df-modal',
-  props: {
-    show: {
-      type: Boolean,
-      default: false,
-    },
-    mask: {
-      type: Boolean,
-      default: false,
-    },
-    modalStyle: {
-      type: Object,
-      default: () => {
-        return {}
-      },
-    },
-    headerStyle: {
-      type: Object,
-      default: () => {
-        return {
-          color: 'red',
-        }
-      },
-    },
-    contentStyle: {
-      type: Object,
-      default: () => {
-        return {}
-      },
-    },
-    footerStyle: {
-      type: Object,
-      default: () => {
-        return {}
-      },
-    },
-    headColor: {
-      type: String,
-      default: '#000',
-    },
-    headText: {
-      type: String,
-      default: '',
-    },
-    headTextColor: {
-      type: String,
-      default: '#fff',
-    },
-    contentText: {
-      type: String,
-      default: '',
-    },
-    contentTextColor: {
-      type: String,
-      default: '#000',
-    },
-    position: {
-      type: String,
-      default: 'top',
-    },
-    actionBtn: {
-      type: Boolean,
-      default: false,
-    },
-    showHead: {
-      type: Boolean,
-      default: false,
-    },
-    confirmText: {
-      type: String,
-      default: '确定',
-    },
-    cancelText: {
-      type: String,
-      default: '取消',
-    },
-  },
+  props: modalProps,
   setup(props, ctx) {
     const instance = getCurrentInstance()
 

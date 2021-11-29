@@ -89,4 +89,6 @@
 
   @include set-component-css-var('transition-function', $transition-function);
   @include set-component-css-var('transition', $transition);
+
+  --df-transition-e: cubic-bezier(0.19, 1, 0.22, 1);
 }

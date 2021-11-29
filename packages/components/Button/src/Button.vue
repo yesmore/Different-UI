@@ -18,39 +18,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { buttonProps } from './Button'
 
 export default defineComponent({
   name: 'df-button',
-  props: {
-    type: {
-      type: String,
-      default: 'default',
-    },
-    color: {
-      type: String,
-      default: 'default',
-    },
-    size: {
-      type: String,
-      default: 'default',
-    },
-    radius: {
-      type: String,
-      default: 'default',
-    },
-    round: {
-      type: Boolean,
-      default: false,
-    },
-    plain: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  setup(props) {
-    // console.log(props)
-
-    return {}
-  },
+  props: buttonProps,
 })
 </script>

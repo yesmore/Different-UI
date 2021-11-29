@@ -79,7 +79,7 @@
 
 // box-shadow
 @each $key, $val in $df-tc-box-shadow {
-  .shadow-#{$key} {
+  .#{$namespace}-shadow-#{$key} {
     box-shadow: $val;
   }
 }
