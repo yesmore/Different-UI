@@ -1,35 +1,35 @@
 declare const _default: import("vue").DefineComponent<{
-    type: {
-        type: StringConstructor;
-        default: string;
+    readonly type: {
+        readonly type: StringConstructor;
+        readonly default: "default";
     };
-    color: {
-        type: StringConstructor;
-        default: string;
+    readonly color: {
+        readonly type: StringConstructor;
+        readonly default: "default";
     };
-    size: {
-        type: StringConstructor;
-        default: string;
+    readonly size: {
+        readonly type: StringConstructor;
+        readonly default: "default";
     };
-    radius: {
-        type: StringConstructor;
-        default: string;
+    readonly radius: {
+        readonly type: StringConstructor;
+        readonly default: "default";
     };
-    round: {
-        type: BooleanConstructor;
-        default: boolean;
+    readonly round: {
+        readonly type: BooleanConstructor;
+        readonly default: false;
     };
-    plain: {
-        type: BooleanConstructor;
-        default: boolean;
+    readonly plain: {
+        readonly type: BooleanConstructor;
+        readonly default: false;
     };
-}, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
-    type?: unknown;
-    color?: unknown;
-    size?: unknown;
-    radius?: unknown;
-    round?: unknown;
-    plain?: unknown;
+}, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
+    readonly type?: unknown;
+    readonly color?: unknown;
+    readonly size?: unknown;
+    readonly radius?: unknown;
+    readonly round?: unknown;
+    readonly plain?: unknown;
 } & {
     type: string;
     color: string;

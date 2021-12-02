@@ -12,8 +12,9 @@ import DfMagnifier from './components/Magnifier'
 import DfStarsRate from './components/StarsRate'
 import DfModal from './components/Modal'
 import DfCard from './components/Card'
+import DfLoginbar from './components/LoginBar'
 
-// import './theme/src/index.scss'
+import './theme/index.css'
 // import './theme/src/Icon/iconfont.css'
 
 // 所有插件列表
@@ -30,6 +31,7 @@ const components = [
   DfStarsRate,
   DfModal,
   DfCard,
+  DfLoginbar,
 ]
 
 // 定义 install 方法， App 作为参数

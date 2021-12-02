@@ -1,11 +1,14 @@
 <template>
   <div id="df-starsrate">
     <i
-      v-for="num in totalStars"
+      v-for="num in totalRate"
       :key="num"
-      class="iconfont icon-star df-stars-iconfont"
-      :class="[num <= starNum ? 'active' : '']"
-      :style="{ fontSize: size + 'px' }"
+      class="iconfont df-stars-iconfont"
+      :class="[icon || 'df-icon-collection']"
+      :style="{
+        fontSize: size + 'px',
+        color: num <= starNum ? activeColor || '#fba906c7' : '',
+      }"
       @click="setStarNum(num)"
     ></i>
   </div>
@@ -26,9 +29,15 @@ export default defineComponent({
       type: Number,
       default: 24,
     },
-    totalStars: {
+    totalRate: {
       type: Number,
       default: 5,
+    },
+    icon: {
+      type: String,
+    },
+    activeColor: {
+      type: String,
     },
   },
   setup(props, ctx) {

@@ -83,12 +83,12 @@ export const data = {
   ],
   "filePathRelative": "component/button.md",
   "git": {
-    "updatedTime": 1638158367000,
+    "updatedTime": 1638196955000,
     "contributors": [
       {
         "name": "song",
         "email": "3224266014@qq.com",
-        "commits": 4
+        "commits": 5
       }
     ]
   }

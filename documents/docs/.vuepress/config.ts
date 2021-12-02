@@ -31,6 +31,13 @@ module.exports = {
   markdown: {
     lineNumbers: true, // 代码块显示行号
   },
+  // directiveTransforms: {
+  //   // v-magnifier -> magnifier
+  //   magnifier: () => ({
+  //     props: [],
+  //     needRuntime: true, // <- remember this
+  //   }),
+  // },
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -129,6 +136,7 @@ module.exports = {
               children: [
                 '/component/',
                 '/component/button.md',
+                '/component/magnifier.md',
                 '/component/icon.md',
               ],
             },
@@ -231,16 +239,18 @@ module.exports = {
               children: [
                 '/zh/component/',
                 '/zh/component/button.md',
+                '/zh/component/magnifier.md',
                 '/zh/component/icon.md',
+                '/zh/component/toolClass.md',
               ],
             },
             {
               text: 'Form 表单组件',
-              children: ['/component/more.md'],
+              children: ['/zh/component/starsrate.md'],
             },
             {
               text: 'Data 数据展示',
-              children: ['/component/more.md'],
+              children: ['/zh/component/card.md'],
             },
             {
               text: 'Navigation 导航',
@@ -248,6 +258,10 @@ module.exports = {
             },
             {
               text: 'Feedback 反馈组件',
+              children: ['/zh/component/modal.md'],
+            },
+            {
+              text: 'Business 业务',
               children: ['/component/more.md'],
             },
             {
@@ -265,7 +279,6 @@ module.exports = {
       },
     },
   },
-
   plugins: [
     [
       '@vuepress/plugin-search',
@@ -284,9 +297,23 @@ module.exports = {
       '@vuepress/register-components',
       {
         components: {
-          DfButton: path.resolve(__dirname, './components/button/DfButton.vue'),
           DfTemplate: path.resolve(__dirname, './components/DfTemplate.vue'),
           DfIcon: path.resolve(__dirname, './components/DfIcon.vue'),
+          DfButton: path.resolve(__dirname, './components/button/DfButton.vue'),
+          DfMagnifier: path.resolve(
+            __dirname,
+            './components/magnifier/DfMagnifier.vue',
+          ),
+          DfModal: path.resolve(__dirname, './components/modal/DfModal.vue'),
+          DfModalTemplate: path.resolve(
+            __dirname,
+            './components/modal/DfModalTemplate.vue',
+          ),
+          DfStarsrate: path.resolve(
+            __dirname,
+            './components/starsRate/DfStarsrate.vue',
+          ),
+          DfCard: path.resolve(__dirname, './components/card/DfCard.vue'),
         },
       },
     ],
@@ -300,6 +327,17 @@ module.exports = {
           },
           '/zh/': {
             defaultInfo: '提示',
+          },
+        },
+      },
+      {
+        type: 'warning',
+        locales: {
+          '/': {
+            defaultInfo: 'Warning',
+          },
+          '/zh/': {
+            defaultInfo: '警告',
           },
         },
       },

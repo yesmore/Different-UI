@@ -1,6 +1,6 @@
 .df-mag-img-wrapper {
   position: relative;
-  border: 1px solid #ddd;
+  // border: 1px solid #ddd;
 }
 
 .df-mag-img-static {
@@ -10,18 +10,16 @@
 
 .df-mag-point-wrapper {
   display: none;
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
-  z-index: 2;
+  z-index: 10002;
   background-color: #fff;
-  cursor: pointer;
+  border-radius: 50%;
 
-  transform: scale(1.7);
   &.df-mag-show {
     display: block;
-    transform: scale(1.7);
   }
   .df-mag-img {
     position: absolute;

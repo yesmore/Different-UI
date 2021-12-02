@@ -24,11 +24,14 @@
     "examples/**/*.tsx",
     "examples/**/*.vue",
     "packages/**/*.ts",
+    "packages/**/**/*.ts",
+    "packages/**/**/**/*.ts",
     "packages/**/*.tsx",
     "packages/**/*.vue",
     "typings/**/*.ts",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "packages/**/**/**/_test_/*.spec.ts"
   ],
   "exclude": ["node_modules"]
 }

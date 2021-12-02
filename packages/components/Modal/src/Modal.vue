@@ -1,24 +1,29 @@
 <template>
-  <transition :name="animate">
+  <transition :name="animate || 'fade'">
     <div :class="[mask === true ? 'df-modal-mask' : '']">
-      <transition :name="animate">
+      <transition :name="animate || 'fade'">
         <div
-          v-show="modalShow"
           id="df-modal"
           ref="dfModal"
           :style="{
             ...modalStyle,
             marginLeft:
-              -parseInt(modalStyle.width.replace(/[^0-9]/gi, '')) / 2 + 'px',
-            top: position === 'center' ? '50%' : '50px',
-            marginTop: position === 'center' ? -dfModalHeight / 2 + 'px' : '',
+              -parseInt(
+                modalStyle?.width
+                  ? modalStyle?.width.replace(/[^0-9]/gi, '')
+                  : 0,
+              ) /
+                2 +
+              'px',
+            // top: position === 'center' ? '30%' : '50px',
+            marginTop: position === 'center' ? dfModalHeight / 5 + 'px' : '',
           }"
         >
           <header class="df-modal-header" :style="headerStyle">
-            <h2 :style="{ color: headerStyle.color }">{{ headText }}</h2>
+            <h2 :style="{ color: headerStyle?.color }">{{ headText }}</h2>
             <a
               href="javascript:;"
-              :style="{ color: headerStyle.color || 'grey' }"
+              :style="{ color: headerStyle?.color || 'grey' }"
               @click="cancel"
             >
               <i class="iconfont df-icon-close"></i>
@@ -38,8 +43,8 @@
               <button
                 class="df-modal-confirm df-modal-btn"
                 :style="{
-                  backgroundColor: headerStyle.backgroundColor,
-                  color: headerStyle.color,
+                  backgroundColor: headerStyle?.backgroundColor,
+                  color: headerStyle?.color,
                 }"
                 @click="confirm"
               >
@@ -63,43 +68,129 @@ import {
   reactive,
   toRefs,
   getCurrentInstance,
+  ref,
 } from 'vue'
 import { modalProps } from './Modal'
 
 export default defineComponent({
   name: 'df-modal',
-  props: modalProps,
+  props: {
+    mask: {
+      type: Boolean,
+      default: false,
+    },
+    showModal: {
+      type: Boolean,
+      default: false,
+    },
+    modalStyle: {
+      type: Object,
+      default: () => {
+        return {
+          width: '300',
+        }
+      },
+    },
+    headerStyle: {
+      type: Object,
+      default: () => {
+        return {
+          color: '',
+        }
+      },
+    },
+    contentStyle: {
+      type: Object,
+      default: () => {
+        return {}
+      },
+    },
+    footerStyle: {
+      type: Object,
+      default: () => {
+        return {}
+      },
+    },
+    headColor: {
+      type: String,
+      default: '',
+    },
+    headText: {
+      type: String,
+      default: '',
+    },
+    headTextColor: {
+      type: String,
+      default: '',
+    },
+    contentText: {
+      type: String,
+      default: '',
+    },
+    contentTextColor: {
+      type: String,
+      default: '',
+    },
+    position: {
+      type: String,
+      default: 'top',
+    },
+    actionBtn: {
+      type: Boolean,
+      default: false,
+    },
+    showHead: {
+      type: Boolean,
+      default: false,
+    },
+    confirmText: {
+      type: String,
+      default: '确定',
+    },
+    cancelText: {
+      type: String,
+      default: '取消',
+    },
+    animate: {
+      type: String,
+      default: 'fade',
+    },
+  },
   setup(props, ctx) {
-    const instance = getCurrentInstance()
+    const instance = getCurrentInstance() as any
+    const dfModal = ref(null as any)
 
     const state = reactive({
       dfModalHeight: 0,
-      modalShow: props.show,
       mask: props.mask,
+      showModal: false,
     })
 
     const confirm = () => {
-      state.modalShow = false
       state.mask = false
       ctx.emit('confirm', {
-        msg: 'modal-confirm',
+        msg: 'confirm',
+        show: false,
       })
     }
+
     const cancel = () => {
-      state.modalShow = false
       state.mask = false
       ctx.emit('cancel', {
-        msg: 'modal-cancel',
+        msg: 'cancel',
+        show: false,
       })
     }
 
     onMounted(() => {
-      state.dfModalHeight = (instance?.refs.dfModal as any).offsetHeight
+      // state.dfModalHeight = dfModal.value.offsetHeight
+      state.dfModalHeight = window.innerHeight
     })
 
     return {
       confirm,
       cancel,
+      dfModal,
       ...toRefs(state),
     }
   },

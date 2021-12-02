@@ -10,7 +10,14 @@ export const data = {
       "level": 2,
       "title": "Basic use",
       "slug": "basic-use",
-      "children": []
+      "children": [
+        {
+          "level": 3,
+          "title": "Import Iconfont",
+          "slug": "import-iconfont",
+          "children": []
+        }
+      ]
     }
   ],
   "filePathRelative": "component/icon.md",

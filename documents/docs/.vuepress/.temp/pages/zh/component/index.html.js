@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-5a5505fa",
   "path": "/zh/component/",
-  "title": "组件说明",
+  "title": "Introduction 组件说明",
   "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",

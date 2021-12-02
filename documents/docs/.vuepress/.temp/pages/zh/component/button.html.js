@@ -68,14 +68,8 @@ export const data = {
         },
         {
           "level": 3,
-          "title": "transx 边框绘制 x",
-          "slug": "transx-边框绘制-x",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "transy 边框绘制 y",
-          "slug": "transy-边框绘制-y",
+          "title": "trans 边框绘制",
+          "slug": "trans-边框绘制",
           "children": []
         },
         {
@@ -85,6 +79,12 @@ export const data = {
           "children": []
         }
       ]
+    },
+    {
+      "level": 2,
+      "title": "API",
+      "slug": "api",
+      "children": []
     }
   ],
   "filePathRelative": "zh/component/button.md",

@@ -1,3 +1,3 @@
 import StarsRate from './src/StarsRate.vue';
-import '../../theme/src/components/StarsRate.scss';
+import '../../theme/components/StarsRate.css';
 export default StarsRate;

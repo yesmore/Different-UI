@@ -47,6 +47,12 @@ export const data = {
       "title": "Licence",
       "slug": "licence",
       "children": []
+    },
+    {
+      "level": 2,
+      "title": "Communication",
+      "slug": "communication",
+      "children": []
     }
   ],
   "filePathRelative": "guide/README.md",

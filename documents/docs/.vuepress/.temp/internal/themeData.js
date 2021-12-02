@@ -73,6 +73,7 @@ export const themeData = {
             "children": [
               "/component/",
               "/component/button.md",
+              "/component/magnifier.md",
               "/component/icon.md"
             ]
           },
@@ -184,19 +185,21 @@ export const themeData = {
             "children": [
               "/zh/component/",
               "/zh/component/button.md",
-              "/zh/component/icon.md"
+              "/zh/component/magnifier.md",
+              "/zh/component/icon.md",
+              "/zh/component/toolClass.md"
             ]
           },
           {
             "text": "Form 表单组件",
             "children": [
-              "/component/more.md"
+              "/zh/component/starsrate.md"
             ]
           },
           {
             "text": "Data 数据展示",
             "children": [
-              "/component/more.md"
+              "/zh/component/card.md"
             ]
           },
           {
@@ -207,6 +210,12 @@ export const themeData = {
           },
           {
             "text": "Feedback 反馈组件",
+            "children": [
+              "/zh/component/modal.md"
+            ]
+          },
+          {
+            "text": "Business 业务",
             "children": [
               "/component/more.md"
             ]

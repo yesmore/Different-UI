@@ -6,6 +6,13 @@
 
 It is recommended to use the `Font Class` method to use the icon font. You only need to use a `<i>` label as the container, select the icon you need, and copy its `class` to generate it quickly.
 
+### Import Iconfont
+
+```typescript
+// vue3/main.ts or *.vue file
+import 'different-ui/theme/src/Icon/iconfont.css'
+```
+
 **Examples**:
 
 <df-icon>
@@ -43,5 +50,5 @@ It is recommended to use the `Font Class` method to use the icon font. You only 
 </df-icon>
 
 ::: tip
-View all [Iconfont](./demo_index.md) here.
+View all ~~[Iconfont](./demo_index.md)~~ here.
 :::

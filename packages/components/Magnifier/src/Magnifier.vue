@@ -2,7 +2,7 @@
   <div id="df-magnifier">
     <div
       v-magnifier
-      class="df-mag-img-wrapper df-shadow-base"
+      class="df-mag-img-wrapper"
       :style="{ width: imgWidth + 'px', height: imgHeight + 'px' }"
     >
       <!-- 放大镜 -->
@@ -14,6 +14,8 @@
           width: magWidth + 'px',
           height: magHeight + 'px',
           borderRadius: magRadius,
+          cursor: cursor || 'crosshair',
+          transform: `scale(${scale || 1.7})`,
         }"
       >
         <!-- 被放大的图片 -->
@@ -21,7 +23,10 @@
           class="df-mag-img"
           :src="imgUrl"
           :alt="imgAlt"
-          :style="{ width: imgWidth + 'px', height: imgHeight + 'px' }"
+          :style="{
+            minWidth: imgWidth + 'px',
+            maxHeight: imgHeight + 'px',
+          }"
         />
       </a>
 
@@ -36,11 +41,51 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import magnifier from './directives/magnifier'
-import { magnifierProps } from './Magnifier'
+// import { magnifierProps } from './Magnifier'
 
 export default defineComponent({
   name: 'df-magnifier',
-  props: magnifierProps,
+  props: {
+    imgWidth: {
+      type: Number || String,
+      default: 375,
+    },
+    imgHeight: {
+      type: Number || String,
+      default: 600,
+    },
+    magWidth: {
+      type: Number || String,
+      default: 100,
+    },
+    magHeight: {
+      type: Number || String,
+      default: 100,
+    },
+    magRadius: {
+      type: String,
+      default: '50%',
+    },
+    blank: {
+      type: Boolean,
+      default: false,
+    },
+    link: {
+      type: String,
+    },
+    imgAlt: {
+      type: String,
+    },
+    imgUrl: {
+      type: String,
+    },
+    cursor: {
+      type: String,
+    },
+    scale: {
+      type: Number,
+    },
+  },
   directives: {
     magnifier,
   },

@@ -1,3 +1,3 @@
 import Modal from './src/Modal.vue';
-import '../../theme/src/components/Modal.scss';
+import '../../theme/components/Modal.css';
 export default Modal;

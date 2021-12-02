@@ -23,11 +23,21 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue'
-import { cardProps } from './Card'
+import { defineComponent } from 'vue'
+// import { cardProps } from './Card'
 
 export default defineComponent({
   name: 'df-card',
-  props: cardProps,
+  props: {
+    bodyStyle: {
+      type: Object,
+      default() {
+        return {}
+      },
+    },
+    coverUrl: {
+      type: String,
+    },
+  },
 })
 </script>

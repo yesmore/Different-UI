@@ -1,3 +1,3 @@
 import Selector from './src/Selector.vue';
-import '../../theme/src/components/Selector.scss';
+import '../../theme/components/Selector.css';
 export default Selector;

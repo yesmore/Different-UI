@@ -9,18 +9,20 @@
 }
 
 .df-mag-point-wrapper {
-  display: none;
+  // display: none;
+  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
+  // overflow: hidden;
   z-index: 2;
   background-color: #fff;
   cursor: pointer;
   border-radius: 50%;
   transform: scale(1.7);
   &.df-mag-show {
-    display: block;
+    // display: block;
+    visibility: visible;
     transform: scale(1.7);
   }
   .df-mag-img {

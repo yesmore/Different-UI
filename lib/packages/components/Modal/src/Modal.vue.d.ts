@@ -1,15 +1,17 @@
 declare const _default: import("vue").DefineComponent<{
-    show: {
+    mask: {
         type: BooleanConstructor;
         default: boolean;
     };
-    mask: {
+    showModal: {
         type: BooleanConstructor;
         default: boolean;
     };
     modalStyle: {
         type: ObjectConstructor;
-        default: () => {};
+        default: () => {
+            width: string;
+        };
     };
     headerStyle: {
         type: ObjectConstructor;
@@ -65,15 +67,20 @@ declare const _default: import("vue").DefineComponent<{
         type: StringConstructor;
         default: string;
     };
+    animate: {
+        type: StringConstructor;
+        default: string;
+    };
 }, {
     dfModalHeight: import("vue").Ref<number>;
-    modalShow: import("vue").Ref<boolean>;
     mask: import("vue").Ref<boolean>;
+    showModal: import("vue").Ref<boolean>;
     confirm: () => void;
     cancel: () => void;
+    dfModal: any;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
-    show?: unknown;
     mask?: unknown;
+    showModal?: unknown;
     modalStyle?: unknown;
     headerStyle?: unknown;
     contentStyle?: unknown;
@@ -88,9 +95,10 @@ declare const _default: import("vue").DefineComponent<{
     showHead?: unknown;
     confirmText?: unknown;
     cancelText?: unknown;
+    animate?: unknown;
 } & {
-    show: boolean;
     mask: boolean;
+    showModal: boolean;
     modalStyle: Record<string, any>;
     headerStyle: Record<string, any>;
     contentStyle: Record<string, any>;
@@ -105,9 +113,10 @@ declare const _default: import("vue").DefineComponent<{
     showHead: boolean;
     confirmText: string;
     cancelText: string;
+    animate: string;
 } & {}>, {
-    show: boolean;
     mask: boolean;
+    showModal: boolean;
     modalStyle: Record<string, any>;
     headerStyle: Record<string, any>;
     contentStyle: Record<string, any>;
@@ -122,5 +131,6 @@ declare const _default: import("vue").DefineComponent<{
     showHead: boolean;
     confirmText: string;
     cancelText: string;
+    animate: string;
 }>;
 export default _default;

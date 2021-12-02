@@ -88,3 +88,7 @@ You can find the breaking change list here: [Breaking Change List](https://githu
 ## Licence
 
 Different UI is open source software licensed as [MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
+
+## Communication
+
+QQ：530396228

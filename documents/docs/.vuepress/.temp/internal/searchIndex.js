@@ -102,7 +102,14 @@ export const searchIndex = [
         "level": 2,
         "title": "Basic use",
         "slug": "basic-use",
-        "children": []
+        "children": [
+          {
+            "level": 3,
+            "title": "Import Iconfont",
+            "slug": "import-iconfont",
+            "children": []
+          }
+        ]
       }
     ],
     "path": "/component/icon.html",
@@ -117,6 +124,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Magnifier",
+    "headers": [],
+    "path": "/component/magnifier.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "开发中",
     "headers": [],
     "path": "/component/more.html",
@@ -127,6 +141,13 @@ export const searchIndex = [
     "title": "Component Introduction",
     "headers": [],
     "path": "/component/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "帮助",
+    "headers": [],
+    "path": "/help/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -181,6 +202,12 @@ export const searchIndex = [
         "title": "Licence",
         "slug": "licence",
         "children": []
+      },
+      {
+        "level": 2,
+        "title": "Communication",
+        "slug": "communication",
+        "children": []
       }
     ],
     "path": "/guide/",
@@ -216,13 +243,6 @@ export const searchIndex = [
       }
     ],
     "path": "/guide/start.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "帮助",
-    "headers": [],
-    "path": "/help/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -298,14 +318,8 @@ export const searchIndex = [
           },
           {
             "level": 3,
-            "title": "transx 边框绘制 x",
-            "slug": "transx-边框绘制-x",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "transy 边框绘制 y",
-            "slug": "transy-边框绘制-y",
+            "title": "trans 边框绘制",
+            "slug": "trans-边框绘制",
             "children": []
           },
           {
@@ -315,9 +329,47 @@ export const searchIndex = [
             "children": []
           }
         ]
+      },
+      {
+        "level": 2,
+        "title": "API",
+        "slug": "api",
+        "children": []
       }
     ],
     "path": "/zh/component/button.html",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "Card 卡片",
+    "headers": [
+      {
+        "level": 2,
+        "title": "基础使用",
+        "slug": "基础使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "卡片样式",
+        "slug": "卡片样式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "卡片内容",
+        "slug": "卡片内容",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API",
+        "slug": "api",
+        "children": []
+      }
+    ],
+    "path": "/zh/component/card.html",
     "pathLocale": "/zh/",
     "extraFields": []
   },
@@ -328,10 +380,63 @@ export const searchIndex = [
         "level": 2,
         "title": "基本使用",
         "slug": "基本使用",
-        "children": []
+        "children": [
+          {
+            "level": 3,
+            "title": "引入 Iconfont",
+            "slug": "引入-iconfont",
+            "children": []
+          }
+        ]
       }
     ],
     "path": "/zh/component/icon.html",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "Magnifier 图片放大镜",
+    "headers": [
+      {
+        "level": 2,
+        "title": "基础使用",
+        "slug": "基础使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "放大镜选项",
+        "slug": "放大镜选项",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API",
+        "slug": "api",
+        "children": []
+      }
+    ],
+    "path": "/zh/component/magnifier.html",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "Modal 模态框",
+    "headers": [
+      {
+        "level": 2,
+        "title": "基础使用",
+        "slug": "基础使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API",
+        "slug": "api",
+        "children": []
+      }
+    ],
+    "path": "/zh/component/modal.html",
     "pathLocale": "/zh/",
     "extraFields": []
   },
@@ -343,9 +448,85 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "组件说明",
+    "title": "Introduction 组件说明",
     "headers": [],
     "path": "/zh/component/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "StarsRate 评分",
+    "headers": [
+      {
+        "level": 2,
+        "title": "基础使用",
+        "slug": "基础使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "图标和样式",
+        "slug": "图标和样式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "回调函数",
+        "slug": "回调函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API",
+        "slug": "api",
+        "children": []
+      }
+    ],
+    "path": "/zh/component/starsrate.html",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "ToolClass 工具类",
+    "headers": [
+      {
+        "level": 3,
+        "title": "基本使用",
+        "slug": "基本使用",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "颜色",
+        "slug": "颜色",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "字体",
+        "slug": "字体",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "定位",
+        "slug": "定位",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "布局",
+        "slug": "布局",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "边框",
+        "slug": "边框",
+        "children": []
+      }
+    ],
+    "path": "/zh/component/toolClass.html",
     "pathLocale": "/zh/",
     "extraFields": []
   },
@@ -399,6 +580,12 @@ export const searchIndex = [
         "level": 2,
         "title": "Licence",
         "slug": "licence",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "交流群",
+        "slug": "交流群",
         "children": []
       }
     ],

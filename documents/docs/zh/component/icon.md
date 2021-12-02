@@ -6,6 +6,13 @@
 
 推荐使用 `Font Class` 方式使用图标字体，你只需要用一个 `<i>` 标签作为容器，并选择你需要的图标，复制它的`class`即可快速生成。
 
+### 引入 Iconfont
+
+```typescript
+// 在 vue3/main.ts or *.vue 文件中
+import 'different-ui/theme/src/Icon/iconfont.css'
+```
+
 **示例**：
 
 <df-icon>
@@ -43,5 +50,5 @@
 </df-icon>
 
 ::: tip
-在这里查看所有[图标字体](./demo_index.md)
+在这里查看所有~~[图标字体](./demo_index.md)~~
 :::

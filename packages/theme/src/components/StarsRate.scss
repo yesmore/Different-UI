@@ -1,15 +1,16 @@
 .df-stars-iconfont {
+  display: inline-block;
   color: rgb(148, 148, 148);
   padding: 0 5px;
-  &.icon-star:hover {
-    color: rgb(114, 114, 114);
-    transition: color 0.3s;
+  &:hover {
+    transform: scale(1.1);
   }
-  &.active {
-    color: #fba906c7;
+  &.iconfont:hover {
+    transition: all 0.3s;
+    color: rgb(114, 114, 114);
   }
   &.active:hover {
-    color: #fbab06;
-    transition: color 0.3s;
+    transition: all 0.3s;
+    opacity: 0.5;
   }
 }

@@ -84,3 +84,7 @@
 ## Licence
 
 Different UI is open source software licensed as [MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
+
+## 交流群
+
+QQ：530396228

@@ -1,3 +1,3 @@
 import Magnifier from './src/Magnifier.vue';
-import '../../theme/src/components/Magnifier.scss';
+import '../../theme/components/Magnifier.css';
 export default Magnifier;

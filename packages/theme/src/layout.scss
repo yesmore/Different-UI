@@ -67,7 +67,7 @@
 
 // border-radius
 @each $key, $val in $df-tc-radius {
-  .radius-#{$key} {
+  .#{$namespace}-radius-#{$key} {
     border-radius: $val;
   }
 }

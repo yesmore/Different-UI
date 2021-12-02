@@ -1,3 +1,3 @@
 import TreeMenu from './src/TreeMenu.vue';
-import '../../theme/src/components/TreeMenu.scss';
+import '../../theme/components/TreeMenu.css';
 export default TreeMenu;

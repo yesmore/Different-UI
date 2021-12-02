@@ -2,7 +2,10 @@
 <p><code>Different</code> integrates <a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer"><code>Iconfont</code><OutboundLink/></a> internally，You don't need to introduce icon dependencies alone. Below are some examples of icon fonts.</p>
 <h2 id="basic-use" tabindex="-1"><a class="header-anchor" href="#basic-use" aria-hidden="true">#</a> Basic use</h2>
 <p>It is recommended to use the <code>Font Class</code> method to use the icon font. You only need to use a <code>&lt;i&gt;</code> label as the container, select the icon you need, and copy its <code>class</code> to generate it quickly.</p>
-<p><strong>Examples</strong>:</p>
+<h3 id="import-iconfont" tabindex="-1"><a class="header-anchor" href="#import-iconfont" aria-hidden="true">#</a> Import Iconfont</h3>
+<div class="language-typescript ext-ts line-numbers-mode"><pre v-pre class="language-typescript"><code><span class="token comment">// vue3/main.ts or *.vue file</span>
+<span class="token keyword">import</span> <span class="token string">'different-ui/theme/src/Icon/iconfont.css'</span>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>Examples</strong>:</p>
 <df-icon>
 <template #src>
 <details class="custom-container details"><summary><i class="iconfont df-icon-script"></i></summary>
@@ -30,6 +33,6 @@
 </template>
 </df-icon>
 <div class="custom-container tip"><p class="custom-container-title">TIP</p>
-<p>View all <RouterLink to="/component/demo_index.html">Iconfont</RouterLink> here.</p>
+<p>View all <s><RouterLink to="/component/demo_index.html">Iconfont</RouterLink></s> here.</p>
 </div>
 </template>

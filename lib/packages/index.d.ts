@@ -10,8 +10,9 @@ import DfSelector from './components/Selector';
 import DfMagnifier from './components/Magnifier';
 import DfStarsRate from './components/StarsRate';
 import DfModal from './components/Modal';
-import './theme/src/Icon/iconfont.css';
-export { DfButton, DfCarousel, DfCarouselItem, DfTreeMenu, DfTreeMenuItem, DfTreeSubMenu, DfTreeReSubMenu, DfSelector, DfMagnifier, DfStarsRate, DfModal, };
+import DfCard from './components/Card';
+import './theme/index.css';
+export { DfButton, DfCarousel, DfCarouselItem, DfTreeMenu, DfTreeMenuItem, DfTreeSubMenu, DfTreeReSubMenu, DfSelector, DfMagnifier, DfStarsRate, DfModal, DfCard, };
 declare const _default: {
     install: (app: App<any>) => void;
 };

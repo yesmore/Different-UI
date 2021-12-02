@@ -10,13 +10,17 @@ export const modalProps = {
   modalStyle: {
     type: Object,
     default: () => {
-      return {}
+      return {
+        width: '300',
+      }
     },
   },
   headerStyle: {
     type: Object,
     default: () => {
-      return {}
+      return {
+        color: '',
+      }
     },
   },
   contentStyle: {

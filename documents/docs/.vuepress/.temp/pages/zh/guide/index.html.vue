@@ -71,4 +71,6 @@
 </p>
 <h2 id="licence" tabindex="-1"><a class="header-anchor" href="#licence" aria-hidden="true">#</a> Licence</h2>
 <p>Different UI is open source software licensed as <a href="https://github.com/element-plus/element-plus/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT<OutboundLink/></a>.</p>
+<h2 id="交流群" tabindex="-1"><a class="header-anchor" href="#交流群" aria-hidden="true">#</a> 交流群</h2>
+<p>QQ：530396228</p>
 </template>
