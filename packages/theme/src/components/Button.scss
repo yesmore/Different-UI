@@ -42,10 +42,10 @@ $df-btn-size: (
 
 $df-btn-radius: (
   'mini': 1px,
-  'small': 3px,
-  'default': 5px,
-  'middle': 5px,
-  'large': 10px,
+  'small': var(--df-border-radius-small),
+  'default': var(--df-border-radius-base),
+  'middle': var(--df-border-radius-base),
+  'large': var(--df-border-radius-round),
 );
 
 /* color */
@@ -54,9 +54,9 @@ $df-btn-radius: (
     background-color: $color;
   }
   .#{$namespace}-btn-plain-#{$colorKey} {
-    background: #fff;
+    background: var(--df-background-color-base);
     color: $color !important;
-    border: 1px dashed $color !important;
+    border: var(--df-border-width-base) dashed $color !important;
   }
 }
 
@@ -68,24 +68,23 @@ $df-btn-radius: (
 }
 
 .df-btn {
-  color: #fff;
+  color: var(--df-color-white);
   border: none;
   margin: 5px;
   padding: 0 15px;
   font-family: 'Lato', sans-serif;
-  font-weight: 500;
+  font-weight: var(--df-font-weight-primary);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--df-transition-duration) ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  // box-shadow: var(--df-box-shadow-custom);
   outline: none;
 
   &:disabled,
   &[disabled] {
-    background-color: #cccccc;
-    color: #666666 !important;
+    background-color: var(--df-disabled-fill-base);
+    color: var(--df-disabled-color-base) !important;
     cursor: not-allowed;
     border: none !important;
   }
@@ -101,7 +100,7 @@ $df-btn-radius: (
     height: 100%;
   }
   &:active {
-    top: 2px;
+    top: 1px;
   }
 }
 
@@ -114,7 +113,7 @@ $df-btn-radius: (
     height: 100%;
   }
   &:active {
-    top: 2px;
+    opacity: 0.7;
   }
 }
 
@@ -138,7 +137,7 @@ $df-btn-radius: (
 
   &:hover {
     text-decoration: none;
-    color: #fff;
+    color: var(--df-color-info-light);
     opacity: 0.7;
   }
   &:before {
@@ -149,14 +148,8 @@ $df-btn-radius: (
     left: 0;
     width: 30px;
     height: 100%;
-    background-color: rgb(255, 255, 255);
-    animation: shiny-btn1 3s ease-in-out infinite;
-  }
-  &:active {
-    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
-      -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
-      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--df-background-color-base);
+    animation: bling-ani 3s ease-in-out infinite;
   }
 }
 
@@ -177,9 +170,8 @@ $df-btn-radius: (
       height: 2px;
       width: 0;
       background: $color;
-      box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
-        4px 4px 5px 0px #0002;
-      transition: 400ms ease all;
+      box-shadow: var(--df-box-shadow-inner);
+      transition: var(--df-transition-duration) ease all;
     }
     &:after {
       right: inherit;
@@ -190,13 +182,13 @@ $df-btn-radius: (
     &:hover:before,
     &:hover:after {
       width: 100%;
-      transition: 800ms ease all;
+      transition: 0.8s ease all;
     }
   }
 
   /* curtain down*/
   .#{$namespace}-btn-type-curtain-down-#{$colorKey} {
-    z-index: 1;
+    z-index: var(--df-index-normal);
 
     &:after {
       position: absolute;
@@ -205,13 +197,13 @@ $df-btn-radius: (
       height: 0;
       bottom: 0;
       left: 0;
-      z-index: -1;
-      border-radius: 5px;
+      z-index: var(--df-index-bottom);
+      border-radius: var(--df-border-radius-base);
       background-color: $color;
       background-image: linear-gradient(315deg, $color 0%, $color 74%);
       box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
         7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
-      transition: all 0.3s ease;
+      transition: all var(--df-transition-duration) ease;
     }
 
     &:hover {
@@ -222,13 +214,13 @@ $df-btn-radius: (
       height: 100%;
     }
     &:active {
-      top: 2px;
+      top: 1px;
     }
   }
 
   /* curtain up*/
   .#{$namespace}-btn-type-curtain-up-#{$colorKey} {
-    z-index: 1;
+    z-index: var(--df-index-normal);
 
     &:after {
       position: absolute;
@@ -237,8 +229,8 @@ $df-btn-radius: (
       height: 0;
       top: 0;
       left: 0;
-      z-index: -1;
-      border-radius: 5px;
+      z-index: var(--df-index-bottom);
+      border-radius: var(--df-border-radius-base);
       background-color: $color;
       background-image: linear-gradient(
         315deg,
@@ -257,7 +249,7 @@ $df-btn-radius: (
           0px
           rgba(0, 0, 0, 0.1),
         4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
+      transition: all var(--df-transition-duration) ease;
     }
     &:hover {
       color: #fff;
@@ -268,13 +260,13 @@ $df-btn-radius: (
       height: 100%;
     }
     &:active {
-      top: 2px;
+      top: 1px;
     }
   }
 
   /* curtain right*/
   .#{$namespace}-btn-type-curtain-right-#{$colorKey} {
-    z-index: 1;
+    z-index: var(--df-index-normal);
 
     &:after {
       position: absolute;
@@ -283,12 +275,12 @@ $df-btn-radius: (
       height: 100%;
       top: 0;
       right: 0;
-      z-index: -1;
+      z-index: var(--df-index-bottom);
       background-color: $color;
-      border-radius: 5px;
+      border-radius: var(--df-border-radius-base);
       box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
         7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
+      transition: all var(--df-transition-duration) ease;
     }
     &:hover {
       color: #fff;
@@ -298,13 +290,13 @@ $df-btn-radius: (
       width: 100%;
     }
     &:active {
-      top: 2px;
+      top: 1px;
     }
   }
 
   /* curtain left*/
   .#{$namespace}-btn-type-curtain-left-#{$colorKey} {
-    z-index: 1;
+    z-index: var(--df-index-normal);
 
     &:after {
       position: absolute;
@@ -313,13 +305,13 @@ $df-btn-radius: (
       height: 100%;
       top: 0;
       right: 0;
-      z-index: -1;
+      z-index: var(--df-index-bottom);
       direction: rtl;
       background-color: $color;
-      border-radius: 5px;
+      border-radius: var(--df-border-radius-base);
       box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
         7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
-      transition: all 0.3s ease;
+      transition: all var(--df-transition-duration) ease;
     }
     &:hover {
       color: #fff;
@@ -330,7 +322,7 @@ $df-btn-radius: (
       width: 100%;
     }
     &:active {
-      top: 2px;
+      top: 1px;
     }
   }
 }
@@ -345,11 +337,11 @@ $df-btn-radius: (
   .#{$namespace}-btn-round-#{$key} {
     min-width: #{nth($size, 2)} !important;
     height: #{nth($size, 2)} !important;
-    border-radius: 50%;
+    border-radius: var(--df-border-radius-circle);
   }
 }
 
-@keyframes shiny-btn1 {
+@keyframes bling-ani {
   0% {
     -webkit-transform: scale(0) rotate(45deg);
     opacity: 0;

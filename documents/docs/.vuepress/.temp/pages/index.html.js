@@ -32,7 +32,7 @@ export const data = {
         "details": "Vuejs 3.x's new feature，I suggest you go to Vue's official website for details. I'm just a little white."
       }
     ],
-    "footer": "MIT Licensed | Copyright © 2021-yesmore"
+    "footer": "MIT Licensed | Copyright © 2021 - yesmore"
   },
   "excerpt": "",
   "headers": [],
@@ -47,17 +47,4 @@ export const data = {
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

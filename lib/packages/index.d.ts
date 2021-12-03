@@ -11,8 +11,8 @@ import DfMagnifier from './components/Magnifier';
 import DfStarsRate from './components/StarsRate';
 import DfModal from './components/Modal';
 import DfCard from './components/Card';
-import './theme/index.css';
-export { DfButton, DfCarousel, DfCarouselItem, DfTreeMenu, DfTreeMenuItem, DfTreeSubMenu, DfTreeReSubMenu, DfSelector, DfMagnifier, DfStarsRate, DfModal, DfCard, };
+import DfSwitch from './components/Switch';
+export { DfButton, DfCarousel, DfCarouselItem, DfTreeMenu, DfTreeMenuItem, DfTreeSubMenu, DfTreeReSubMenu, DfSelector, DfMagnifier, DfStarsRate, DfModal, DfCard, DfSwitch, };
 declare const _default: {
     install: (app: App<any>) => void;
 };

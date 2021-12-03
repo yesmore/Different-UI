@@ -17,16 +17,18 @@ export const pagesComponents = {
   "v-0de0ac79": defineAsyncComponent(() => import(/* webpackChunkName: "v-0de0ac79" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/more.html.vue")),
   // path: /component/
   "v-952a5aea": defineAsyncComponent(() => import(/* webpackChunkName: "v-952a5aea" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/index.html.vue")),
-  // path: /help/
-  "v-14ac19b5": defineAsyncComponent(() => import(/* webpackChunkName: "v-14ac19b5" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/help/index.html.vue")),
   // path: /guide/link.html
   "v-43288db3": defineAsyncComponent(() => import(/* webpackChunkName: "v-43288db3" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/guide/link.html.vue")),
   // path: /guide/
   "v-fffb8e28": defineAsyncComponent(() => import(/* webpackChunkName: "v-fffb8e28" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/guide/index.html.vue")),
   // path: /guide/start.html
   "v-621628ba": defineAsyncComponent(() => import(/* webpackChunkName: "v-621628ba" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/guide/start.html.vue")),
+  // path: /help/
+  "v-14ac19b5": defineAsyncComponent(() => import(/* webpackChunkName: "v-14ac19b5" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/help/index.html.vue")),
   // path: /zh/
   "v-2d0ad528": defineAsyncComponent(() => import(/* webpackChunkName: "v-2d0ad528" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/index.html.vue")),
+  // path: /zh/component/animation.html
+  "v-5c167f62": defineAsyncComponent(() => import(/* webpackChunkName: "v-5c167f62" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/animation.html.vue")),
   // path: /zh/component/button.html
   "v-42a9baa6": defineAsyncComponent(() => import(/* webpackChunkName: "v-42a9baa6" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/button.html.vue")),
   // path: /zh/component/card.html

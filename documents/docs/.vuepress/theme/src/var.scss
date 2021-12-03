@@ -45,13 +45,13 @@
     var(--df-border-color-base);
 
   // --df-border-radius-#{$type}
-  @each $type in (base, small, round, circle) {
+  @each $type in (base, small, round, large, circle) {
     @include set-css-var-type('border-radius', $type, $border-radius);
   }
 
   // Box-shadow
   // --df-box-shadow-#{$type}
-  @each $type in (base, light) {
+  @each $type in (base, light, custom, inner) {
     @include set-css-var-type('box-shadow', $type, $box-shadow);
   }
 
@@ -71,6 +71,7 @@
   --df-font-color-disabled-base: #bbb;
 
   // z-index
+  --df-index-bottom: -1;
   --df-index-normal: 1;
   --df-index-top: 1000;
   --df-index-popper: 2000;
@@ -89,4 +90,6 @@
 
   @include set-component-css-var('transition-function', $transition-function);
   @include set-component-css-var('transition', $transition);
+
+  --df-transition-e: cubic-bezier(0.19, 1, 0.22, 1);
 }

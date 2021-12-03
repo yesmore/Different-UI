@@ -42,7 +42,7 @@
     "build:esm-bundle": "rollup --config ./build/rollup.config.js",
     "build:dev": "rollup --config ./build/rollup.config.dev.js",
     "build:css": "yarn gulp sass",
-    "watch:css": "yarn gulp watch",
+    "w:css": "yarn gulp watch",
     "prepublishOnly": "yarn build && yarn test:cov",
     "test:unit": "vue-cli-service test:unit",
     "test:cov": "vue-cli-service test:unit --coverage",

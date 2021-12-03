@@ -13,8 +13,9 @@ import DfStarsRate from './components/StarsRate'
 import DfModal from './components/Modal'
 import DfCard from './components/Card'
 import DfLoginbar from './components/LoginBar'
+import DfSwitch from './components/Switch'
 
-import './theme/index.css'
+// import './theme/index.css'
 // import './theme/src/Icon/iconfont.css'
 
 // 所有插件列表
@@ -32,6 +33,7 @@ const components = [
   DfModal,
   DfCard,
   DfLoginbar,
+  DfSwitch,
 ]
 
 // 定义 install 方法， App 作为参数
@@ -54,6 +56,7 @@ export {
   DfStarsRate,
   DfModal,
   DfCard,
+  DfSwitch,
 }
 // 全局注册
 export default {

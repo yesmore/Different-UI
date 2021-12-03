@@ -10,24 +10,23 @@
 
 必填参数：`imgUrl`，即被放大的图片路径；可选参数 `imgAlt`、`blank` （分别对应`<img>` 标签的`alt`、`target:_blank`属性）
 
-`<df-magnifier>` 整体默认宽高为 `375 x 600`（像素），你可以传入 `imgWidth` 和 `imgHeight` 参数来调整图片大小。
+`<df-magnifier>` 整体默认宽高为 `375 X 600`（像素），你可以传入 `imgWidth` 和 `imgHeight` 参数来调整图片大小。
 
 **示例**（移入鼠标即可预览）：
 
-<ClientOnly>
 <df-template>
   <template #demo>
     <div 
       class="magnifier-container" 
       align='center' 
     >
-      <!-- <df-magnifier
+      <df-magnifier
         :blank="true"
         imgUrl="https://cdn.jsdelivr.net/gh/yesmore/img/v2/1/09.jpg"
-        imgAlt="可放大的图片"
+        imgAlt="放大镜"
         cursor='crosshair'
         :scale='1.7'
-      /> -->
+      />
     </div>
   </template>
 
@@ -41,7 +40,7 @@
     <df-magnifier
       :blank="true"
       imgUrl="https://cdn.jsdelivr.net/gh/yesmore/img/v2/1/09.jpg"
-      imgAlt="可放大的图片"
+      imgAlt="放大镜"
       cursor="crosshair"
       :scale="1.7"
     />
@@ -53,21 +52,21 @@
 </template>
 
 </df-template>
- </ClientOnly>
 
 ## 放大镜选项
 
 `<df-magnifier>` 提供了以下可选值来自定义你的放大镜：
 
-- 修改 `magWidth` 和 `magHeight` 参数来调整放大镜的大小；
-- 修改 `magRadius` 参数以改变放大镜圆角弧度；
-- 修改 `cursor` 参数以改变放大时鼠标指针式
-- 修改 `scale` 调整放大倍数
-- 传入 `link` 值：图片跳转地址
+- `magWidth` 和 `magHeight` 参数来调整放大镜的大小；
+- `magRadius` 参数以改变放大镜圆角弧度；
+- `cursor` 参数以改变放大时鼠标指针式
+- `scale` 调整放大倍数
+- `link` ：图片跳转地址
+
+放大镜默认大小为 `100 X 100`（像素）。
 
 **示例**（移入鼠标即可预览）：
 
-<ClientOnly>
 <df-template>
   <template #demo>
     <div 
@@ -77,13 +76,10 @@
       <!-- <df-magnifier
         link="https://github.com/yesmore/different-ui"
         :blank="true"
-        imgUrl="https://cdn.jsdelivr.net/gh/yesmore/img/v2/8/59.jpg"
+        imgUrl="https://cdn.jsdelivr.net/gh/yesmore/img/v2/1/09.jpg"
         imgAlt="可放大的图片"
-        :imgWidth="475"
-        :magWidth="100"
-        :magHeight="100"
         magRadius="10%"
-        cursor="crosshair"
+        cursor="point"
         :scale="1.7"
       /> -->
     </div>
@@ -117,7 +113,6 @@
 </template>
 
 </df-template>
-</ClientOnly>
 
 ## API
 

@@ -121,8 +121,9 @@ $border-radius: map.merge(
   (
     'base': 4px,
     'small': 2px,
+    'large': 10px,
     'round': 20px,
-    'circle': 100%,
+    'circle': 50%,
   ),
   $border-radius
 );
@@ -136,6 +137,16 @@ $box-shadow: map.merge(
       0 0 6px rgba(0, 0, 0, 0.04),
     ),
     'light': 0 2px 12px 0 rgba(0, 0, 0, 0.1),
+    'custom': (
+      inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+      4px 4px 5px 0px rgba(0, 0, 0, 0.1),
+    ),
+    'inner': (
+      -1px -1px 5px 0px #fff,
+      7px 7px 20px 0px #0003,
+      4px 4px 5px 0px #0002,
+    ),
   ),
   $box-shadow
 );

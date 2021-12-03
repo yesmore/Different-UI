@@ -1,26 +1,11 @@
-// $imageIds: '1517021897933-0e0319cfbc28', '1533903345306-15d1c30952de',
-//   '1545243424-0ce743321e11', '1531306728370-e2ebd9d7bb99';
 @use '../var.scss' as *;
 
-$bp-md: 600px;
-$bp-lg: 800px;
-
-// .page-content {
-//   display: grid;
-//   grid-gap: 1rem;
-//   padding: 1rem;
-//   max-width: 1024px;
-//   margin: 0 auto;
-//   font-family: var(--font-sans);
-
-//   @media (min-width: $bp-md) {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-
-//   @media (min-width: $bp-lg) {
-//     grid-template-columns: repeat(4, 1fr);
-//   }
-// }
+$card-bp-md: 600px;
+$card-bp-lg: 800px;
+$card-bg-color: whitesmoke;
+$card-text-color: whitesmoke;
+$card-radius: 4px;
+$card-scale-height: 350px;
 
 .df-card {
   box-sizing: border-box;
@@ -31,14 +16,12 @@ $bp-lg: 800px;
   padding: 1rem;
   max-width: 100%;
   text-align: center;
-  color: whitesmoke;
-  background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
-    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
-    0 16px 16px rgba(0, 0, 0, 0.1);
+  color: $card-text-color;
+  background-color: $card-bg-color;
+  border-radius: $card-radius;
 
-  @media (min-width: $bp-md) {
-    height: 350px;
+  @media (min-width: $card-bp-md) {
+    height: $card-scale-height;
   }
 
   &:before {
@@ -87,14 +70,6 @@ $bp-lg: 800px;
     transition: transform calc(var(--df-transition-duration) * 2)
       var(--df-transition-e);
   }
-
-  // @each $id in $imageIds {
-  //   $i: index($imageIds, $id);
-
-  //   &:nth-child(#{$i}):before {
-  //     background-image: url(https://images.unsplash.com/photo-#{$id}?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  //   }
-  // }
 }
 
 .df-card-body {
@@ -105,7 +80,7 @@ $bp-lg: 800px;
   width: 100%;
   padding: 1rem;
   transition: transform var(--df-transition-duration) var(--df-transition-e);
-  z-index: 1;
+  z-index: var(--df-index-normal);
 
   > * + * {
     margin-top: 1rem;
@@ -125,7 +100,7 @@ $bp-lg: 800px;
   line-height: 1.35;
 }
 
-@media (hover: hover) and (min-width: $bp-md) {
+@media (hover: hover) and (min-width: $card-bp-md) {
   .df-card:after {
     transform: translateY(0);
   }

@@ -145,13 +145,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "帮助",
-    "headers": [],
-    "path": "/help/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "Link",
     "headers": [],
     "path": "/guide/link.html",
@@ -247,9 +240,84 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "帮助",
+    "headers": [],
+    "path": "/help/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/zh/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "Animation 动画",
+    "headers": [
+      {
+        "level": 2,
+        "title": "基本使用",
+        "slug": "基本使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Fade in & out",
+        "slug": "fade-in-out",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "List in & out",
+        "slug": "list-in-out",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "zoom in top",
+        "slug": "zoom-in-top",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "zoom in center",
+        "slug": "zoom-in-center",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "zoom in bottom",
+        "slug": "zoom-in-bottom",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "zoom in left",
+        "slug": "zoom-in-left",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Slide in & out",
+        "slug": "slide-in-out",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Slide left in & out",
+        "slug": "slide-left-in-out",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Scale in & out",
+        "slug": "scale-in-out",
+        "children": []
+      }
+    ],
+    "path": "/zh/component/animation.html",
     "pathLocale": "/zh/",
     "extraFields": []
   },
@@ -640,16 +708,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}

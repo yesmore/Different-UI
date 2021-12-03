@@ -25,14 +25,14 @@ export const data = {
       },
       {
         "title": "🔥 TypeScript",
-        "details": "你以为我用的TypeScript，其实是AnyScript (bushi 。"
+        "details": "你以为我用的 TypeScript，其实是 AnyScript (bushi 。"
       },
       {
         "title": "💪 Composition API",
         "details": "Vuejs 3.x 新特性，建议去vue官网详情，鄙人只是个小白。"
       }
     ],
-    "footer": "MIT Licensed | Copyright © 2021-yesmore"
+    "footer": "MIT Licensed | Copyright © 2021 - yesmore"
   },
   "excerpt": "",
   "headers": [],
@@ -47,17 +47,4 @@ export const data = {
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

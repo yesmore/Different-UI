@@ -15,16 +15,18 @@ export const pagesData = {
   "v-0de0ac79": () => import(/* webpackChunkName: "v-0de0ac79" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/more.html.js").then(({ data }) => data),
   // path: /component/
   "v-952a5aea": () => import(/* webpackChunkName: "v-952a5aea" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/index.html.js").then(({ data }) => data),
-  // path: /help/
-  "v-14ac19b5": () => import(/* webpackChunkName: "v-14ac19b5" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/help/index.html.js").then(({ data }) => data),
   // path: /guide/link.html
   "v-43288db3": () => import(/* webpackChunkName: "v-43288db3" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/guide/link.html.js").then(({ data }) => data),
   // path: /guide/
   "v-fffb8e28": () => import(/* webpackChunkName: "v-fffb8e28" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/guide/index.html.js").then(({ data }) => data),
   // path: /guide/start.html
   "v-621628ba": () => import(/* webpackChunkName: "v-621628ba" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/guide/start.html.js").then(({ data }) => data),
+  // path: /help/
+  "v-14ac19b5": () => import(/* webpackChunkName: "v-14ac19b5" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/help/index.html.js").then(({ data }) => data),
   // path: /zh/
   "v-2d0ad528": () => import(/* webpackChunkName: "v-2d0ad528" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/index.html.js").then(({ data }) => data),
+  // path: /zh/component/animation.html
+  "v-5c167f62": () => import(/* webpackChunkName: "v-5c167f62" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/animation.html.js").then(({ data }) => data),
   // path: /zh/component/button.html
   "v-42a9baa6": () => import(/* webpackChunkName: "v-42a9baa6" */"C:/Users/86136/Desktop/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/zh/component/button.html.js").then(({ data }) => data),
   // path: /zh/component/card.html

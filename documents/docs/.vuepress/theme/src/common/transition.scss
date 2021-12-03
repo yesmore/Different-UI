@@ -106,3 +106,50 @@
   transition: opacity var(--df-transition-duration)
     cubic-bezier(0.55, 0, 0.1, 1);
 }
+
+/* new carousel */
+// 默认：右入左出
+.#{$namespace}-slide-enter-active,
+.#{$namespace}-slide-leave-active {
+  transition: all var(--df-transition-duration) linear;
+}
+.#{$namespace}-slide-enter-active {
+  transform: translateX(100%);
+}
+.#{$namespace}-slide-enter-to {
+  transform: translateX(0);
+}
+.#{$namespace}-slide-leave-active {
+  transform: translateX(0);
+}
+.#{$namespace}-slide-leave-to {
+  transform: translateX(-100%);
+}
+
+// 缩放变换
+.#{$namespace}-scale-enter-from,
+.#{$namespace}-scale-leave-to {
+  transform: scale(0);
+}
+.#{$namespace}-scale-leave-from,
+.#{$namespace}-scale-enter-to {
+  transform: scale(1);
+}
+.#{$namespace}-scale-enter-active,
+.#{$namespace}-scale-leave-active {
+  transition: all var(--df-transition-duration);
+}
+
+// 左入右出
+.#{$namespace}-left-enter-from,
+.#{$namespace}-left-leave-to {
+  transform: translate3d(-100%, 0, 0);
+}
+.#{$namespace}-left-leave-from,
+.#{$namespace}-left-enter-to {
+  transform: translate3d(0, 0, 0);
+}
+.#{$namespace}-left-enter-active,
+.#{$namespace}-left-leave-active {
+  transition: all var(--df-transition-duration);
+}

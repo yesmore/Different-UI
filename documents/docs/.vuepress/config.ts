@@ -262,11 +262,11 @@ module.exports = {
             },
             {
               text: 'Business 业务',
-              children: ['/component/more.md'],
+              children: ['/zh/component/more.md'],
             },
             {
               text: 'Others 其他',
-              children: ['/component/more.md'],
+              children: ['/zh/component/animation.md'],
             },
           ],
           '/zh/help/': [
@@ -299,6 +299,7 @@ module.exports = {
         components: {
           DfTemplate: path.resolve(__dirname, './components/DfTemplate.vue'),
           DfIcon: path.resolve(__dirname, './components/DfIcon.vue'),
+          DfAnimation: path.resolve(__dirname, './components/DfAnimation.vue'),
           DfButton: path.resolve(__dirname, './components/button/DfButton.vue'),
           DfMagnifier: path.resolve(
             __dirname,

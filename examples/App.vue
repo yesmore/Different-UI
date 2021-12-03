@@ -18,12 +18,12 @@
   </div> -->
 
   <!-- 动画 -->
-  <!-- <df-button @click="show">显示</df-button> -->
-  <!-- <transition name="df-list">
+  <df-button @click="show">显示</df-button>
+  <transition name="df-fade-in">
     <div v-if="showMod">
       <h1>卧槽</h1>
     </div>
-  </transition> -->
+  </transition>
 
   <!-- <div class="btn-container">
     <df-button
@@ -37,24 +37,28 @@
       按钮
     </df-button>
     <df-button color="success" type="trans-success">success</df-button>
+    <df-button type="curtain-down-success">success</df-button>
     <df-button @click="handleClick" color="success"> 按钮 </df-button>
+    <df-button :plain="true" color="primary"> 按钮 </df-button>
+    <df-button type="concave" color="primary"> 按钮 </df-button>
+    <df-button type="bling" color="primary"> 按钮 </df-button>
   </div> -->
 
-  <div class="car-container card">
+  <!-- <div class="car-container card df-m-5">
     <df-carousel
       :autoplay="true"
       :duration="3000"
       :initialIndex="0"
       :showDot="true"
       :showDirector="true"
-      :animation="'fade'"
+      animation="df-slide"
       :dotBgColor="'grey'"
     >
       <df-carousel-item v-for="(item, index) in carousel_data" :key="index">
         <img :src="item.img_name" alt="" />
       </df-carousel-item>
     </df-carousel>
-  </div>
+  </div> -->
 
   <!-- <div class="tree-container">
     <div class="df-side-bar">
@@ -165,6 +169,10 @@
   <!-- <div class="loginbar">
     <df-loginbar></df-loginbar>
   </div> -->
+
+  <div class="switch-container">
+    <df-switch></df-switch>
+  </div>
 </template>
 
 <script lang="ts">
@@ -243,98 +251,6 @@ export default defineComponent({
 }
 
 .car-container {
-  width: 300px;
-}
-
-body {
-  background: #212534 !important;
-}
-
-@property --rotate {
-  syntax: '<angle>';
-  initial-value: 132deg;
-  inherits: false;
-}
-
-:root {
-  --card-height: 65vh;
-  --card-width: calc(var(--card-height) / 1.5);
-}
-
-.card {
-  background: #191c29;
-  /* width: var(--card-width);
-  height: var(--card-height); */
-  padding: 3px;
-  position: relative;
-  border-radius: 6px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  font-size: 1.5em;
-  color: rgb(88 199 250 / 0%);
-  cursor: pointer;
-  font-family: cursive;
-}
-
-.card:hover {
-  /* color: rgb(88 199 250 / 100%); */
-  /* transition: color 1s; */
-}
-.card:hover:before,
-.card:hover:after {
-  /* animation: none;
-  opacity: 0; */
-}
-
-.card::before {
-  content: '';
-  width: 104%;
-  height: 102%;
-  border-radius: 8px;
-  background-image: linear-gradient(
-    var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
-  );
-  position: absolute;
-  z-index: -1;
-  top: -1%;
-  left: -2%;
-  animation: spin 2.5s linear infinite;
-}
-
-.card::after {
-  position: absolute;
-  content: '';
-  top: calc(var(--card-height) / 6);
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
-  background-image: linear-gradient(
-    var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
-  );
-  opacity: 1;
-  transition: opacity 0.5s;
-  animation: spin 2.5s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
-  100% {
-    --rotate: 360deg;
-  }
+  width: 400px;
 }
 </style>
