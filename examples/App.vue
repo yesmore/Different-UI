@@ -18,12 +18,12 @@
   </div> -->
 
   <!-- 动画 -->
-  <df-button @click="show">显示</df-button>
+  <!-- <df-button @click="show">显示</df-button>
   <transition name="df-fade-in">
     <div v-if="showMod">
       <h1>卧槽</h1>
     </div>
-  </transition>
+  </transition> -->
 
   <!-- <div class="btn-container">
     <df-button
@@ -171,7 +171,15 @@
   </div> -->
 
   <div class="switch-container">
-    <df-switch></df-switch>
+    <df-switch
+      activeColor="success"
+      :showLabel="false"
+      labelText="卧槽"
+      @handleChangeStatus="handleChangeStatus"
+    ></df-switch>
+    <df-switch>
+      <template #label> 哈哈哈 </template>
+    </df-switch>
   </div>
 </template>
 
@@ -227,6 +235,10 @@ export default defineComponent({
       state.showMod = !state.showMod
     }
 
+    const handleChangeStatus = (data: boolean) => {
+      console.log(data)
+    }
+
     return {
       carousel_data,
       handleClick,
@@ -239,6 +251,7 @@ export default defineComponent({
       modalConfirm,
       modalClose,
       show,
+      handleChangeStatus,
     }
   },
 })

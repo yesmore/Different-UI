@@ -1,0 +1,75 @@
+@use 'sass:math';
+@use '../common/var' as *;
+@use '../mixins/config' as *;
+
+$switch-off-color: #eeeeee;
+$slider-off-color: #c5c5c5;
+
+// Sizes
+$slider-height: 8px !default;
+$slider-width: $slider-height * 4 !default; // 32px
+$switch-height: $slider-height * 3 !default; // 24px
+$switch-width: $switch-height !default; // 24px
+$switch-shift: $slider-height !default; // 8px
+
+// Transitions
+$transition: all var(--df-transition-duration) ease;
+
+##{$namespace}-switch {
+  // display: block;
+  margin: 12px;
+
+  .#{$namespace}-switch-slider {
+    position: relative;
+    display: inline-block;
+    height: $slider-height;
+    width: $slider-width;
+    border-radius: $slider-height;
+    cursor: pointer;
+    background: $slider-off-color;
+    transition: $transition;
+
+    &:after {
+      background: $switch-off-color;
+      position: absolute;
+      left: -$switch-shift;
+      top: math.div(($slider-height - $switch-height), 2);
+      display: block;
+      width: $switch-height;
+      height: $switch-width;
+      border-radius: 50%;
+      box-shadow: 0px 2px 2px rgba(#000, 0.2);
+      content: '';
+      transition: $transition;
+    }
+  }
+
+  label {
+    margin-right: 7px;
+  }
+
+  .#{$namespace}-switch-input {
+    display: none;
+
+    ~ .#{$namespace}-switch-label {
+      margin-left: $slider-height;
+    }
+
+    &:checked ~ .#{$namespace}-switch-slider {
+      &:after {
+        left: $slider-width - $switch-width + $switch-shift;
+      }
+    }
+  }
+
+  @each $type in $types {
+    .#{$namespace}-switch-input-#{$type}:checked
+      ~ .#{$namespace}-switch-slider-#{$type} {
+      background: var(--df-color-#{$type});
+
+      &:after {
+        background: var(--df-color-#{$type});
+      }
+    }
+  }
+}

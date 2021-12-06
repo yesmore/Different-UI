@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/npm/dt/different-ui.svg">
   </a><br>
   <a href="https://npmcharts.com/compare/different-ui?minimal=true">
-    <img src="https://img.shields.io/github/size/yesmore/different-ui/lib/index.umd.js">
+    <img src="https://img.shields.io/github/size/yesmore/different-ui/lib/index.umd.min.js">
   </a>
   <img src="https://img.shields.io/github/stars/yesmore/different-ui.svg?logo=github" alt="star"/>
   <img src="https://img.shields.io/github/forks/yesmore/different-ui" alt="fork"/>

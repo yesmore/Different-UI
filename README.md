@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/npm/dt/different-ui.svg">
   </a><br>
   <a href="https://npmcharts.com/compare/different-ui?minimal=true" target='_blank'>
-    <img src="https://img.shields.io/github/size/yesmore/different-ui/lib/index.umd.js">
+    <img src="https://img.shields.io/github/size/yesmore/different-ui/lib/index.umd.min.js">
   </a>
   <img src="https://img.shields.io/github/stars/yesmore/different-ui.svg?logo=github" alt="star"/>
   <img src="https://img.shields.io/github/forks/yesmore/different-ui" alt="fork"/>
@@ -26,6 +26,7 @@
   <img src="https://img.shields.io/github/license/yesmore/different-ui" alt="mit"/>  
   <br>
 </p>
+
 
 <p align="center">Different UI - A Vue.js 3 UI library made by <a href='https://github.com/yesmore'>@yesmore</a></p>
 
