@@ -16,6 +16,8 @@ import DfLoginbar from './components/LoginBar'
 import DfSwitch from './components/Switch'
 
 // import './theme/index.css'
+// import './theme/components.css'
+
 // import './theme/src/Icon/iconfont.css'
 
 // 所有插件列表

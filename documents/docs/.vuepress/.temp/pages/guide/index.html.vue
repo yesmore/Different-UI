@@ -1,7 +1,4 @@
-<template><h1 id="information" tabindex="-1"><a class="header-anchor" href="#information" aria-hidden="true">#</a> Information</h1>
-<div class="custom-container warning"><p class="custom-container-title">WARNING</p>
-<p>This component library is not recommended</p>
-</div>
+<template><h1 id="介绍" tabindex="-1"><a class="header-anchor" href="#介绍" aria-hidden="true">#</a> 介绍</h1>
 <p align="center">
     <img width='300px' src='https://cdn.jsdelivr.net/gh/yesmore/img/img/logo.png' alt='different-ui'/>
 </p>
@@ -36,34 +33,34 @@
 <li>💪 Vue 3 Composition API</li>
 <li>🔥 Written in TypeScript</li>
 </ul>
-<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：<a href='https://github.com/yesmore/different-ui'>中文版</a> | English</div>
-<h2 id="💻-status-beta" tabindex="-1"><a class="header-anchor" href="#💻-status-beta" aria-hidden="true">#</a> 💻 Status: Beta</h2>
+<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/Different-UI/blob/dev/README_en.md'>English</a></div>
+<h2 id="💻-状态-beta" tabindex="-1"><a class="header-anchor" href="#💻-状态-beta" aria-hidden="true">#</a> 💻 状态: Beta</h2>
 <blockquote>
-<p>This framework is not recommended at this time</p>
+<p>目前不推荐使用本框架</p>
 </blockquote>
-<p>This project is still under heavy development. Feel free to join us and make your first pull request.</p>
-<p><strong>Next</strong>：</p>
+<p>这个项目仍在持续开发中。欢迎加入开发，并提出您的第一次 Pull Request 。</p>
+<p><strong>下一步计划</strong>：</p>
 <ul>
-<li>Improve existing component styles</li>
-<li>Use <code>jest</code> to test existing components</li>
-<li>Use <code>vuepress</code> to generate development documents and go online</li>
-<li>Publish <code> npm</code></li>
-<li>Writing case templates</li>
+<li>完善已有组件样式</li>
+<li>使用<code>jest</code>测试已有组件</li>
+<li>使用<code>vuepress</code>生成开发文档并上线</li>
+<li>发布<code>npm</code></li>
+<li>编写案例模板</li>
 </ul>
-<h2 id="📖-documentation" tabindex="-1"><a class="header-anchor" href="#📖-documentation" aria-hidden="true">#</a> 📖 Documentation</h2>
-<p>You can find for more details, API, and other docs on <a href="https://yesmore.cc/Different-UI" target="_blank" rel="noopener noreferrer">https://yesmore.cc/Different-UI<OutboundLink/></a></p>
-<h2 id="📘-change-logs" tabindex="-1"><a class="header-anchor" href="#📘-change-logs" aria-hidden="true">#</a> 📘 Change Logs</h2>
-<p>You can find the breaking change list here: <a href="https://github.com/yesmore/different-ui/issues/1" target="_blank" rel="noopener noreferrer">Breaking Change List<OutboundLink/></a>.</p>
-<h2 id="🌱-different-zen" tabindex="-1"><a class="header-anchor" href="#🌱-different-zen" aria-hidden="true">#</a> 🌱 Different Zen</h2>
+<h2 id="📖-开发文档" tabindex="-1"><a class="header-anchor" href="#📖-开发文档" aria-hidden="true">#</a> 📖 开发文档</h2>
+<p>更详细的 Api、组件信息请查看 <a href="https://yesmore.cc/Different-UI" target="_blank" rel="noopener noreferrer">https://yesmore.cc/Different-UI<OutboundLink/></a></p>
+<h2 id="📘-重要更新" tabindex="-1"><a class="header-anchor" href="#📘-重要更新" aria-hidden="true">#</a> 📘 重要更新</h2>
+<p>重大更新日志请查看: <a href="https://github.com/yesmore/different-ui/issues/1" target="_blank" rel="noopener noreferrer">Breaking Change List<OutboundLink/></a>.</p>
+<h2 id="🌱-禅" tabindex="-1"><a class="header-anchor" href="#🌱-禅" aria-hidden="true">#</a> 🌱 禅</h2>
 <ul>
-<li>There is a child stepping on the shadow on the road,</li>
-<li>I feel so childish.</li>
-<li>So I bypassed,</li>
-<li>I'm afraid he'll step on my shadow.</li>
+<li>路上有个小孩在踩影子，</li>
+<li>我觉得好幼稚。</li>
+<li>所以绕开了，</li>
+<li>我怕他踩到我的影子。</li>
 </ul>
-<h2 id="🐾-contributors" tabindex="-1"><a class="header-anchor" href="#🐾-contributors" aria-hidden="true">#</a> 🐾 Contributors</h2>
+<h2 id="🐾-创建者" tabindex="-1"><a class="header-anchor" href="#🐾-创建者" aria-hidden="true">#</a> 🐾 创建者</h2>
 <p><a href='https://github.com/yesmore'><img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a></p>
-<h2 id="🎨-treat-me-to-spicy-strips" tabindex="-1"><a class="header-anchor" href="#🎨-treat-me-to-spicy-strips" aria-hidden="true">#</a> 🎨 Treat me to spicy strips</h2>
+<h2 id="🎨-请我吃辣条" tabindex="-1"><a class="header-anchor" href="#🎨-请我吃辣条" aria-hidden="true">#</a> 🎨 请我吃辣条</h2>
 <p align="center">
   <table border="0">
     <tr>
@@ -74,6 +71,6 @@
 </p>
 <h2 id="licence" tabindex="-1"><a class="header-anchor" href="#licence" aria-hidden="true">#</a> Licence</h2>
 <p>Different UI is open source software licensed as <a href="https://github.com/element-plus/element-plus/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT<OutboundLink/></a>.</p>
-<h2 id="communication" tabindex="-1"><a class="header-anchor" href="#communication" aria-hidden="true">#</a> Communication</h2>
+<h2 id="交流群" tabindex="-1"><a class="header-anchor" href="#交流群" aria-hidden="true">#</a> 交流群</h2>
 <p>QQ：530396228</p>
 </template>

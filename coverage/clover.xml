@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1638535790911" clover="3.2.0">
-  <project timestamp="1638535790911" name="All files">
+<coverage generated="1638883894552" clover="3.2.0">
+  <project timestamp="1638883894553" name="All files">
     <metrics statements="65" coveredstatements="43" conditionals="16" coveredconditionals="4" methods="19" coveredmethods="9" elements="100" coveredelements="56" complexity="0" loc="65" ncloc="65" packages="7" files="8" classes="8"/>
     <package name="components.Magnifier">
       <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="index.ts" path="C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Magnifier\index.ts">
+      <file name="index.ts" path="D:\repository\different-ui\different-ui\packages\components\Magnifier\index.ts">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -15,7 +15,7 @@
     </package>
     <package name="components.Magnifier.src">
       <metrics statements="3" coveredstatements="3" conditionals="8" coveredconditionals="4" methods="0" coveredmethods="0"/>
-      <file name="Magnifier.vue" path="C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Magnifier\src\Magnifier.vue">
+      <file name="Magnifier.vue" path="D:\repository\different-ui\different-ui\packages\components\Magnifier\src\Magnifier.vue">
         <metrics statements="3" coveredstatements="3" conditionals="8" coveredconditionals="4" methods="0" coveredmethods="0"/>
         <line num="42" count="1" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
@@ -24,7 +24,7 @@
     </package>
     <package name="components.Magnifier.src.directives">
       <metrics statements="31" coveredstatements="16" conditionals="8" coveredconditionals="0" methods="8" coveredmethods="3"/>
-      <file name="magnifier.ts" path="C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Magnifier\src\directives\magnifier.ts">
+      <file name="magnifier.ts" path="D:\repository\different-ui\different-ui\packages\components\Magnifier\src\directives\magnifier.ts">
         <metrics statements="31" coveredstatements="16" conditionals="8" coveredconditionals="0" methods="8" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -61,7 +61,7 @@
     </package>
     <package name="components.Modal">
       <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="index.ts" path="C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Modal\index.ts">
+      <file name="index.ts" path="D:\repository\different-ui\different-ui\packages\components\Modal\index.ts">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -72,7 +72,7 @@
     </package>
     <package name="components.Modal.src">
       <metrics statements="18" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="5"/>
-      <file name="Modal.vue" path="C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Modal\src\Modal.vue">
+      <file name="Modal.vue" path="D:\repository\different-ui\different-ui\packages\components\Modal\src\Modal.vue">
         <metrics statements="18" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="5"/>
         <line num="65" count="1" type="stmt"/>
         <line num="75" count="1" type="stmt"/>
@@ -96,18 +96,18 @@
     </package>
     <package name="theme.components">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="Magnifier.css" path="C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\theme\components\Magnifier.css">
+      <file name="Magnifier.css" path="D:\repository\different-ui\different-ui\packages\theme\components\Magnifier.css">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
       </file>
-      <file name="Modal.css" path="C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\theme\components\Modal.css">
+      <file name="Modal.css" path="D:\repository\different-ui\different-ui\packages\theme\components\Modal.css">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
       </file>
     </package>
     <package name="utils">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getDomStyle.ts" path="C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\utils\getDomStyle.ts">
+      <file name="getDomStyle.ts" path="D:\repository\different-ui\different-ui\packages\utils\getDomStyle.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="8" count="4" type="stmt"/>
       </file>

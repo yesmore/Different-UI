@@ -1,27 +1,39 @@
 export const data = {
   "key": "v-2671d7b7",
   "path": "/en/guide/start.html",
-  "title": "Quick Start",
+  "title": "Quick start",
   "lang": "eh-US",
   "frontmatter": {},
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 2,
+      "title": "Install",
+      "slug": "install",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "Global load",
+      "slug": "global-load",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "Load on demand",
+      "slug": "load-on-demand",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "Run",
+      "slug": "run",
+      "children": []
+    }
+  ],
   "filePathRelative": "en/guide/start.md",
   "git": {
     "updatedTime": null,
     "contributors": []
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

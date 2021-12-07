@@ -38,27 +38,14 @@ export const siteData = {
   ],
   "locales": {
     "/": {
-      "lang": "eh-US",
-      "title": "Different",
-      "description": "A Vue.js 3 UI library"
-    },
-    "/zh/": {
       "lang": "zh-CN",
       "title": "Different",
       "description": "一个基于 Vuejs 3.x 的UI组件库"
+    },
+    "/en/": {
+      "lang": "eh-US",
+      "title": "Different",
+      "description": "A Vue.js 3 UI library"
     }
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSiteData) {
-    __VUE_HMR_RUNTIME__.updateSiteData(siteData)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ siteData }) => {
-    __VUE_HMR_RUNTIME__.updateSiteData(siteData)
-  })
 }

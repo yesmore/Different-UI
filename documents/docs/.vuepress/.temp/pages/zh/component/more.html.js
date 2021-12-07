@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-44d0342c",
   "path": "/zh/component/more.html",
-  "title": "",
+  "title": "More 更多",
   "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",

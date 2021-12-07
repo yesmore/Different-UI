@@ -1,7 +1,10 @@
-# Component Introduction
+# Introduction 组件说明
 
-::: warning
-The English document is translating, please check the [**Chinese**](../zh/component/) for more components。
-:::
+特性：
 
-Try [ Button ](./button.md)
+- 组件采用 `vue` 插件化开发；
+- 组件逻辑与样式分离，支持按需加载；
+- 支持栅格布局；
+- 内置过渡动画与`ToolClass`。
+
+尝试第一个组件 [ Button ](./button.md).

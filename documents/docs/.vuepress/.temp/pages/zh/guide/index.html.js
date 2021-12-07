@@ -57,12 +57,12 @@ export const data = {
   ],
   "filePathRelative": "zh/guide/README.md",
   "git": {
-    "updatedTime": 1638453652000,
+    "updatedTime": 1638752333000,
     "contributors": [
       {
         "name": "song",
         "email": "3224266014@qq.com",
-        "commits": 3
+        "commits": 4
       }
     ]
   }

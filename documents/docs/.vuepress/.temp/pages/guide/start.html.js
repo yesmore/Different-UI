@@ -1,33 +1,33 @@
 export const data = {
   "key": "v-621628ba",
   "path": "/guide/start.html",
-  "title": "Quick start",
-  "lang": "eh-US",
+  "title": "快速上手",
+  "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
     {
       "level": 2,
-      "title": "Install",
-      "slug": "install",
+      "title": "安装依赖",
+      "slug": "安装依赖",
       "children": []
     },
     {
       "level": 2,
-      "title": "Global load",
-      "slug": "global-load",
+      "title": "全局加载",
+      "slug": "全局加载",
       "children": []
     },
     {
       "level": 2,
-      "title": "Load on demand",
-      "slug": "load-on-demand",
+      "title": "按需加载",
+      "slug": "按需加载",
       "children": []
     },
     {
       "level": 2,
-      "title": "Run",
-      "slug": "run",
+      "title": "启动项目",
+      "slug": "启动项目",
       "children": []
     }
   ],
@@ -42,17 +42,4 @@ export const data = {
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

@@ -2,18 +2,12 @@
 @use './reset.scss';
 @use './main.scss';
 
-// df-component styles
+// df-self styles
 @use './row.scss';
 @use './col.scss';
 @use './display.scss';
 
-// @use './components/Button.scss';
-// @use './components/Carousel.scss';
-// @use './components/Magnifier.scss';
-// @use './components/Modal.scss';
-// @use './components/Selector.scss';
-// @use './components/StarsRate.scss';
-// @use './components/TreeMenu.scss';
+// @use './components.scss';
 
 // df-tool styles
 @use './layout.scss';

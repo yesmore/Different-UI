@@ -1,11 +1,11 @@
-<template><h1 id="iconfont" tabindex="-1"><a class="header-anchor" href="#iconfont" aria-hidden="true">#</a> Iconfont</h1>
-<p><code>Different</code> integrates <a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer"><code>Iconfont</code><OutboundLink/></a> internally，You don't need to introduce icon dependencies alone. Below are some examples of icon fonts.</p>
-<h2 id="basic-use" tabindex="-1"><a class="header-anchor" href="#basic-use" aria-hidden="true">#</a> Basic use</h2>
-<p>It is recommended to use the <code>Font Class</code> method to use the icon font. You only need to use a <code>&lt;i&gt;</code> label as the container, select the icon you need, and copy its <code>class</code> to generate it quickly.</p>
-<h3 id="import-iconfont" tabindex="-1"><a class="header-anchor" href="#import-iconfont" aria-hidden="true">#</a> Import Iconfont</h3>
-<div class="language-typescript ext-ts line-numbers-mode"><pre v-pre class="language-typescript"><code><span class="token comment">// vue3/main.ts or *.vue file</span>
+<template><h1 id="iconfont-图标字体" tabindex="-1"><a class="header-anchor" href="#iconfont-图标字体" aria-hidden="true">#</a> Iconfont 图标字体</h1>
+<p><code>Different</code> 内部集成了 <a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer"><code>Iconfont</code><OutboundLink/></a>，你并不需要单独引入 Icon 依赖。下面是部分图标字体示例。</p>
+<h2 id="基本使用" tabindex="-1"><a class="header-anchor" href="#基本使用" aria-hidden="true">#</a> 基本使用</h2>
+<p>推荐使用 <code>Font Class</code> 方式使用图标字体，你只需要用一个 <code>&lt;i&gt;</code> 标签作为容器，并选择你需要的图标，复制它的<code>class</code>即可快速生成。</p>
+<h3 id="引入-iconfont" tabindex="-1"><a class="header-anchor" href="#引入-iconfont" aria-hidden="true">#</a> 引入 Iconfont</h3>
+<div class="language-typescript ext-ts line-numbers-mode"><pre v-pre class="language-typescript"><code><span class="token comment">// 在 vue3/main.ts or *.vue 文件中</span>
 <span class="token keyword">import</span> <span class="token string">'different-ui/theme/src/Icon/iconfont.css'</span>
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>Examples</strong>:</p>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>示例</strong>：</p>
 <df-icon>
 <template #src>
 <details class="custom-container details"><summary><i class="iconfont df-icon-script"></i></summary>
@@ -32,7 +32,7 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div></details>
 </template>
 </df-icon>
-<div class="custom-container tip"><p class="custom-container-title">TIP</p>
-<p>View all <s><RouterLink to="/component/demo_index.html">Iconfont</RouterLink></s> here.</p>
+<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<p>在这里查看所有~~<RouterLink to="/component/demo_index.html">图标字体</RouterLink>~~</p>
 </div>
 </template>

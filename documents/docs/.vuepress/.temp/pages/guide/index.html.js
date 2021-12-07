@@ -1,45 +1,45 @@
 export const data = {
   "key": "v-fffb8e28",
   "path": "/guide/",
-  "title": "Information",
-  "lang": "eh-US",
+  "title": "介绍",
+  "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
     {
       "level": 2,
-      "title": "💻 Status: Beta",
-      "slug": "💻-status-beta",
+      "title": "💻 状态: Beta",
+      "slug": "💻-状态-beta",
       "children": []
     },
     {
       "level": 2,
-      "title": "📖 Documentation",
-      "slug": "📖-documentation",
+      "title": "📖 开发文档",
+      "slug": "📖-开发文档",
       "children": []
     },
     {
       "level": 2,
-      "title": "📘 Change Logs",
-      "slug": "📘-change-logs",
+      "title": "📘 重要更新",
+      "slug": "📘-重要更新",
       "children": []
     },
     {
       "level": 2,
-      "title": "🌱 Different Zen",
-      "slug": "🌱-different-zen",
+      "title": "🌱 禅",
+      "slug": "🌱-禅",
       "children": []
     },
     {
       "level": 2,
-      "title": "🐾 Contributors",
-      "slug": "🐾-contributors",
+      "title": "🐾 创建者",
+      "slug": "🐾-创建者",
       "children": []
     },
     {
       "level": 2,
-      "title": "🎨 Treat me to spicy strips",
-      "slug": "🎨-treat-me-to-spicy-strips",
+      "title": "🎨 请我吃辣条",
+      "slug": "🎨-请我吃辣条",
       "children": []
     },
     {
@@ -50,33 +50,20 @@ export const data = {
     },
     {
       "level": 2,
-      "title": "Communication",
-      "slug": "communication",
+      "title": "交流群",
+      "slug": "交流群",
       "children": []
     }
   ],
   "filePathRelative": "guide/README.md",
   "git": {
-    "updatedTime": 1638453652000,
+    "updatedTime": 1638752333000,
     "contributors": [
       {
         "name": "song",
         "email": "3224266014@qq.com",
-        "commits": 3
+        "commits": 4
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

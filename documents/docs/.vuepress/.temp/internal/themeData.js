@@ -6,6 +6,126 @@ export const themeData = {
   "searchMaxSuggestions": 10,
   "locales": {
     "/": {
+      "selectLanguageText": "多语言",
+      "selectLanguageName": "简体中文",
+      "lastUpdated": "上次更新",
+      "editLinkText": "在Github上编辑此页",
+      "contributors": true,
+      "contributorsText": "贡献者列表",
+      "serviceWorker": {
+        "updatePopup": {
+          "message": "有新的内容被推送",
+          "buttonText": "刷新"
+        }
+      },
+      "navbar": [
+        {
+          "text": "版本",
+          "children": [
+            {
+              "text": "v0.1.1-beta.3",
+              "link": "https://github.com/yesmore/different-ui"
+            }
+          ]
+        },
+        {
+          "text": "指南",
+          "link": "/guide/"
+        },
+        {
+          "text": "组件",
+          "link": "/component/"
+        },
+        {
+          "text": "帮助",
+          "link": "/help/"
+        },
+        {
+          "text": "快乐码原",
+          "link": "https://yesmore.cc",
+          "target": "_blank"
+        },
+        {
+          "text": "Github",
+          "link": "https://github.com/yesmore/different-ui"
+        }
+      ],
+      "sidebar": {
+        "/guide/": [
+          {
+            "text": "指南",
+            "children": [
+              "/guide/README.md",
+              "/guide/start.md"
+            ]
+          },
+          {
+            "text": "深入",
+            "children": [
+              "/guide/link.md"
+            ]
+          }
+        ],
+        "/component/": [
+          {
+            "text": "Basic 基础组件",
+            "children": [
+              "/component/",
+              "/component/button.md",
+              "/component/magnifier.md",
+              "/component/icon.md",
+              "/component/toolClass.md"
+            ]
+          },
+          {
+            "text": "Form 表单组件",
+            "children": [
+              "/component/starsrate.md",
+              "/component/switch.md"
+            ]
+          },
+          {
+            "text": "Data 数据展示",
+            "children": [
+              "/component/card.md"
+            ]
+          },
+          {
+            "text": "Navigation 导航",
+            "children": [
+              "/component/more.md"
+            ]
+          },
+          {
+            "text": "Feedback 反馈组件",
+            "children": [
+              "/component/modal.md"
+            ]
+          },
+          {
+            "text": "Business 业务",
+            "children": [
+              "/component/more.md"
+            ]
+          },
+          {
+            "text": "Others 其他",
+            "children": [
+              "/component/animation.md"
+            ]
+          }
+        ],
+        "/help/": [
+          {
+            "text": "帮助",
+            "children": [
+              "/component/"
+            ]
+          }
+        ]
+      }
+    },
+    "/en/": {
       "selectLanguageText": "Languages",
       "selectLanguageName": "English",
       "lastUpdatedText": "Last Updated",
@@ -31,15 +151,15 @@ export const themeData = {
         },
         {
           "text": "Guide",
-          "link": "/guide/"
+          "link": "/en/guide/"
         },
         {
           "text": "Component",
-          "link": "/component/"
+          "link": "/en/component/"
         },
         {
           "text": "Help",
-          "link": "/help/"
+          "link": "/en/help/"
         },
         {
           "text": "Blog",
@@ -52,41 +172,43 @@ export const themeData = {
         }
       ],
       "sidebar": {
-        "/guide/": [
+        "/en/guide/": [
           {
             "text": "Guide",
             "children": [
-              "/guide/README.md",
-              "/guide/start.md"
+              "/en/guide/README.md",
+              "/en/guide/start.md"
             ]
           },
           {
-            "text": "Deep",
+            "text": "More",
             "children": [
-              "link.md"
+              "/en/guide/link.md"
             ]
           }
         ],
-        "/component/": [
+        "/en/component/": [
           {
             "text": "Basic",
             "children": [
-              "/component/",
-              "/component/button.md",
-              "/component/magnifier.md",
-              "/component/icon.md"
+              "/en/component/",
+              "/en/component/button.md",
+              "/en/component/magnifier.md",
+              "/en/component/icon.md",
+              "/en/component/toolClass.md"
             ]
           },
           {
             "text": "Form",
             "children": [
-              "/component/more.md"
+              "/en/component/starsrate.md",
+              "/en/component/switch.md"
             ]
           },
           {
             "text": "Data",
             "children": [
-              "/component/more.md"
+              "/en/component/card.md"
             ]
           },
           {
@@ -98,140 +220,27 @@ export const themeData = {
           {
             "text": "Feedback",
             "children": [
-              "/component/more.md"
+              "/en/component/modal.md"
+            ]
+          },
+          {
+            "text": "Business",
+            "children": [
+              "/en/component/more.md"
             ]
           },
           {
             "text": "Others",
             "children": [
-              "/component/more.md"
+              "/en/component/animation.md"
             ]
           }
         ],
-        "/help/": [
+        "/en/help/": [
           {
-            "text": "帮助",
+            "text": "Help",
             "children": [
-              "/zh/component/"
-            ]
-          }
-        ]
-      }
-    },
-    "/zh/": {
-      "selectLanguageText": "多语言",
-      "selectLanguageName": "简体中文",
-      "lastUpdated": "上次更新",
-      "editLinkText": "在Github上编辑此页",
-      "contributors": true,
-      "contributorsText": "贡献者列表",
-      "serviceWorker": {
-        "updatePopup": {
-          "message": "有新的内容被推送",
-          "buttonText": "刷新"
-        }
-      },
-      "navbar": [
-        {
-          "text": "版本",
-          "children": [
-            {
-              "text": "v0.1.1-beta.3",
-              "link": "https://github.com/yesmore/different-ui"
-            }
-          ]
-        },
-        {
-          "text": "指南",
-          "link": "/zh/guide/"
-        },
-        {
-          "text": "组件",
-          "link": "/zh/Component/"
-        },
-        {
-          "text": "帮助",
-          "link": "/zh/help/"
-        },
-        {
-          "text": "快乐码原",
-          "link": "https://yesmore.cc",
-          "target": "_blank"
-        },
-        {
-          "text": "Github",
-          "link": "https://github.com/yesmore/different-ui"
-        }
-      ],
-      "sidebar": {
-        "/zh/guide/": [
-          {
-            "text": "指南",
-            "children": [
-              "/zh/guide/README.md",
-              "/zh/guide/start.md"
-            ]
-          },
-          {
-            "text": "深入",
-            "children": [
-              "/zh/guide/link.md"
-            ]
-          }
-        ],
-        "/zh/component/": [
-          {
-            "text": "Basic 基础组件",
-            "children": [
-              "/zh/component/",
-              "/zh/component/button.md",
-              "/zh/component/magnifier.md",
-              "/zh/component/icon.md",
-              "/zh/component/toolClass.md"
-            ]
-          },
-          {
-            "text": "Form 表单组件",
-            "children": [
-              "/zh/component/starsrate.md"
-            ]
-          },
-          {
-            "text": "Data 数据展示",
-            "children": [
-              "/zh/component/card.md"
-            ]
-          },
-          {
-            "text": "Navigation 导航",
-            "children": [
-              "/component/more.md"
-            ]
-          },
-          {
-            "text": "Feedback 反馈组件",
-            "children": [
-              "/zh/component/modal.md"
-            ]
-          },
-          {
-            "text": "Business 业务",
-            "children": [
-              "/zh/component/more.md"
-            ]
-          },
-          {
-            "text": "Others 其他",
-            "children": [
-              "/zh/component/animation.md"
-            ]
-          }
-        ],
-        "/zh/help/": [
-          {
-            "text": "帮助",
-            "children": [
-              "/zh/component/"
+              "/en/component/"
             ]
           }
         ]
@@ -262,17 +271,4 @@ export const themeData = {
   "openInNewWindow": "open in new window",
   "toggleDarkMode": "toggle dark mode",
   "toggleSidebar": "toggle sidebar"
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateThemeData) {
-    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ themeData }) => {
-    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
-  })
 }

@@ -1,2 +1,2 @@
-<template><h1 id="开发中" tabindex="-1"><a class="header-anchor" href="#开发中" aria-hidden="true">#</a> 开发中</h1>
+<template><h1 id="more-更多" tabindex="-1"><a class="header-anchor" href="#more-更多" aria-hidden="true">#</a> More 更多</h1>
 </template>

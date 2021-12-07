@@ -140,7 +140,7 @@
   transition: all var(--df-transition-duration);
 }
 
-// 左入右出
+// 左入左出
 .#{$namespace}-left-enter-from,
 .#{$namespace}-left-leave-to {
   transform: translate3d(-100%, 0, 0);

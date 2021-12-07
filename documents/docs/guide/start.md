@@ -1,6 +1,6 @@
-# Quick start
+# 快速上手
 
-## Install
+## 安装依赖
 
 <CodeGroup>
 
@@ -21,7 +21,7 @@ $ npm install different-ui -S
   </CodeGroupItem>
 </CodeGroup>
 
-## Global load
+## 全局加载
 
 ```ts
 // vue3/main.ts
@@ -35,7 +35,7 @@ app.use(DifferentUi)
 app.mount('#app')
 ```
 
-## Load on demand
+## 按需加载
 
 ```vue
 <!-- vue3/App.vue -->
@@ -57,7 +57,7 @@ export default defineComponent({
 </script>
 ```
 
-## Run
+## 启动项目
 
 <CodeGroup>
 

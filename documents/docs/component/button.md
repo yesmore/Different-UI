@@ -1,16 +1,16 @@
-# Button
+# Button 按钮
 
-Button component
+按钮组件
 
-## Basic
+## 基础按钮
 
-You can control the basic style of `<df-button>` through `color`, `size`,`radius`,`round`, `plain`, `disabled`. Below are all attributes and their optional values.
+可以通过 `color`、`size`、`radius`、`round`、`plain`、`disabled` 来控制 `<df-button>` 基本样式。下面是所有属性及其可选值。
 
-### color
+### color 颜色
 
-df-button provides the `color` attribute to set different color themes for buttons.
+通过 `color` 属性来设置按钮大小，默认值为 `default`/`primary`
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -57,11 +57,11 @@ df-button provides the `color` attribute to set different color themes for butto
 
 </df-template>
 
-### size
+### size 尺寸
 
-Set the button size through the `size` attribute. The default value is `default / middle`.
+通过 `size` 属性来设置按钮大小，默认值为 `default`/`middle`
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -102,11 +102,11 @@ Set the button size through the `size` attribute. The default value is `default 
 
 </df-template>
 
-### radius
+### radius 圆角
 
-Set the button fillet radius through the `radius` attribute. The default value is `default / middle`.
+通过 `radius` 属性来设置按钮圆角半径，默认值为 `default`/`middle`
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -147,11 +147,11 @@ Set the button fillet radius through the `radius` attribute. The default value i
 
 </df-template>
 
-### round
+### round 圆形
 
-Set whether the button is round through the `round` attribute. The default value is `false`.
+通过 `round` 属性来设置按钮是否为圆形，默认值为 `false`.
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -192,11 +192,11 @@ Set whether the button is round through the `round` attribute. The default value
 
 </df-template>
 
-### plain
+### plain 扁平
 
-Set the button to have a flat effect through the `plain` attribute. The default value is `false`.
+通过 `plain` 属性来设置按钮是扁平效果，默认值为 `false`.
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -237,11 +237,11 @@ Set the button to have a flat effect through the `plain` attribute. The default 
 
 </df-template>
 
-### disabled
+### disabled 禁用
 
-Set whether the button is disabled through the `1disabled` attribute.
+通过 `disabled` 属性来设置按钮是否禁用.
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -282,16 +282,16 @@ Set whether the button is disabled through the `1disabled` attribute.
 
 </df-template>
 
-## Advanced
+## 进阶按钮
 
-`<df-button>` provides the `type` attribute to set different style types of buttons. The default style is `default / simple` . The following is an example of optional values for `type`.
+df-button 提供了 `type` 属性来设置按钮不同样式类型，其中，默认样式为 `default`/`simple`。下面是 `type` 的可选值示例。
 
-### concave
+### concave 凹陷
 
 - `type='concave'`
-- When you click the mouse, it will produce a depression effect.
+- 当你鼠标点击时，会产生凹陷效果。
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -338,12 +338,12 @@ Set whether the button is disabled through the `1disabled` attribute.
 
 </df-template>
 
-### bling
+### bling 闪烁
 
 - `type='bling'`
-- blingbling effect.
+- 闪动效果。
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -390,12 +390,12 @@ Set whether the button is disabled through the `1disabled` attribute.
 
 </df-template>
 
-### trans
+### trans 边框绘制
 
 - `type='trans-[color]'`
-- Button border dynamic drawing (half) effect.
+- 边框动态绘制效果。
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -447,16 +447,14 @@ Set whether the button is disabled through the `1disabled` attribute.
 `type='trans-[color]'`中的 [color] 为边框颜色，可与 `color` 属性同时使用。
 :::
 
-### curtain
+### curtain 幕布
 
 - `type='curtain-[dirction]-[color]'`
-- Curtain effect.
+- 幕布效果。
 
-::: warning
-[color] is the color of the curtain. If the `color` attribute is the same as [color], the curtain should be transparent, and the two can be combined with different colors at will.
-:::
+> [color] 为幕布颜色，若`color`属性与[color]相同，幕布应为透明效果，两者可随意搭配不同颜色组合。
 
-**Examples**:
+**示例**：
 
 <df-template>
 
@@ -511,3 +509,7 @@ Set whether the button is disabled through the `1disabled` attribute.
 </template>
 
 </df-template>
+
+## API
+
+...

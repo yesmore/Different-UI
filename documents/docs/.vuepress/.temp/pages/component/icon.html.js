@@ -1,20 +1,20 @@
 export const data = {
   "key": "v-4ee9c1d5",
   "path": "/component/icon.html",
-  "title": "Iconfont",
-  "lang": "eh-US",
+  "title": "Iconfont 图标字体",
+  "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
   "headers": [
     {
       "level": 2,
-      "title": "Basic use",
-      "slug": "basic-use",
+      "title": "基本使用",
+      "slug": "基本使用",
       "children": [
         {
           "level": 3,
-          "title": "Import Iconfont",
-          "slug": "import-iconfont",
+          "title": "引入 Iconfont",
+          "slug": "引入-iconfont",
           "children": []
         }
       ]
@@ -31,17 +31,4 @@ export const data = {
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

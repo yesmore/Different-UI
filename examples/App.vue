@@ -25,7 +25,7 @@
     </div>
   </transition> -->
 
-  <!-- <div class="btn-container">
+  <!-- <div class="btn-container df-m-5">
     <df-button
       @click="handleClick"
       type="bling"
@@ -170,7 +170,7 @@
     <df-loginbar></df-loginbar>
   </div> -->
 
-  <div class="switch-container">
+  <div class="switch-container df-m-5">
     <df-switch
       activeColor="success"
       :showLabel="false"
@@ -188,12 +188,12 @@ import { defineComponent, ref, reactive, toRefs } from 'vue'
 import carousel_data from './data/carousel'
 import tree_menu_data from './data/treeMenu'
 import selector_data from './data/selector'
-// import { DfCarousel, DfCarouselItem, DfButton, DfTreeMenu } from '~/index'
+// import { DfButton, DfMagnifier } from '~/index'
 // import { DfModal } from '~/index'
 
 export default defineComponent({
   name: 'App',
-  // components: { DfModal },
+  // components: { DfButton, DfMagnifier },
   setup() {
     const count = ref(0)
 

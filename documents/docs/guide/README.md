@@ -1,8 +1,4 @@
-# Information
-
-::: warning
-This component library is not recommended
-:::
+# 介绍
 
 <p align="center">
     <img width='300px' src='https://cdn.jsdelivr.net/gh/yesmore/img/img/logo.png' alt='different-ui'/>
@@ -39,42 +35,42 @@ This component library is not recommended
 - 💪 Vue 3 Composition API
 - 🔥 Written in TypeScript
 
-<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：<a href='https://github.com/yesmore/different-ui'>中文版</a> | English</div>
+<div align='right' style='margin-bottom:20px;'><strong>阅读文档</strong>：中文版 | <a href='https://github.com/yesmore/Different-UI/blob/dev/README_en.md'>English</a></div>
 
-## 💻 Status: Beta
+## 💻 状态: Beta
 
-> This framework is not recommended at this time
+> 目前不推荐使用本框架
 
-This project is still under heavy development. Feel free to join us and make your first pull request.
+这个项目仍在持续开发中。欢迎加入开发，并提出您的第一次 Pull Request 。
 
-**Next**：
+**下一步计划**：
 
-- Improve existing component styles
-- Use `jest` to test existing components
-- Use `vuepress` to generate development documents and go online
-- Publish ` npm`
-- Writing case templates
+- 完善已有组件样式
+- 使用`jest`测试已有组件
+- 使用`vuepress`生成开发文档并上线
+- 发布`npm`
+- 编写案例模板
 
-## 📖 Documentation
+## 📖 开发文档
 
-You can find for more details, API, and other docs on [https://yesmore.cc/Different-UI](https://yesmore.cc/Different-UI)
+更详细的 Api、组件信息请查看 [https://yesmore.cc/Different-UI](https://yesmore.cc/Different-UI)
 
-## 📘 Change Logs
+## 📘 重要更新
 
-You can find the breaking change list here: [Breaking Change List](https://github.com/yesmore/different-ui/issues/1).
+重大更新日志请查看: [Breaking Change List](https://github.com/yesmore/different-ui/issues/1).
 
-## 🌱 Different Zen
+## 🌱 禅
 
-- There is a child stepping on the shadow on the road,
-- I feel so childish.
-- So I bypassed,
-- I'm afraid he'll step on my shadow.
+- 路上有个小孩在踩影子，
+- 我觉得好幼稚。
+- 所以绕开了，
+- 我怕他踩到我的影子。
 
-## 🐾 Contributors
+## 🐾 创建者
 
 <a href='https://github.com/yesmore'><img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a>
 
-## 🎨 Treat me to spicy strips
+## 🎨 请我吃辣条
 
 <p align="center">
   <table border="0">
@@ -89,6 +85,6 @@ You can find the breaking change list here: [Breaking Change List](https://githu
 
 Different UI is open source software licensed as [MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
 
-## Communication
+## 交流群
 
 QQ：530396228

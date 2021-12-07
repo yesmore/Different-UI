@@ -2,7 +2,7 @@ export const data = {
   "key": "v-35e09821",
   "path": "/component/color.html",
   "title": "",
-  "lang": "eh-US",
+  "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
   "headers": [],

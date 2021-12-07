@@ -1,8 +1,8 @@
 export const data = {
   "key": "v-0de0ac79",
   "path": "/component/more.html",
-  "title": "开发中",
-  "lang": "eh-US",
+  "title": "More 更多",
+  "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
@@ -17,17 +17,4 @@ export const data = {
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

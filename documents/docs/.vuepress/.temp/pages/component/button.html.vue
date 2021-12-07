@@ -1,10 +1,10 @@
-<template><h1 id="button" tabindex="-1"><a class="header-anchor" href="#button" aria-hidden="true">#</a> Button</h1>
-<p>Button component</p>
-<h2 id="basic" tabindex="-1"><a class="header-anchor" href="#basic" aria-hidden="true">#</a> Basic</h2>
-<p>You can control the basic style of <code>&lt;df-button&gt;</code> through <code>color</code>, <code>size</code>,<code>radius</code>,<code>round</code>, <code>plain</code>, <code>disabled</code>. Below are all attributes and their optional values.</p>
-<h3 id="color" tabindex="-1"><a class="header-anchor" href="#color" aria-hidden="true">#</a> color</h3>
-<p>df-button provides the <code>color</code> attribute to set different color themes for buttons.</p>
-<p><strong>Examples</strong>:</p>
+<template><h1 id="button-按钮" tabindex="-1"><a class="header-anchor" href="#button-按钮" aria-hidden="true">#</a> Button 按钮</h1>
+<p>按钮组件</p>
+<h2 id="基础按钮" tabindex="-1"><a class="header-anchor" href="#基础按钮" aria-hidden="true">#</a> 基础按钮</h2>
+<p>可以通过 <code>color</code>、<code>size</code>、<code>radius</code>、<code>round</code>、<code>plain</code>、<code>disabled</code> 来控制 <code>&lt;df-button&gt;</code> 基本样式。下面是所有属性及其可选值。</p>
+<h3 id="color-颜色" tabindex="-1"><a class="header-anchor" href="#color-颜色" aria-hidden="true">#</a> color 颜色</h3>
+<p>通过 <code>color</code> 属性来设置按钮大小，默认值为 <code>default</code>/<code>primary</code></p>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -39,9 +39,9 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></details>
 </template>
 </df-template>
-<h3 id="size" tabindex="-1"><a class="header-anchor" href="#size" aria-hidden="true">#</a> size</h3>
-<p>Set the button size through the <code>size</code> attribute. The default value is <code>default / middle</code>.</p>
-<p><strong>Examples</strong>:</p>
+<h3 id="size-尺寸" tabindex="-1"><a class="header-anchor" href="#size-尺寸" aria-hidden="true">#</a> size 尺寸</h3>
+<p>通过 <code>size</code> 属性来设置按钮大小，默认值为 <code>default</code>/<code>middle</code></p>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -70,9 +70,9 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></details>
 </template>
 </df-template>
-<h3 id="radius" tabindex="-1"><a class="header-anchor" href="#radius" aria-hidden="true">#</a> radius</h3>
-<p>Set the button fillet radius through the <code>radius</code> attribute. The default value is <code>default / middle</code>.</p>
-<p><strong>Examples</strong>:</p>
+<h3 id="radius-圆角" tabindex="-1"><a class="header-anchor" href="#radius-圆角" aria-hidden="true">#</a> radius 圆角</h3>
+<p>通过 <code>radius</code> 属性来设置按钮圆角半径，默认值为 <code>default</code>/<code>middle</code></p>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -101,9 +101,9 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></details>
 </template>
 </df-template>
-<h3 id="round" tabindex="-1"><a class="header-anchor" href="#round" aria-hidden="true">#</a> round</h3>
-<p>Set whether the button is round through the <code>round</code> attribute. The default value is <code>false</code>.</p>
-<p><strong>Examples</strong>:</p>
+<h3 id="round-圆形" tabindex="-1"><a class="header-anchor" href="#round-圆形" aria-hidden="true">#</a> round 圆形</h3>
+<p>通过 <code>round</code> 属性来设置按钮是否为圆形，默认值为 <code>false</code>.</p>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -132,9 +132,9 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></details>
 </template>
 </df-template>
-<h3 id="plain" tabindex="-1"><a class="header-anchor" href="#plain" aria-hidden="true">#</a> plain</h3>
-<p>Set the button to have a flat effect through the <code>plain</code> attribute. The default value is <code>false</code>.</p>
-<p><strong>Examples</strong>:</p>
+<h3 id="plain-扁平" tabindex="-1"><a class="header-anchor" href="#plain-扁平" aria-hidden="true">#</a> plain 扁平</h3>
+<p>通过 <code>plain</code> 属性来设置按钮是扁平效果，默认值为 <code>false</code>.</p>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -163,9 +163,9 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></details>
 </template>
 </df-template>
-<h3 id="disabled" tabindex="-1"><a class="header-anchor" href="#disabled" aria-hidden="true">#</a> disabled</h3>
-<p>Set whether the button is disabled through the <code>1disabled</code> attribute.</p>
-<p><strong>Examples</strong>:</p>
+<h3 id="disabled-禁用" tabindex="-1"><a class="header-anchor" href="#disabled-禁用" aria-hidden="true">#</a> disabled 禁用</h3>
+<p>通过 <code>disabled</code> 属性来设置按钮是否禁用.</p>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -194,14 +194,14 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></details>
 </template>
 </df-template>
-<h2 id="advanced" tabindex="-1"><a class="header-anchor" href="#advanced" aria-hidden="true">#</a> Advanced</h2>
-<p><code>&lt;df-button&gt;</code> provides the <code>type</code> attribute to set different style types of buttons. The default style is <code>default / simple</code> . The following is an example of optional values for <code>type</code>.</p>
-<h3 id="concave" tabindex="-1"><a class="header-anchor" href="#concave" aria-hidden="true">#</a> concave</h3>
+<h2 id="进阶按钮" tabindex="-1"><a class="header-anchor" href="#进阶按钮" aria-hidden="true">#</a> 进阶按钮</h2>
+<p>df-button 提供了 <code>type</code> 属性来设置按钮不同样式类型，其中，默认样式为 <code>default</code>/<code>simple</code>。下面是 <code>type</code> 的可选值示例。</p>
+<h3 id="concave-凹陷" tabindex="-1"><a class="header-anchor" href="#concave-凹陷" aria-hidden="true">#</a> concave 凹陷</h3>
 <ul>
 <li><code>type='concave'</code></li>
-<li>When you click the mouse, it will produce a depression effect.</li>
+<li>当你鼠标点击时，会产生凹陷效果。</li>
 </ul>
-<p><strong>Examples</strong>:</p>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -236,12 +236,12 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></details>
 </template>
 </df-template>
-<h3 id="bling" tabindex="-1"><a class="header-anchor" href="#bling" aria-hidden="true">#</a> bling</h3>
+<h3 id="bling-闪烁" tabindex="-1"><a class="header-anchor" href="#bling-闪烁" aria-hidden="true">#</a> bling 闪烁</h3>
 <ul>
 <li><code>type='bling'</code></li>
-<li>blingbling effect.</li>
+<li>闪动效果。</li>
 </ul>
-<p><strong>Examples</strong>:</p>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -276,12 +276,12 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></details>
 </template>
 </df-template>
-<h3 id="trans" tabindex="-1"><a class="header-anchor" href="#trans" aria-hidden="true">#</a> trans</h3>
+<h3 id="trans-边框绘制" tabindex="-1"><a class="header-anchor" href="#trans-边框绘制" aria-hidden="true">#</a> trans 边框绘制</h3>
 <ul>
 <li><code>type='trans-[color]'</code></li>
-<li>Button border dynamic drawing (half) effect.</li>
+<li>边框动态绘制效果。</li>
 </ul>
-<p><strong>Examples</strong>:</p>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -316,18 +316,18 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></details>
 </template>
 </df-template>
-<div class="custom-container tip"><p class="custom-container-title">TIP</p>
+<div class="custom-container tip"><p class="custom-container-title">提示</p>
 <p><code>type='trans-[color]'</code>中的 [color] 为边框颜色，可与 <code>color</code> 属性同时使用。</p>
 </div>
-<h3 id="curtain" tabindex="-1"><a class="header-anchor" href="#curtain" aria-hidden="true">#</a> curtain</h3>
+<h3 id="curtain-幕布" tabindex="-1"><a class="header-anchor" href="#curtain-幕布" aria-hidden="true">#</a> curtain 幕布</h3>
 <ul>
 <li><code>type='curtain-[dirction]-[color]'</code></li>
-<li>Curtain effect.</li>
+<li>幕布效果。</li>
 </ul>
-<div class="custom-container warning"><p class="custom-container-title">WARNING</p>
-<p>[color] is the color of the curtain. If the <code>color</code> attribute is the same as [color], the curtain should be transparent, and the two can be combined with different colors at will.</p>
-</div>
-<p><strong>Examples</strong>:</p>
+<blockquote>
+<p>[color] 为幕布颜色，若<code>color</code>属性与[color]相同，幕布应为透明效果，两者可随意搭配不同颜色组合。</p>
+</blockquote>
+<p><strong>示例</strong>：</p>
 <df-template>
 <template #demo>
   <div
@@ -370,4 +370,6 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div></details>
 </template>
 </df-template>
+<h2 id="api" tabindex="-1"><a class="header-anchor" href="#api" aria-hidden="true">#</a> API</h2>
+<p>...</p>
 </template>

@@ -1,27 +1,63 @@
 export const data = {
   "key": "v-e6412400",
   "path": "/en/guide/",
-  "title": "介绍",
+  "title": "Information",
   "lang": "eh-US",
   "frontmatter": {},
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 2,
+      "title": "💻 Status: Beta",
+      "slug": "💻-status-beta",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "📖 Documentation",
+      "slug": "📖-documentation",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "📘 Change Logs",
+      "slug": "📘-change-logs",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "🌱 Different Zen",
+      "slug": "🌱-different-zen",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "🐾 Contributors",
+      "slug": "🐾-contributors",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "🎨 Treat me to spicy strips",
+      "slug": "🎨-treat-me-to-spicy-strips",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "Licence",
+      "slug": "licence",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "Communication",
+      "slug": "communication",
+      "children": []
+    }
+  ],
   "filePathRelative": "en/guide/README.md",
   "git": {
     "updatedTime": null,
     "contributors": []
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

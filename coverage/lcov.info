@@ -1,5 +1,5 @@
 TN:
-SF:C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Magnifier\index.ts
+SF:D:\repository\different-ui\different-ui\packages\components\Magnifier\index.ts
 FN:5,(anonymous_0)
 FNF:1
 FNH:0
@@ -15,7 +15,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Magnifier\src\Magnifier.vue
+SF:D:\repository\different-ui\different-ui\packages\components\Magnifier\src\Magnifier.vue
 FNF:0
 FNH:0
 DA:42,1
@@ -35,7 +35,7 @@ BRF:8
 BRH:4
 end_of_record
 TN:
-SF:C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Magnifier\src\directives\magnifier.ts
+SF:D:\repository\different-ui\different-ui\packages\components\Magnifier\src\directives\magnifier.ts
 FN:4,(anonymous_0)
 FN:26,(anonymous_1)
 FN:30,bindEvent
@@ -99,7 +99,7 @@ BRF:8
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Modal\index.ts
+SF:D:\repository\different-ui\different-ui\packages\components\Modal\index.ts
 FN:5,(anonymous_0)
 FNF:1
 FNH:0
@@ -115,7 +115,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\components\Modal\src\Modal.vue
+SF:D:\repository\different-ui\different-ui\packages\components\Modal\src\Modal.vue
 FN:88,(anonymous_0)
 FN:96,(anonymous_1)
 FN:104,(anonymous_2)
@@ -158,7 +158,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\theme\components\Magnifier.css
+SF:D:\repository\different-ui\different-ui\packages\theme\components\Magnifier.css
 FNF:0
 FNH:0
 DA:1,1
@@ -168,7 +168,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\theme\components\Modal.css
+SF:D:\repository\different-ui\different-ui\packages\theme\components\Modal.css
 FNF:0
 FNH:0
 DA:1,1
@@ -178,7 +178,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\86136\Desktop\repository\different-ui\different-ui\packages\utils\getDomStyle.ts
+SF:D:\repository\different-ui\different-ui\packages\utils\getDomStyle.ts
 FN:7,getDomStyle
 FNF:1
 FNH:1

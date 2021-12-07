@@ -1,8 +1,8 @@
 export const data = {
   "key": "v-43288db3",
   "path": "/guide/link.html",
-  "title": "Link",
-  "lang": "eh-US",
+  "title": "链接",
+  "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
@@ -17,17 +17,4 @@ export const data = {
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

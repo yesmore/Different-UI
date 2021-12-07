@@ -1,19 +1,19 @@
-# Iconfont
+# Iconfont 图标字体
 
-`Different` integrates [`Iconfont`](https://www.iconfont.cn/) internally，You don't need to introduce icon dependencies alone. Below are some examples of icon fonts.
+`Different` 内部集成了 [`Iconfont`](https://www.iconfont.cn/)，你并不需要单独引入 Icon 依赖。下面是部分图标字体示例。
 
-## Basic use
+## 基本使用
 
-It is recommended to use the `Font Class` method to use the icon font. You only need to use a `<i>` label as the container, select the icon you need, and copy its `class` to generate it quickly.
+推荐使用 `Font Class` 方式使用图标字体，你只需要用一个 `<i>` 标签作为容器，并选择你需要的图标，复制它的`class`即可快速生成。
 
-### Import Iconfont
+### 引入 Iconfont
 
 ```typescript
-// vue3/main.ts or *.vue file
+// 在 vue3/main.ts or *.vue 文件中
 import 'different-ui/theme/src/Icon/iconfont.css'
 ```
 
-**Examples**:
+**示例**：
 
 <df-icon>
 
@@ -50,5 +50,5 @@ import 'different-ui/theme/src/Icon/iconfont.css'
 </df-icon>
 
 ::: tip
-View all ~~[Iconfont](./demo_index.md)~~ here.
+在这里查看所有~~[图标字体](./demo_index.md)~~
 :::

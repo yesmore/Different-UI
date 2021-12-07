@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-add861c2",
   "path": "/en/guide/link.html",
-  "title": "链接",
+  "title": "Link",
   "lang": "eh-US",
   "frontmatter": {},
   "excerpt": "",
@@ -11,17 +11,4 @@ export const data = {
     "updatedTime": null,
     "contributors": []
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }
