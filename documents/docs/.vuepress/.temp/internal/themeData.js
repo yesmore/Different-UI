@@ -23,7 +23,7 @@ export const themeData = {
           "text": "版本",
           "children": [
             {
-              "text": "v0.1.1-beta.3",
+              "text": "v0.1.1-beta.11",
               "link": "https://github.com/yesmore/different-ui"
             }
           ]
@@ -99,6 +99,7 @@ export const themeData = {
           {
             "text": "Feedback 反馈组件",
             "children": [
+              "/component/message.md",
               "/component/modal.md"
             ]
           },
@@ -220,7 +221,7 @@ export const themeData = {
           {
             "text": "Feedback",
             "children": [
-              "/en/component/modal.md"
+              "/en/component/message.md"
             ]
           },
           {

@@ -11,6 +11,8 @@ export const pagesData = {
   "v-4ee9c1d5": () => import(/* webpackChunkName: "v-4ee9c1d5" */"D:/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/icon.html.js").then(({ data }) => data),
   // path: /component/magnifier.html
   "v-44426a34": () => import(/* webpackChunkName: "v-44426a34" */"D:/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/magnifier.html.js").then(({ data }) => data),
+  // path: /component/message.html
+  "v-d8f6f186": () => import(/* webpackChunkName: "v-d8f6f186" */"D:/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/message.html.js").then(({ data }) => data),
   // path: /component/modal.html
   "v-da3d69d2": () => import(/* webpackChunkName: "v-da3d69d2" */"D:/repository/different-ui/different-ui/documents/docs/.vuepress/.temp/pages/component/modal.html.js").then(({ data }) => data),
   // path: /component/more.html

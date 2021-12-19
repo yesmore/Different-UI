@@ -1,0 +1,59 @@
+@use '../mixins/mixins.scss' as *;
+@use '../common/var' as *;
+
+$df-message-colors: (
+  'success': $color-success,
+  'warning': $color-warning,
+  'error': $color-error,
+  'info': $color-white,
+);
+
+@include b(message) {
+  z-index: var(--df-index-top);
+  display: inline-block;
+  padding: 10px 10px 10px 15px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
+  height: 30px;
+  color: var(--df-color-white);
+  line-height: 30px;
+  border-radius: var(--df-border-radius-base);
+  border: 1px solid var(--df-border-color-lighter);
+  font-size: var(--df-messagebox-font-size);
+  box-shadow: var(--df-box-shadow-light);
+  overflow: hidden;
+
+  @each $key, $value in $df-message-colors {
+    @include m($key) {
+      // df-message--info
+      background-color: $value;
+      @if $key == 'info' {
+        color: var(--df-color-black);
+      }
+    }
+  }
+
+  @include when(center) {
+    text-align: center;
+  }
+}
+
+// .df-slide-enter-active,
+// .df-slide-leave-active {
+//   transition: all var(--df-transition-duration) linear;
+// }
+// .df-slide-enter-active {
+//   transform: translateX(100%);
+// }
+// .df-slide-enter-to {
+//   transform: translateX(0);
+// }
+// .df-slide-leave-active {
+//   transform: translateX(0);
+// }
+// .df-slide-leave-to {
+//   transform: translateX(-100%);
+// }

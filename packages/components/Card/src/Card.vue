@@ -23,14 +23,14 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
-// import { cardProps } from './Card'
+import { defineComponent, PropType } from 'vue'
+// import { ICardOptions } from './Card.types'
 
 export default defineComponent({
   name: 'df-card',
   props: {
     bodyStyle: {
-      type: Object,
+      type: Object as PropType<StyleSheet>,
       default() {
         return {}
       },

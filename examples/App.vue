@@ -1,7 +1,7 @@
 <template>
   <!-- <h2>组件示例<i class="iconfont df-icon-script"></i></h2> -->
 
-  <!-- <div class="card-container">
+  <div class="card-container">
     <df-card
       :bodyStyle="{ borderRadius: '10px', width: '300px' }"
       coverUrl="https://cdn.jsdelivr.net/gh/yesmore/img/v2/6/02.jpg"
@@ -15,11 +15,11 @@
         >
       </template>
     </df-card>
-  </div> -->
+  </div>
 
   <!-- 动画 -->
   <!-- <df-button @click="show">显示</df-button>
-  <transition name="df-fade-in">
+  <transition name="df-slide">
     <div v-if="showMod">
       <h1>卧槽</h1>
     </div>
@@ -36,12 +36,16 @@
     >
       按钮
     </df-button>
+    <df-button> 按钮 </df-button>
     <df-button color="success" type="trans-success">success</df-button>
     <df-button type="curtain-down-success">success</df-button>
     <df-button @click="handleClick" color="success"> 按钮 </df-button>
     <df-button :plain="true" color="primary"> 按钮 </df-button>
     <df-button type="concave" color="primary"> 按钮 </df-button>
-    <df-button type="bling" color="primary"> 按钮 </df-button>
+    <df-button color="primary" size="mini" :round="true">i</df-button>
+    <df-button color="success" size="small" :round="true">i</df-button>
+    <df-button color="warning" size="middle" :round="true">按钮</df-button>
+    <df-button color="danger" size="large" :round="true">按钮</df-button>
   </div> -->
 
   <!-- <div class="car-container card df-m-5">
@@ -170,7 +174,7 @@
     <df-loginbar></df-loginbar>
   </div> -->
 
-  <div class="switch-container df-m-5">
+  <!-- <div class="switch-container df-m-5">
     <df-switch
       activeColor="success"
       :showLabel="false"
@@ -180,7 +184,13 @@
     <df-switch>
       <template #label> 哈哈哈 </template>
     </df-switch>
-  </div>
+  </div> -->
+
+  <!-- <div class="msg">
+    <df-button @click="showMsg"
+      ><i class="iconfont df-icon-github1"></i>显示Message</df-button
+    >
+  </div> -->
 </template>
 
 <script lang="ts">
@@ -188,7 +198,8 @@ import { defineComponent, ref, reactive, toRefs } from 'vue'
 import carousel_data from './data/carousel'
 import tree_menu_data from './data/treeMenu'
 import selector_data from './data/selector'
-// import { DfButton, DfMagnifier } from '~/index'
+
+import { DfMessage } from '~/index'
 // import { DfModal } from '~/index'
 
 export default defineComponent({
@@ -235,6 +246,20 @@ export default defineComponent({
       state.showMod = !state.showMod
     }
 
+    const showMsg = () => {
+      DfMessage({
+        // center: true,
+        type: 'warning',
+        message: '卧槽',
+        duration: 1000,
+        animation: 'df-fade-in',
+        onClose: onClose,
+      })
+    }
+    const onClose = () => {
+      console.log('我关闭了message')
+    }
+
     const handleChangeStatus = (data: boolean) => {
       console.log(data)
     }
@@ -252,6 +277,7 @@ export default defineComponent({
       modalClose,
       show,
       handleChangeStatus,
+      showMsg,
     }
   },
 })

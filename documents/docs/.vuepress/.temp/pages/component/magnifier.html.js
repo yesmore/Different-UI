@@ -27,12 +27,12 @@ export const data = {
   ],
   "filePathRelative": "component/magnifier.md",
   "git": {
-    "updatedTime": 1638453652000,
+    "updatedTime": 1638887014000,
     "contributors": [
       {
         "name": "song",
         "email": "3224266014@qq.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

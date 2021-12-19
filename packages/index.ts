@@ -1,5 +1,4 @@
 import { App } from 'vue'
-
 import DfButton from './components/Button'
 import DfCarousel from './components/Carousel'
 import DfCarouselItem from './components/Carousel/item'
@@ -14,13 +13,13 @@ import DfModal from './components/Modal'
 import DfCard from './components/Card'
 import DfLoginbar from './components/LoginBar'
 import DfSwitch from './components/Switch'
+import DfMessage from './components/Message'
 
 // import './theme/index.css'
 // import './theme/components.css'
-
 // import './theme/src/Icon/iconfont.css'
 
-// 所有插件列表
+// 插件列表
 const components = [
   DfButton,
   DfCarousel,
@@ -36,11 +35,12 @@ const components = [
   DfCard,
   DfLoginbar,
   DfSwitch,
+  DfMessage,
 ]
 
 // 定义 install 方法， App 作为参数
 const install = (app: App): void => {
-  // 遍历注册所有插件
+  // 注册所有插件
   components.map((component) => app.component(component.name, component))
 }
 
@@ -59,6 +59,7 @@ export {
   DfModal,
   DfCard,
   DfSwitch,
+  DfMessage,
 }
 // 全局注册
 export default {

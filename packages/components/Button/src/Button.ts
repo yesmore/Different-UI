@@ -1,4 +1,4 @@
-export const buttonProps = {
+const buttonProps = {
   type: {
     type: String,
     default: 'default',
@@ -24,3 +24,10 @@ export const buttonProps = {
     default: false,
   },
 } as const
+
+enum ButtonPropsType {
+  type,
+  plain,
+}
+
+export { buttonProps, ButtonPropsType }

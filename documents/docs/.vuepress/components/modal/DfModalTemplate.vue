@@ -33,7 +33,6 @@
 <script lang="ts">
 import { defineComponent, reactive, toRefs } from 'vue'
 // import DfModal from './DfModal'
-
 export default defineComponent({
   name: 'df-modal-template',
   components: {
@@ -43,11 +42,9 @@ export default defineComponent({
     const state = reactive({
       showMod: false,
     })
-
     const show = () => {
       state.showMod = !state.showMod
     }
-
     const modalConfirm = (data: { msg: string; show: boolean }) => {
       console.log(data.msg, data.show)
       state.showMod = data.show

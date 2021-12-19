@@ -8,12 +8,12 @@ export const data = {
   "headers": [],
   "filePathRelative": "component/README.md",
   "git": {
-    "updatedTime": 1638535889000,
+    "updatedTime": 1638887014000,
     "contributors": [
       {
         "name": "song",
         "email": "3224266014@qq.com",
-        "commits": 5
+        "commits": 6
       }
     ]
   }

@@ -33,12 +33,12 @@ export const data = {
   ],
   "filePathRelative": "guide/start.md",
   "git": {
-    "updatedTime": 1638067839000,
+    "updatedTime": 1638887014000,
     "contributors": [
       {
         "name": "song",
         "email": "3224266014@qq.com",
-        "commits": 2
+        "commits": 3
       }
     ]
   }

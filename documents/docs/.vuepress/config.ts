@@ -44,7 +44,7 @@ module.exports = {
     '/': {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
       title: 'Different',
-      description: '一个基于 Vuejs 3.x 的UI组件库',
+      description: '一个Vue 3 UI组件库',
     },
     '/en/': {
       lang: 'eh-US',
@@ -80,7 +80,7 @@ module.exports = {
             text: '版本',
             children: [
               {
-                text: 'v0.1.1-beta.3',
+                text: 'v0.1.1-beta.11',
                 link: 'https://github.com/yesmore/different-ui',
               },
             ],
@@ -150,7 +150,7 @@ module.exports = {
             },
             {
               text: 'Feedback 反馈组件',
-              children: ['/component/modal.md'],
+              children: ['/component/message.md', '/component/modal.md'],
             },
             {
               text: 'Business 业务',
@@ -264,7 +264,7 @@ module.exports = {
             },
             {
               text: 'Feedback',
-              children: ['/en/component/modal.md'],
+              children: ['/en/component/message.md'],
             },
             {
               text: 'Business',
@@ -310,6 +310,14 @@ module.exports = {
           DfMagnifier: path.resolve(
             __dirname,
             './components/magnifier/DfMagnifier.vue',
+          ),
+          DfMessage: path.resolve(
+            __dirname,
+            './components/message/DfMessage.vue',
+          ),
+          DfMessageTemplate: path.resolve(
+            __dirname,
+            './components/message/DfMessageTemplate.vue',
           ),
           DfModal: path.resolve(__dirname, './components/modal/DfModal.vue'),
           DfModalTemplate: path.resolve(

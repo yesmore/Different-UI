@@ -1,4 +1,5 @@
-$namespace: 'df';
-$element-separator: '__';
-$modifier-separator: '--';
-$state-prefix: 'is-';
+// BEM：block 代码块 | element 元素 | modifier 修饰符
+$namespace: 'df'; // 命名空间
+$element-separator: '__'; // 划分空间分隔符
+$modifier-separator: '--'; // 修饰类型
+$state-prefix: 'is-'; // 修饰状态

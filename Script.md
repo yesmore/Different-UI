@@ -5,7 +5,7 @@
 ```shell
 # cd /
 $ yarn serve
-$ yarn watch:css
+$ yarn w:css
 
 # cd /documents
 $ yarn docs:dev

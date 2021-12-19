@@ -6,5 +6,6 @@
   "prettier.trailingComma": "all",
   "prettier.singleQuote": true,
   "prettier.requireConfig": false,
-  "files.autoSave": "onWindowChange"
+  "files.autoSave": "onWindowChange",
+  "html.format.wrapLineLength": 80
 }

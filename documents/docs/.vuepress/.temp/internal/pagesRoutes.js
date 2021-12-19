@@ -7,6 +7,7 @@ const routeItems = [
   ["v-d9a1ecc4","/component/card.html","Card 卡片",["/component/card","/component/card.md"]],
   ["v-4ee9c1d5","/component/icon.html","Iconfont 图标字体",["/component/icon","/component/icon.md"]],
   ["v-44426a34","/component/magnifier.html","Magnifier 图片放大镜",["/component/magnifier","/component/magnifier.md"]],
+  ["v-d8f6f186","/component/message.html","Message 消息框",["/component/message","/component/message.md"]],
   ["v-da3d69d2","/component/modal.html","Modal 模态框",["/component/modal","/component/modal.md"]],
   ["v-0de0ac79","/component/more.html","More 更多",["/component/more","/component/more.md"]],
   ["v-952a5aea","/component/","Introduction 组件说明",["/component/index.html","/component/README.md"]],

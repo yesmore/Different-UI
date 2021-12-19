@@ -40,7 +40,7 @@ export const siteData = {
     "/": {
       "lang": "zh-CN",
       "title": "Different",
-      "description": "一个基于 Vuejs 3.x 的UI组件库"
+      "description": "一个Vue 3 UI组件库"
     },
     "/en/": {
       "lang": "eh-US",

@@ -3,10 +3,10 @@ home: true
 heroImage: /logo-s.png
 actions:
   - text: Get Started
-    link: /guide/start.html
+    link: /en/guide/start.html
     type: primary
   - text: Introduction
-    link: /guide/
+    link: /en/guide/
     type: secondary
 features:
   - title: 🌈 Colorful Style

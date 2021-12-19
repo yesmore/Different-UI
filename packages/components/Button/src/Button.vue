@@ -2,11 +2,11 @@
   <button
     :class="[
       'df-btn',
-      color ? 'df-btn-' + color : 'df-btn-default',
+      color !== 'default' ? 'df-btn-' + color : 'df-btn-primary',
       plain === true && color ? 'df-btn-plain-' + color : '',
-      type ? 'df-btn-type-' + type : 'df-btn-type-default',
-      size ? 'df-btn-size-' + size : 'df-btn-size-default',
-      radius ? 'df-btn-radius-' + radius : 'df-btn-radius-default',
+      type !== '' ? 'df-btn-type-' + type : '',
+      size !== 'default' ? 'df-btn-size-' + size : '',
+      radius === '' ? 'df-btn-radius-' + radius : '',
       round === true ? 'df-btn-round-' + size : '',
     ]"
   >
@@ -18,10 +18,39 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { buttonProps } from './Button'
+// import { ButtonPropsType } from './Button'
 
 export default defineComponent({
   name: 'df-button',
-  props: buttonProps,
+  props: {
+    type: {
+      type: String,
+      default: '',
+    },
+    color: {
+      type: String,
+      default: 'default',
+    },
+    size: {
+      type: String,
+      default: 'default',
+    },
+    radius: {
+      type: String,
+      default: 'default',
+    },
+    round: {
+      type: Boolean,
+      default: false,
+    },
+    plain: {
+      type: Boolean,
+      default: false,
+    },
+  } as const,
+  setup(props) {
+    props.color
+    let el = document.querySelector('button')
+  },
 })
 </script>

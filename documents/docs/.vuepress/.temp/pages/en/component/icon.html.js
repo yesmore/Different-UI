@@ -22,7 +22,13 @@ export const data = {
   ],
   "filePathRelative": "en/component/icon.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1638887014000,
+    "contributors": [
+      {
+        "name": "song",
+        "email": "3224266014@qq.com",
+        "commits": 1
+      }
+    ]
   }
 }

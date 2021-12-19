@@ -68,8 +68,12 @@ $df-btn-radius: (
 }
 
 .df-btn {
+  min-width: 105px;
+  height: 35px;
   color: var(--df-color-white);
+  // background-color: $color-primary;
   border: none;
+  border-radius: var(--df-border-radius-base);
   margin: 5px;
   padding: 0 15px;
   font-family: 'Lato', sans-serif;
@@ -78,7 +82,6 @@ $df-btn-radius: (
   transition: all var(--df-transition-duration) ease;
   position: relative;
   display: inline-block;
-  // box-shadow: var(--df-box-shadow-custom);
   outline: none;
 
   &:disabled,
@@ -335,8 +338,7 @@ $df-btn-radius: (
   }
 
   .#{$namespace}-btn-round-#{$key} {
-    min-width: #{nth($size, 2)} !important;
-    height: #{nth($size, 2)} !important;
+    min-width: #{nth($size, 2)};
     border-radius: var(--df-border-radius-circle);
   }
 }

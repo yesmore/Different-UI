@@ -25,7 +25,6 @@ import {
   ref,
 } from 'vue'
 import { modalProps } from './Modal'
-
 export default defineComponent({
   name: 'df-modal',
   props: {
@@ -113,13 +112,11 @@ export default defineComponent({
   setup(props, ctx) {
     const instance = getCurrentInstance() as any
     const dfModal = ref(null as any)
-
     const state = reactive({
       dfModalHeight: 0,
       mask: props.mask,
       showModal: false,
     })
-
     const confirm = () => {
       state.mask = false
       ctx.emit('confirm', {
@@ -127,7 +124,6 @@ export default defineComponent({
         show: false,
       })
     }
-
     const cancel = () => {
       state.mask = false
       ctx.emit('cancel', {
@@ -135,13 +131,11 @@ export default defineComponent({
         show: false,
       })
     }
-
     onMounted(() => {
       // state.dfModalHeight = dfModal.value.offsetHeight
       state.dfModalHeight = window.innerHeight
       console.log('窗口高度', window.innerHeight)
     })
-
     return {
       confirm,
       cancel,
