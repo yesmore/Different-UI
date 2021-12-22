@@ -27,7 +27,6 @@
   <br>
 </p>
 
-
 <p align="center">Different UI - A Vue.js 3 UI library made by <a href='https://github.com/yesmore'>@yesmore</a></p>
 
 - 🌈 With Colorful Style
@@ -112,14 +111,13 @@ $ npm run dev
 
 ## 🌱 禅
 
-- 路上有个小孩在踩影子，
-- 我觉得好幼稚。
-- 所以绕开了，
-- 我怕他踩到我的影子。
+Different UI（以简称 DF）构建于巨人的肩膀上，它借鉴了互联网上优秀开源作品，如 `codepen` 等，基于此，DF 也将是一款拥抱开源的作品，并将一直持续下去。
 
-## 🐾 创建者
+## 🐾 构建者
 
-<a href='https://github.com/yesmore'><img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a>
+<code><a href='https://github.com/yesmore'>
+<img width='40px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a>
+</code>
 
 ## 🎨 请我吃辣条
 
