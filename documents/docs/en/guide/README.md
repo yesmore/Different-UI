@@ -65,10 +65,7 @@ You can find the breaking change list here: [Breaking Change List](https://githu
 
 ## 🌱 Different Zen
 
-- There is a child stepping on the shadow on the road,
-- I feel so childish.
-- So I bypassed,
-- I'm afraid he'll step on my shadow.
+Different UI (hereinafter referred to as DF) is built on the shoulders of giants. It draws lessons from excellent open source works on the Internet, such as `codepen`. Based on this, DF will also be a work that embraces open source and will continue.
 
 ## 🐾 Contributors
 

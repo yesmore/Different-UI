@@ -27,8 +27,6 @@
   <br>
 </p>
 
-
-
 <p align="center">Different UI - A Vue.js 3 UI library made by <a href='https://github.com/yesmore'>@yesmore</a></p>
 
 - 🌈 With Colorful Style
@@ -113,13 +111,11 @@ $ npm run dev
 
 ## 🌱 Different Zen
 
-- Beauty is better than ugliness, and so is CSS
-- Sometimes ‘CV’ may be really better than you, except boss
-- From 0 to 1
+Different UI (hereinafter referred to as DF) is built on the shoulders of giants. It draws lessons from excellent open source works on the Internet, such as `codepen`. Based on this, DF will also be a work that embraces open source and will continue.
 
 ## 🐾 Contributors
 
-<a href='https://github.com/yesmore'><img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a>  
+<a href='https://github.com/yesmore'><img width='50px' style='border-radius: 50%' src='https://avatars.githubusercontent.com/u/89140804?v=4' alt='wx'/></a>
 
 ## 🎨 Treat me to spicy strips
 
@@ -132,8 +128,6 @@ $ npm run dev
   </table>
 </p>
 
-
 ## Licence
 
 Different UI is open source software licensed as [MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
-
